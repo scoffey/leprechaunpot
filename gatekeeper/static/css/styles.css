@@ -1,0 +1,26 @@
+body {
+	width: 600px;
+	margin: 20px auto;
+	font-family: Helvetica, sans-serif;
+}
+
+table {
+	width: 100%;
+	font-size: 20pt;
+	border-collapse:collapse;
+}
+
+th {
+	padding: 16px;
+}
+
+td {
+	padding: 16px;
+	border: 1px black solid;
+	text-align: center;
+}
+
+.hover {
+	background: #9cf;
+}
+
