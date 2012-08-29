@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>AsciiTube alpha</title>
+<link href="asciitube.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="mootools-1.2.3-core.js"></script>
+<script type="text/javascript" src="mootools-1.2.3.1-more.js"></script>
+<script type="text/javascript" src="asciitube.js"></script>
+</head>
+
+<body>
+<h1>AsciiTube</h1>
+<div class="controls">
+<a href="javascript:void(0);" id="insert" title="Inserts a new blank frame after current">New</a>
+<a href="javascript:void(0);" id="copy" title="Inserts a copy of the current frame">Duplicate</a>
+<a href="javascript:void(0);" id="delete" title="Deletes the current frame">Delete</a>
+<a href="javascript:void(0);" id="save" title="Saves the animation">Save</a>
+</div>
+<div class="controls">
+<span><label for="framewidth">Width:</label> <input type="text" id="framewidth" /></span>
+<span><label for="frameheight">Height:</label> <input type="text" id="frameheight" /></span>
+<span><input type="checkbox" id="loop" /> <label for="loop">Loop</label></span>
+<span><input type="checkbox" id="editable" /> <label for="editable">Editable</label></span>
+<span><input type="text" id="framerate" /> <label for="framerate">frames / second</label></span>
+</div>
+<p><textarea id="viewport" class="viewport" cols="80" rows="25"></textarea></p>
+<p class="controls playback">
+<a href="javascript:void(0);" id="play-pause">P</a>
+<span id="slider" class="slider"><span id="knob" class="knob"></span></span>
+<a href="javascript:void(0);" id="first">|&lt;&lt;</a>
+<a href="javascript:void(0);" id="previous">&lt;--</a>
+<span class="cursor"><span id="current" class="current"></span> / <span id="total" class="total"></span></span>
+<a href="javascript:void(0);" id="next">--&gt;</a>
+<a href="javascript:void(0);" id="last">&gt;&gt;|</a>
+</p>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+	font-family: sans-serif;
+	width: 900px;
+	margin: 0 auto;
+}
+.controls {
+	margin: 16px 0;
+	line-height: 150%;
+}
+#framewidth, #frameheight, #framerate {
+	width: 40px;
+}
+.controls a {
+    text-align: center;
+    width: auto;
+    background: #bbbbbb;
+    color: black;
+    border: 3px outset #cccccc;
+    margin: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 9pt;
+}
+.playback a, .playback span {
+    float: left;
+}
+.controls a:hover {
+    border: 3px inset #dddddd;
+}
+#knob {
+	background: black;
+	height: 15px;
+	width: 15px;
+	margin: 2px;
+	padding: 0;
+	display: block;
+}
+#slider {
+	background: gray;
+	height: 20px;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#viewport {
+	font-family: monospace;
+	font-size: 12pt;
+}
