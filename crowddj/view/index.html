@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crowd DJ</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+</head>
+<body>
+  <div id="search-tab">
+    <form id="search-form">
+      <input id="search-box" type="text" placeholder="Search tracks..." />
+    </form>
+    <ul id="results" />
+  </div>
+  <div id="playlist-tab">
+    <ul id="playlist" />
+  </div>
+  <div id="track-tab">
+    <div class="track-thumb">
+      <img src="" width="300" height="300" />
+    </div>
+    <div class="track-description">
+      <div class="track-name"></div>
+      <div class="track-artist"></div>
+      <div class="rating">
+        <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/crowddj.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+<title>the posta sokoban</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta property="og:title" content="The Posta Sokoban" />
+<meta property="og:type" content="game" />
+<meta property="og:url" content="http://www.coffey.com.ar/postasokoban/" />
+<meta property="og:image" content="http://www.coffey.com.ar/postasokoban/static/images/sprite.gif" />
+<meta property="og:site_name" content="coffey.com.ar" />
+<meta property="fb:admins" content="1020813103" />
+
+<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="static/js/mootools.js"></script>
+
+<link type="text/css" rel="stylesheet" href="static/css/postasokoban.css" />
+<link rel="shortcut icon" href="static/images/box.gif" />
+
+</head>
+
+<body ontouchmove="BlockMove(event);">
+<div id="fb-root"></div>
+<script src="static/js/all.js"></script>
+
+  <div id="stage">
+    <div id="gameboard">
+
+
+
+	<div id="topbar">
+		<div class="inner">
+			<span>postasokoban</span>
+			<span id="message">a game developed for the Facebook Developer World HACK Buenos Aires 2012</span>
+		</div>
+	</div>
+
+	<div id="splashscreen">
+		<h1>the posta sokoban</h1>
+		<p>
+			<img src="static/images/sprite.gif" />
+			<img src="static/images/box.gif" />
+			<img src="static/images/goal.gif" />
+			<img src="static/images/box-on-goal.gif" />
+			<img src="static/images/wall.gif" />
+			<img src="static/images/sprite-on-goal.gif" style="display: none;" />
+		</p>
+		<p>Push the boxes onto the goal locations.</p>
+		<p>Use the arrow keys to move; U to undo; R to redo.</p>
+		<p>&nbsp;</p>
+		<p>
+			<a id="start" href="javascript:void(0);">Start game</a>
+			<a id="resume" href="javascript:void(0);">Resume game</a>
+		</p>
+		<p>&nbsp;</p>
+		<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+	</div>
+	<div id="content" style="display: none;">
+		<div id="sokoban"></div>
+	</div>
+
+
+
+    </div>
+
+  </div>
+
+<script>
+  var appId = '359179634160046';
+  var uid = "0";
+  var accessToken = "0";
+
+  // Initialize the JS SDK
+  FB.init({
+    appId: appId,
+    cookie: true,
+  });
+
+  // Get the user's UID
+  FB.getLoginStatus(function(response) {
+    uid = response.authResponse.userID ? response.authResponse.userID : null;
+  });
+
+  function authUser() {
+    FB.login(function(response) {
+		if (response.authResponse) {
+			uid = response.authResponse.userID;
+			accessToken = response.authResponse.accessToken;
+		} else {
+			console.log('User cancelled login or did not fully authorize.');
+		}
+    }, {scope:'email,publish_actions'});
+  }
+</script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "/postasokoban/static/js/all.js#xfbml=1&appId=359179634160046";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript" src="static/js/sokowalter.js"></script>
+<script type="text/javascript" src="static/js/postasokoban.js"></script>
+<script type="text/javascript" src="static/js/ui.js"></script>
+
+
+</body>
+
+</html>

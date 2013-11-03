@@ -1,0 +1,135 @@
+body {
+	width: 800px;
+	margin: 20px auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+input:focus {
+	outline: none;
+}
+#search-tab {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	background: black;
+}
+#search-box {
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	color: #333;
+	font-size: 11pt;
+	height: 32px;
+	margin: 4px;
+	padding: 0 14px;
+	width: 360px;
+	float: right;
+}
+#results {
+	position: fixed;
+	right: 0;
+	top: 42px;
+	width: 380px;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	list-style: none;
+}
+.track-item {
+	padding: 0;
+	margin: 0;
+}
+.track-anchor {
+	display: block;
+	padding: 4px;
+	margin: 0;
+	width: 360px;
+	height: 42px;
+}
+.track-anchor:hover {
+	background-color: #ffd;
+}
+.track-description {
+	float: left;
+	margin: 0 4px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;
+}
+.track-thumb {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 42px;
+	height: 42px;
+}
+.track-thumb img {
+	padding: 0;
+	margin: 4px;
+	border: 0;
+}
+.track-name {
+	float: left;
+	font-size: 16px;
+	line-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;
+}
+.track-artist {
+	clear: left;
+	float: left;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;
+}
+#track-tab {
+	padding: 48px 0;
+	line-height: 3em;
+}
+#track-tab .track-thumb {
+	width: 320px;
+	height: 320px;
+}
+#track-tab .track-name {
+	font-size: 16pt;
+}
+#track-tab .track-artist {
+	font-size: 12pt;
+}
+#track-tab .track-description {
+	padding: 12px;
+	width: none;
+}
+#track-tab .rating {
+	clear: left;
+	float: left;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+

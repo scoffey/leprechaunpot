@@ -1,26 +1,43 @@
 import os
-import logging
-from datetime import datetime
+import datetime
+import json
 
+import webapp2
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from google.appengine.ext.webapp.util import run_wsgi_app
 
-class MainPage(webapp.RequestHandler):
-    TEMPLATE_DIR = os.path.dirname(__file__)
+class MainPage(webapp2.RequestHandler):
+    TEMPLATE_PATH = ('index.html',)
     def get(self):
-        data = {'server_time': str(datetime.utcnow())}
-        path = os.path.join(self.TEMPLATE_DIR, 'index.html')
+        data = {'server_time': str(datetime.datetime.utcnow())}
+        path = os.path.join(os.path.dirname(__file__), *self.TEMPLATE_PATH)
         output = template.render(path, data)
         self.response.out.write(output)
 
-class GateKeeperPage(MainPage):
-    TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), \
-            'gatekeeper', 'view')
+class CrowdDjController(MainPage):
+    TEMPLATE_PATH = ('crowddj', 'view', 'index.html')
+
+class GateKeeperController(MainPage):
+    TEMPLATE_PATH = ('gatekeeper', 'view', 'index.html')
+
+class PostaSokobanMainController(MainPage):
+    TEMPLATE_PATH = ('postasokoban', 'view', 'index.html')
+
+class PostaSokobanLevelController(PostaSokobanMainController):
+    TEMPLATE_PATH = ('postasokoban', 'view', 'level.html')
+    def get(self):
+        data = dict((i, self.request.get(i)) for i in self.request.arguments())
+        path = os.path.join(os.path.dirname(__file__), *self.TEMPLATE_PATH)
+        output = template.render(path, data)
+        self.response.out.write(output)
 
 routes = {
     '/': MainPage,
-    '/gatekeeper/*': GateKeeperPage,
+    '/crowddj/*': CrowdDjController,
+    '/gatekeeper/*': GateKeeperController,
+    '/postasokoban/': PostaSokobanMainController,
+    '/postasokoban/level': PostaSokobanLevelController,
 }
 app = webapp.WSGIApplication(routes.items(), debug=True)
 

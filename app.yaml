@@ -16,8 +16,14 @@ handlers:
 - url: /asciitube
   static_dir: asciitube/static
 
+- url: /crowddj/static
+  static_dir: crowddj/static
+
 - url: /gatekeeper/static
   static_dir: gatekeeper/static
+
+- url: /postasokoban/static
+  static_dir: postasokoban/static
 
 - url: .*
   script: main.app

@@ -1,0 +1,98 @@
+body {
+	font: bold 10pt Helvetica, sans-serif;
+	background-color: white;
+	margin: 0;
+}
+
+#topbar {
+	background-color: #0c3;
+	color: black;
+	margin: 0;
+	padding: 8px;
+	font-size: 12pt;
+}
+
+#topbar a {
+	color: black;
+}
+
+#message {
+	padding: 0 24px;
+}
+
+#topbar div.inner {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#socialbar {
+	height: 40px;
+	width: 940px;
+	margin: 120px auto 0 auto;
+	bottom: 0;
+}
+
+#splashscreen,
+#content {
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#splashscreen {
+	color: #0c3;
+	font-size: 160%;
+}
+
+#splashscreen a {
+	color: black;
+	background-color: #0c3;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 10px;
+}
+
+#splashscreen a.disabled {
+	color: #666666;
+	background-color: #333333;
+}
+
+#sokoban {
+	min-height: 480px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+#sokoban p {
+	padding: 16px;
+	color: white;
+}
+#sokoban div {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+#sokoban div.wall {
+	background: url(../images/wall.gif) no-repeat left top;
+}
+#sokoban div.floor {
+	/* background: url(../images/floor.gif) no-repeat left top; */
+}
+#sokoban div.sprite {
+	background: url(../images/sprite.gif) no-repeat left top;
+}
+#sokoban div.box {
+	background: url(../images/box.gif) no-repeat left top;
+}
+#sokoban div.goal {
+	background: url(../images/goal.gif) no-repeat left top;
+}
+#sokoban div.sprite-on-goal {
+	background: url(../images/sprite-on-goal.gif) no-repeat left top;
+}
+#sokoban div.box-on-goal {
+	background: url(../images/box-on-goal.gif) no-repeat left top;
+}
