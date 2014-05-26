@@ -10,7 +10,14 @@
 <script src="static/fixture.js"></script>
 </head>
 <body>
-<p>Can you predict the World Cup better than your friends?</p>
-<div id="container"></div>
+<ul class="tabs clear">
+<li><a id="fixture-tab" href="javascript:void(0);">Make a prediction</a></li>
+<li><a id="challenge-tab" href="javascript:void(0);">Challenge your friends</a></li>
+<li><a id="guess-tab" href="javascript:void(0);">Check out your guesses</a></li>
+</ul>
+<div id="fixture" class="panel"></div>
+<div id="challenge" class="panel"><p>Invite your friends. Share. Coming soon...</p></div>
+<div id="guess" class="panel"><p>How many match winners and exact scores you guessed so far. Coming soon...</p></div>
+<p><a id="debug" href="javascript:void(0);">Randomize</a></p>
 </body>
 </html>

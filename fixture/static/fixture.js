@@ -1,20 +1,36 @@
 $(document).ready(function () {
-	$('#container').append(
+	// setup fixture
+	$('.panel').hide();
+	var save = newElem('a', {'class': 'action', 'id': 'save'}).text('Save');
+	$('#fixture').append(
 		Fixture.renderGroupsStage(),
-		Fixture.renderSecondStage()
+		Fixture.renderSecondStage(),
+		newElem('p', {'class': 'controls'}).append(save),
+		newElem('p', {'id': 'status'})
 	);
+	Fixture.load();
+	$('#fixture').show();
+	$('#fixture-tab').addClass('tab-on');
+
+	// event handlers
 	$('.score').change(Fixture.update);
+	$('#save').click(Fixture.submit);
+	$('#debug').click(Fixture.random);
+	$('.tabs li a').click(function (e) {
+		$('.panel').hide();
+		$('#' + e.target.id.split('-')[0]).show();
+		$('.tabs li a').removeClass('tab-on');
+		$(e.target).addClass('tab-on');
+	});
 });
 
-var debug = function () {
-	var i = 0;
-	$('.score').each(function (i, e) {
-		var max = 13;
-		var min = 2;
-		var r = Math.floor(Math.random() * (max - min + 1)) + min;
-		$(e).val(i++ % r);
-	});
-	Fixture.update();
+var newElem = function (tagname, attributes) {
+	return $(document.createElement(tagname)).attr(attributes || {});
+};
+
+var getCookie = function (key) {
+        var m = document.cookie.match('(?:^|;\\s*)'+ key +'=(.*?)(?:;|$)');
+        return (m ? decodeURIComponent(m[1]) : null);
 };
 
 var Fixture = {};
@@ -86,13 +102,15 @@ Fixture.matches = [
 	['W61', 'W62']
 ];
 
-var newElem = function (tagname, attributes) {
-	return $(document.createElement(tagname)).attr(attributes || {});
-};
-
-var getCookie = function (key) {
-        var m = document.cookie.match('(?:^|;\\s*)'+ key +'=(.*?)(?:;|$)');
-        return (m ? decodeURIComponent(m[1]) : null);
+Fixture.random = function () {
+	var i = 0;
+	$('.score').each(function (i, e) {
+		var max = 13;
+		var min = 2;
+		var r = Math.floor(Math.random() * (max - min + 1)) + min;
+		$(e).val(i++ % r);
+	});
+	Fixture.update();
 };
 
 Fixture.renderGroupsStage = function () {
@@ -311,13 +329,52 @@ Fixture.getQualifier = function (key) {
 };
 
 Fixture.submit = function () {
+	var userId = getCookie('fb_user_id');
+	if (!userId) {
+		var message = 'Unknown user. Facebook login required.';
+		$('#status').text(message).addClass('error');
+		return null;
+	}
 	var results = [];
 	for (var i = 0; i < 64; i++) {
 		var r  = Fixture.getMatchResult(i);
-		if (!r) return false;
+		if (!r) {
+			var message = 'Fixture is invalid or incomplete.';
+			$('#status').text(message).addClass('error');
+			return null;
+		}
 		results.push(r);
 	}
-	console.log(JSON.stringify(results));
+	var payload = {
+		'user_id': userId,
+		'prediction': JSON.stringify(results),
+		'auth_token': getCookie('auth_token')
+	};
+	var onSuccess = function (data) {
+		Fixture.setLastSaved(data.timestamp);
+	};
+	var onError = function (jqXHR, textStatus, e) {
+		var code = jqXHR.status;
+		var message = 'Failed to save your prediction: ';
+		if (code == 400) {
+			message += 'Fixture is invalid or incomplete';
+		} else if (code == 401 || code == 403) {
+			message += 'User authentication failed';
+		} else {
+			message += 'Server cannot handle your request';
+		}
+		message += ' (HTTP ' + code + ' ' + jqXHR.statusText + ')';
+		$('#status').text(message).addClass('error');
+	};
+	$.ajax({
+		'type': 'POST',
+		'url': '/fixture/api',
+		'data': payload,
+		'dataType': 'json',
+		'success': onSuccess,
+		'error': onError
+	});
+	return results;
 };
 
 Fixture.getMatchResult = function (index) {
@@ -325,10 +382,90 @@ Fixture.getMatchResult = function (index) {
 	var score1 = (scores.eq(0) ? parseInt($(scores.eq(0)).val()) : NaN);
 	var score2 = (scores.eq(1) ? parseInt($(scores.eq(1)).val()) : NaN);
 	if (isNaN(score1) || isNaN(score2)) return null;
+	if (score1 < 0 || score2 < 0) return null;
 	var trigrams = $('#match-' + index + ' .trigram');
 	var team1 = (trigrams.eq(0) ? $(trigrams.eq(0)).text() : null);
 	var team2 = (trigrams.eq(1) ? $(trigrams.eq(1)).text() : null);
-	if (!team1 || team1 == '?' || !team2 || team2 == '?') return null;
+	if (!team1 || !team2) return null;
+	if (team1.length != 3 || team2.length != 3) return null;
 	return [team1, team2, score1, score2];
 };
+
+Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
+	var scores = $('#match-' + index + ' .score');
+	$(scores.eq(0)).val(score1);
+	$(scores.eq(1)).val(score2);
+	if (index >= 6 * 8) {
+		var flags = $('#match-' + index + ' .flag');
+		var trigrams = $('#match-' + index + ' .trigram');
+		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
+		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
+	}
+};
+
+Fixture.load = function () {
+	var userId = getCookie('fb_user_id');
+	if (!userId) return false;
+	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
+		var fixture = data[userId];
+		if (!fixture || !fixture.prediction) return;
+		for (var i = 0; i < 64; i++) {
+			var r = fixture.prediction[i];
+			if (!r || r.length != 4) continue;
+			Fixture.setMatchResult(i, r[0], r[1], r[2], r[3]);
+		}
+		Fixture.setLastSaved(fixture.timestamp);
+	});
+	return true;
+};
+
+Fixture.setLastSaved = function (timestamp) {
+	if (timestamp) {
+		var date = new Date(1000 * timestamp);
+		$('#status').text('Last saved: ' + prettyDate(date));
+		$('#status').removeClass('error');
+	}
+};
+
+Fixture.delete = function () {
+	var userId = getCookie('fb_user_id');
+	if (!userId) return false;
+	var payload = {
+		'user_id': userId,
+		'auth_token': getCookie('auth_token')
+	};
+	var onSuccess = function (data) {
+		console.log(data);
+	};
+	$.ajax({
+		'type': 'DELETE',
+		'url': '/fixture/api',
+		'data': payload,
+		'success': onSuccess
+	});
+	return true;
+};
+
+/*
+ * JavaScript Pretty Date
+ * Copyright (c) 2011 John Resig (ejohn.org)
+ * Licensed under the MIT and GPL licenses.
+ */
+function prettyDate(date){
+	var diff = (((new Date()).getTime() - date.getTime()) / 1000),
+		day_diff = Math.floor(diff / 86400);
+
+	if ( isNaN(day_diff) || day_diff < 0 || day_diff >= 31 )
+		return date.toDateString();
+
+	return day_diff == 0 && (
+			diff < 60 && "just now" ||
+			diff < 120 && "1 minute ago" ||
+			diff < 3600 && Math.floor( diff / 60 ) + " minutes ago" ||
+			diff < 7200 && "1 hour ago" ||
+			diff < 86400 && Math.floor( diff / 3600 ) + " hours ago") ||
+		day_diff == 1 && "Yesterday" ||
+		day_diff < 7 && day_diff + " days ago" ||
+		day_diff < 31 && Math.ceil( day_diff / 7 ) + " weeks ago";
+}
 

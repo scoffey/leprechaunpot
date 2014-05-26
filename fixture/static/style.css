@@ -1,15 +1,15 @@
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
-	width: 1020px;
-	background: #eee;
+	width: 1024px;
+	background: #ccc;
 	margin: 0 auto;
 }
 .match {
 	padding: 0;
 	margin: 0;
 	font-size: 11pt;
-	clear: left;
+	clear: both;
 	display: block;
 }
 .match:hover {
@@ -55,9 +55,11 @@ body {
 	outline: none;
 }
 .groups-stage {
+	clear: both;
 	float: left;
 }
 .second-stage {
+	clear: both;
 	float: left;
 	background: #fff;
 	padding: 0 20px;
@@ -100,7 +102,7 @@ body {
 	width: 240px;
 }
 .round-of-16 .scoreboard, .quarters .scoreboard, .semifinals .scoreboard {
-	clear: left;
+	clear: both;
 	margin: 0 10px;
 }
 .round-of-16 .match {
@@ -123,4 +125,61 @@ body {
 	width: 238px;
 	height: 30px;
 	margin: 160px 0 0 0;
+}
+.tabs li {
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+.tabs li a {
+	display: block;
+	padding: 10px;
+	width: 240px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background: #ddd;
+	border-radius: 8px 8px 0 0;
+}
+.tabs li a.tab-on, .tabs li a:hover {
+	background: #eee;
+}
+.panel {
+	width: 1016px;
+	margin: 0 0 40px 0;
+	padding: 4px;
+	float: left;
+	background: #eee;
+	border-radius: 8px;
+}
+.clear {
+	clear: both;
+}
+.controls {
+	clear: both;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+.action {
+	width: 120px;
+	padding: 16px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 6px;
+	color: #6c9;
+	background: white;
+}
+.action:hover {
+	color: white;
+	background: #6c9;
+}
+#status {
+	text-align: center;
+	font-size: 10pt;
+	color: #999;
+}
+#status.error {
+	color: red;
 }
