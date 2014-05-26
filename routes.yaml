@@ -29,6 +29,6 @@ handlers:
   script: main.app
 
 #- url: /.*
-#  static_files: static/404.html
-#  upload: static/404\.html
+#  static_files: templates/404.html
+#  upload: templates/404\.html
 
