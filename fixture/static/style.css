@@ -1,0 +1,126 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	width: 1020px;
+	background: #eee;
+	margin: 0 auto;
+}
+.match {
+	padding: 0;
+	margin: 0;
+	font-size: 11pt;
+	clear: left;
+	display: block;
+}
+.match:hover {
+	background: #eee;
+}
+.flag {
+	width: 36px;
+	height: 24px;
+	margin: 2px;
+	padding: 0;
+	float: left;
+	border: 1pt solid #ccc;
+}
+.trigram {
+	width: 34px;
+	height: 18px;
+	margin: 5px;
+	padding: 0;
+	float: left;
+	text-align: center;
+}
+.team {
+	width: 86px;
+	height: 30px;
+	float: left;
+}
+.scoreboard {
+	width: 66px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.score {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 2px 0;
+	border: solid #ccc 1px;
+	font-family: inherit;
+	font-size: inherit;
+	text-align: center;
+	outline: none;
+}
+.groups-stage {
+	float: left;
+}
+.second-stage {
+	float: left;
+	background: #fff;
+	padding: 0 20px;
+	margin: 4px 106px;
+}
+.group-matches {
+	width: 238px;
+	padding: 4px;
+	margin: 4px;
+	float: left;
+	background: #fff;
+}
+.group-matches .match {
+	width: 238px;
+	height: 30px;
+}
+.second-stage .match {
+	width: 86px;
+	height: 90px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+#match-48, #match-49, #match-52, #match-53, #match-56, #match-57, #match-60 {
+	border-right: 1px solid black;
+}
+#match-50, #match-51, #match-54, #match-55, #match-58, #match-59, #match-61 {
+	border-left: 1px solid black;
+}
+#match-62 {
+	border: 1px solid black;
+}
+.round-of-16, .quarters, .semifinals, .finals {
+	width: 87px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: #fff;
+}
+.finals {
+	width: 240px;
+}
+.round-of-16 .scoreboard, .quarters .scoreboard, .semifinals .scoreboard {
+	clear: left;
+	margin: 0 10px;
+}
+.round-of-16 .match {
+	margin: 10px 0;
+}
+.quarters .match {
+	margin: 60px 0;
+	padding: 15px 0;
+}
+.semifinals .match {
+	margin: 120px 0;
+	padding: 50px 0;
+}
+#match-63 {
+	width: 240px;
+	height: 30px;
+	margin: 200px 0 0 0;
+}
+#match-62 {
+	width: 238px;
+	height: 30px;
+	margin: 160px 0 0 0;
+}
