@@ -1,9 +1,3 @@
-application: leprechaunpot-hrd
-version: 1
-runtime: python27
-api_version: 1
-threadsafe: yes
-
 handlers:
 
 - url: /favicon\.ico
@@ -25,10 +19,16 @@ handlers:
 - url: /postasokoban/static
   static_dir: postasokoban/static
 
-- url: .*
+- url: /fixture/static
+  static_dir: fixture/static
+
+- url: /fixture/?.*
+  script: fixture.controller.app
+
+- url: /.*
   script: main.app
 
-libraries:
-- name: webapp2
-  version: "2.5.1"
+#- url: /.*
+#  static_files: static/404.html
+#  upload: static/404\.html
 
