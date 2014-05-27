@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-	/*
 	$.ajaxSetup({'cache': true});
 	$.getScript('//connect.facebook.net/en_US/all.js', function() {
 		FB.init({
@@ -8,34 +6,24 @@ $(document).ready(function () {
 			'xfbml': true,
 			'version': 'v2.0'
 		});
-	});
-	*/
-
-	// setup panels
-	$('.panel').hide();
-	var save = newElem('a', {'class': 'action', 'id': 'save'}).text('Save');
-	$('#fixture').append(
-		Fixture.renderGroupsStage(),
-		Fixture.renderSecondStage(),
-		newElem('p', {'class': 'controls'}).append(save),
-		newElem('p', {'id': 'status'})
-	);
-	Fixture.load();
-	$('#fixture').show();
-	$('#fixture-tab').addClass('tab-on');
-	$('#guess').append(Fixture.renderGuesses());
-
-	// event handlers
-	$('.score').change(Fixture.update);
-	$('#save').click(Fixture.submit);
-	$('#debug').click(Fixture.random);
-	$('.tabs li a').click(function (e) {
-		$('.panel').hide();
-		$('#' + e.target.id.split('-')[0]).show();
-		$('.tabs li a').removeClass('tab-on');
-		$(e.target).addClass('tab-on');
+		FB.login(onLogin);
 	});
 });
+
+var onLogin = function (response) {
+	if (response.status === 'connected') {
+		// Logged into your app and Facebook.
+		Fixture.bootstrap();
+	} else if (response.status === 'not_authorized') {
+		// The person is logged into Facebook, but not your app.
+		var url = 'https://apps.facebook.com/worldcupfixture/';
+		window.top.location.href = url;
+	} else {
+		// The person is not logged into Facebook, so we're not sure if
+		// they are logged into this app or not.
+		document.write('Please log in to Facebook and reload.');
+	}
+};
 
 var newElem = function (tagname, attributes) {
 	return $(document.createElement(tagname)).attr(attributes || {});
@@ -114,6 +102,33 @@ Fixture.matches = [
 	['L61', 'L62'],
 	['W61', 'W62']
 ];
+
+Fixture.bootstrap = function () {
+	// setup panels
+	$('.panel').hide();
+	var save = newElem('a', {'class': 'action', 'id': 'save'}).text('Save');
+	$('#fixture').append(
+		Fixture.renderGroupsStage(),
+		Fixture.renderSecondStage(),
+		newElem('p', {'class': 'controls'}).append(save),
+		newElem('p', {'id': 'status'})
+	);
+	Fixture.load();
+	$('#fixture').show();
+	$('#fixture-tab').addClass('tab-on');
+	$('#guess').append(Fixture.renderGuesses());
+
+	// event handlers
+	$('.score').change(Fixture.update);
+	$('#save').click(Fixture.submit);
+	$('#debug').click(Fixture.random);
+	$('.tabs li a').click(function (e) {
+		$('.panel').hide();
+		$('#' + e.target.id.split('-')[0]).show();
+		$('.tabs li a').removeClass('tab-on');
+		$(e.target).addClass('tab-on');
+	});
+};
 
 Fixture.random = function () {
 	var i = 0;
@@ -343,7 +358,7 @@ Fixture.getQualifier = function (key) {
 };
 
 Fixture.submit = function () {
-	var userId = getCookie('fb_user_id');
+	var userId = FB.getUserID();
 	if (!userId) {
 		var message = 'Unknown user. Facebook login required.';
 		$('#status').text(message).addClass('error');
@@ -360,9 +375,9 @@ Fixture.submit = function () {
 		results.push(r);
 	}
 	var payload = {
-		'user_id': userId,
+		'user_id': FB.getUserID(),
 		'prediction': JSON.stringify(results),
-		'auth_token': getCookie('auth_token')
+		'signed_request': FB.getAuthResponse().signedRequest
 	};
 	var onSuccess = function (data) {
 		Fixture.setLastSaved(data.timestamp);
@@ -418,7 +433,7 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
 };
 
 Fixture.load = function () {
-	var userId = getCookie('fb_user_id');
+	var userId = FB.getUserID();
 	if (!userId) return false;
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
@@ -442,11 +457,9 @@ Fixture.setLastSaved = function (timestamp) {
 };
 
 Fixture.delete = function () {
-	var userId = getCookie('fb_user_id');
-	if (!userId) return false;
 	var payload = {
-		'user_id': userId,
-		'auth_token': getCookie('auth_token')
+		'user_id': FB.getUserID(),
+		'signed_request': FB.getAuthResponse().signedRequest
 	};
 	var onSuccess = function (data) {
 		console.log(data);

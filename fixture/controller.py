@@ -37,10 +37,6 @@ def parse_signed_request(signed_request, secret=_FB_APP_SECRET):
             return data
     return None
 
-def encode_signature(message, secret=_FB_APP_SECRET):
-    sig = hmac.new(secret, msg=message, digestmod=hashlib.sha256).digest()
-    return base64.urlsafe_b64encode(sig).rstrip('=')
-
 # Models
 
 class Fixture(ndb.Model):
@@ -57,19 +53,8 @@ class MainHandler(webapp2.RequestHandler):
         self._render_template(self.TEMPLATE, self._get_data())
 
     def post(self):
-        signed_request = self.request.get('signed_request')
-        if signed_request:
-            payload = parse_signed_request(signed_request)
-            if payload is None:
-                self.abort(401)
-            for k in ('user_id', 'oauth_token'):
-                if k not in payload:
-                    self.abort(401)
-                self._set_cookie('fb_' + k, payload[k])
-            user_id = payload['user_id']
-            self._set_cookie('auth_token', encode_signature(user_id))
-        else:
-            self.abort(401)
+        # deprecated: signed_request is no longer guaranteed to provide
+        # user_id at this point; login will be forced client-side
         self.get()
 
     def _render_template(self, filename, data=None):
@@ -119,10 +104,13 @@ class ApiHandler(webapp2.RequestHandler):
         user_id = params.get('user_id')
         if not user_id:
             self.abort(400) # bad request
-        auth_token = params.get('auth_token')
+        signed_request = params.get('signed_request')
         if not auth_token:
             self.abort(401) # unauthorized
-        if auth_token != encode_signature(user_id):
+        payload = parse_signed_request(signed_request)
+        if payload is None:
+            self.abort(401) # unauthorized
+        if 'user_id' not in payload or payload['user_id'] != user_id:
             self.abort(403) # forbidden
         return user_id
 
