@@ -134,7 +134,7 @@ body {
 .tabs li a {
 	display: block;
 	padding: 10px;
-	width: 240px;
+	width: 270px;
 	text-align: center;
 	text-decoration: none;
 	color: black;
@@ -182,4 +182,55 @@ body {
 }
 #status.error {
 	color: red;
+}
+#guess .wrapper {
+	margin: 4px;
+	padding: 4px;
+}
+#guess .box {
+	width: 150px;
+	float: left;
+	margin: 4px;
+	padding: 4px;
+	text-align: center;
+	background: #6c9;
+}
+#guess .sub {
+	padding: 8px;
+	color: white;
+	background-color: black;
+	font-size: 10pt;
+}
+.guessdata {
+	margin: 8px 0 0 0;
+	padding: 8px;
+	background: white;
+}
+.guessdata span {
+	display: block;
+	text-align: center;
+}
+.guessdata span:last-child {
+	color: #ccc;
+	font-size: 10pt;
+}
+.guesses {
+	font-size: 24pt;
+	padding: 8px;
+}
+#guess .totalbox {
+	width: 126px;
+	height: 122px;
+	float: right;
+	margin: 4px 8px;
+	padding: 16px;
+	font-size: 12pt;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+#guess .total {
+	font-size: 36pt;
+	display: block;
+	padding: 20px;
 }

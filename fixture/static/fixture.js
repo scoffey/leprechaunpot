@@ -1,5 +1,17 @@
 $(document).ready(function () {
-	// setup fixture
+
+	/*
+	$.ajaxSetup({'cache': true});
+	$.getScript('//connect.facebook.net/en_US/all.js', function() {
+		FB.init({
+			'appId': '181581748697602',
+			'xfbml': true,
+			'version': 'v2.0'
+		});
+	});
+	*/
+
+	// setup panels
 	$('.panel').hide();
 	var save = newElem('a', {'class': 'action', 'id': 'save'}).text('Save');
 	$('#fixture').append(
@@ -11,6 +23,7 @@ $(document).ready(function () {
 	Fixture.load();
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
+	$('#guess').append(Fixture.renderGuesses());
 
 	// event handlers
 	$('.score').change(Fixture.update);
@@ -228,6 +241,7 @@ Fixture.update = function () {
 	for (var i = 6 * 8 + 8; i < 64; i++) {
 		Fixture.updateQualifyingMatch(i);
 	}
+	// TODO: hook guess updates
 };
 
 Fixture.rankGroupResults = function (matchResults) {
@@ -444,6 +458,55 @@ Fixture.delete = function () {
 		'success': onSuccess
 	});
 	return true;
+};
+
+Fixture.renderGuesses = function () {
+	return newElem('div', {'class': 'wrapper'}).append(
+		newElem('div', {'class': 'box'}).text('Groups stage').append(
+			Fixture.renderGuessItem('round qualifiers', 2 * 8, 2),
+			Fixture.renderGuessItem('exact scores', 6 * 8, 2),
+			Fixture.renderGuessItem('wins or ties', 6 * 8, 1)
+		),
+		newElem('div', {'class': 'box'}).text('Round of 16').append(
+			Fixture.renderGuessItem('quarter-finalists', 8, 3),
+			Fixture.renderGuessItem('exact scores', 8, 3)
+		),
+		newElem('div', {'class': 'box'}).text('Quarter-finals').append(
+			Fixture.renderGuessItem('semi-finalists', 4, 4),
+			Fixture.renderGuessItem('exact scores', 4, 3)
+		),
+		newElem('div', {'class': 'box'}).text('Semi-finals').append(
+			Fixture.renderGuessItem('finalists', 2, 5),
+			Fixture.renderGuessItem('exact scores', 2, 3)
+		),
+		newElem('div', {'class': 'box'}).text('3rd place').append(
+			Fixture.renderGuessItem('3rd place winner', 1, 6),
+			Fixture.renderGuessItem('exact scores', 1, 3)
+		),
+		newElem('div', {'class': 'box'}).text('Final').append(
+			Fixture.renderGuessItem('World Cup winner', 1, 7),
+			Fixture.renderGuessItem('exact scores', 1, 3)
+		),
+		newElem('div', {'class': 'totalbox'}).append(
+			newElem('span', {'class': 'total'}).text('0'),
+			'Total Points'
+		)
+	);
+};
+
+Fixture.renderGuessItem = function (item, maxguesses, scalar) {
+	return newElem('div').append(
+		newElem('div', {'class': 'guessdata'}).append(
+			newElem('span').text('You guessed '),
+			newElem('span', {'class': 'guesses'}).text('0'),
+			newElem('span').text(' ' + item),
+			newElem('span').text(' out of ' + maxguesses)
+		),
+		newElem('div', {'class': 'sub'}).append(
+			newElem('span').text(' x ' + scalar + ' points = '),
+			newElem('span', {'class': 'subtotal'}).text('0')
+		)
+	);
 };
 
 /*

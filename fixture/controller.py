@@ -60,10 +60,16 @@ class MainHandler(webapp2.RequestHandler):
         signed_request = self.request.get('signed_request')
         if signed_request:
             payload = parse_signed_request(signed_request)
+            if payload is None:
+                self.abort(401)
             for k in ('user_id', 'oauth_token'):
+                if k not in payload:
+                    self.abort(401)
                 self._set_cookie('fb_' + k, payload[k])
             user_id = payload['user_id']
-            self._set_cookie('auth_token', encode_signature(user_id));
+            self._set_cookie('auth_token', encode_signature(user_id))
+        else:
+            self.abort(401)
         self.get()
 
     def _render_template(self, filename, data=None):
