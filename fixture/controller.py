@@ -75,8 +75,8 @@ class ApiHandler(webapp2.RequestHandler):
         user_ids = self.request.get('user_ids')
         if user_ids:
             keys = [ndb.Key(Fixture, k) for k in user_ids.split(',')]
-            fs = ndb.get_multi(keys)
-            result = dict((f.user_id, self._fixture_to_dict(f)) for f in fs)
+            result = dict((f.user_id, self._fixture_to_dict(f)) for \
+                f in ndb.get_multi(keys) if f is not None)
             self._output_json(result)
         else:
             self._output_json({})
@@ -105,7 +105,7 @@ class ApiHandler(webapp2.RequestHandler):
         if not user_id:
             self.abort(400) # bad request
         signed_request = params.get('signed_request')
-        if not auth_token:
+        if not signed_request:
             self.abort(401) # unauthorized
         payload = parse_signed_request(signed_request)
         if payload is None:
