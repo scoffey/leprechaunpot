@@ -235,3 +235,58 @@ body {
 	display: block;
 	padding: 20px;
 }
+#challenge ul {
+	height: 500px;
+	overflow: scroll;
+	padding: 0;
+	margin: 0;
+	background: #eee;
+}
+#leaderboard {
+	width: 600px;
+}
+#challenge ul li {
+	padding: 0;
+	margin: 1px;
+	list-style-type: none;
+}
+#challenge ul img {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+#challenge ul a {
+	height: 20px;
+	display: block;
+	background: white;
+	padding: 15px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+#challenge ul a:hover, #challenge ul a.selected {
+	color: white;
+	background: #6c9;
+}
+#challenge .wrapper {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	background: #ddd;
+}
+#challenge .wrapper p {
+	text-align: center;
+}
+#invitable-box {
+	width: 340px;
+}
+#leader-box {
+	width: 600px;
+}
+#leaderboard a span {
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+	float: right;
+}

@@ -1,19 +1,21 @@
 $(document).ready(function () {
+	Fixture.bootstrap();
 	$.ajaxSetup({'cache': true});
 	$.getScript('//connect.facebook.net/en_US/all.js', function() {
 		FB.init({
 			'appId': '181581748697602',
-			'xfbml': true,
+			//'xfbml': true,
+			'cookie': true,
 			'version': 'v2.0'
 		});
-		FB.login(onLogin);
+		FB.getLoginStatus(onLogin);
 	});
 });
 
 var onLogin = function (response) {
 	if (response.status === 'connected') {
 		// Logged into your app and Facebook.
-		Fixture.bootstrap();
+		Fixture.load();
 	} else if (response.status === 'not_authorized') {
 		// The person is logged into Facebook, but not your app.
 		var url = 'https://apps.facebook.com/worldcupfixture/';
@@ -21,7 +23,7 @@ var onLogin = function (response) {
 	} else {
 		// The person is not logged into Facebook, so we're not sure if
 		// they are logged into this app or not.
-		document.write('Please log in to Facebook and reload.');
+		FB.login(onLogin);
 	}
 };
 
@@ -113,10 +115,10 @@ Fixture.bootstrap = function () {
 		newElem('p', {'class': 'controls'}).append(save),
 		newElem('p', {'id': 'status'})
 	);
-	Fixture.load();
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
 	$('#guess').append(Fixture.renderGuesses());
+	Fixture.renderChallenge();
 
 	// event handlers
 	$('.score').change(Fixture.update);
@@ -335,30 +337,26 @@ Fixture.updateQualifyingMatch = function (index) {
 	var opps = Fixture.matches[index];
 	var team1 = Fixture.getQualifier(opps[0]);
 	var team2 = Fixture.getQualifier(opps[1]);
-	if (team1 && team2) {
-		var flags = $('#match-' + index + ' .flag');
-		var trigrams = $('#match-' + index + ' .trigram');
-		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
-		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
-	}
+	var flags = $('#match-' + index + ' .flag');
+	var trigrams = $('#match-' + index + ' .trigram');
+	Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
+	Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
 };
 
 Fixture.getQualifier = function (key) {
-	var isWinner = (key[0] == 'W' ? true : false);
+	var isWinnerRequest = (key[0] == 'W' ? true : false);
 	var index = parseInt(key.substr(1)) - 1;
-	var scores = $('#match-' + index + ' .score');
-	var score1 = (scores.eq(0) ? parseInt($(scores.eq(0)).val()) : NaN);
-	var score2 = (scores.eq(1) ? parseInt($(scores.eq(1)).val()) : NaN);
-	if (isNaN(score1) || isNaN(score2)) return null;
-	var trigrams = $('#match-' + index + ' .trigram');
-	var q = null;
-	if (score1 > score2) q = $(trigrams.eq(isWinner ? 0 : 1)).text();
-	if (score2 > score1) q = $(trigrams.eq(isWinner ? 1 : 0)).text();
-	return (q == '?' ? null : q);
+	var r = Fixture.getMatchResult(index);
+	if (!r) return null;
+	var score1 = r[2];
+	var score2 = r[3];
+	if (score1 > score2) return (isWinnerRequest ? r[0] : r[1]);
+	if (score2 > score1) return (isWinnerRequest ? r[1] : r[0]);
+	return null;
 };
 
 Fixture.submit = function () {
-	var userId = FB.getUserID();
+	var userId = (FB ? FB.getUserID() : null);
 	if (!userId) {
 		var message = 'Unknown user. Facebook login required.';
 		$('#status').text(message).addClass('error');
@@ -368,7 +366,7 @@ Fixture.submit = function () {
 	for (var i = 0; i < 64; i++) {
 		var r  = Fixture.getMatchResult(i);
 		if (!r) {
-			var message = 'Fixture is invalid or incomplete.';
+			var message = 'You cannot save until you fill in ALL the match results. (Tip: Fix ties by adding an extra goal to the team that wins after penalty shootout.)';
 			$('#status').text(message).addClass('error');
 			return null;
 		}
@@ -433,7 +431,7 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
 };
 
 Fixture.load = function () {
-	var userId = FB.getUserID();
+	var userId = (FB ? FB.getUserID() : null);
 	if (!userId) return false;
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
@@ -445,6 +443,8 @@ Fixture.load = function () {
 		}
 		Fixture.setLastSaved(fixture.timestamp);
 	});
+	FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
+	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
 	return true;
 };
 
@@ -457,6 +457,8 @@ Fixture.setLastSaved = function (timestamp) {
 };
 
 Fixture.delete = function () {
+	var userId = (FB ? FB.getUserID() : null);
+	if (!userId) return false;
 	var payload = {
 		'user_id': FB.getUserID(),
 		'signed_request': FB.getAuthResponse().signedRequest
@@ -521,6 +523,77 @@ Fixture.renderGuessItem = function (item, maxguesses, scalar) {
 		)
 	);
 };
+
+Fixture.renderChallenge = function () {
+	var t = "These friends haven't made a prediction yet";
+	var ul = newElem('ul', {'id': 'invitable'});
+	var div = newElem('div', {'id': 'invitable-box', 'class': 'wrapper'});
+	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
+	anchor.click(Fixture.sendAppRequest);
+	div.append(newElem('p').text(t), ul, newElem('p').append(anchor));
+	$('#challenge').append(div);
+	var t = "Best World Cup predictions among your friends";
+	var ul = newElem('ul', {'id': 'leaderboard'});
+	var div = newElem('div', {'id': 'leader-box', 'class': 'wrapper'});
+	div.append(newElem('p').text(t), ul);
+	$('#challenge').append(div);
+};
+
+Fixture.sendAppRequest = function () {
+	var uids = [];
+	$('#invitable li a.selected').each(function (i, anchor) {
+		uids.push(anchor.id);
+	});
+	var t = "I bet you can't predict the World Cup better than me!";
+	FB.ui({
+		'method': 'apprequests',
+		'to': uids.join(','),
+		'message': t
+	}, function (response) {
+		FB.api('/v2.0/me/invitable_friends',
+			Fixture.renderInvitableFriends);
+	});
+};
+
+Fixture.renderInvitableFriends = function (response) {
+	$('#invitable').empty();
+	var friends = response.data;
+	var onSelect = function (e) {
+		var checkmark = ' \u2713';
+		var anchor = $(e.target);
+		anchor.toggleClass('selected');
+		if (anchor.hasClass('selected')) {
+			anchor.text(anchor.text() + checkmark);
+		} else {
+			var i = anchor.text().lastIndexOf(checkmark);
+			if (i != -1) anchor.text(anchor.text().substr(0, i));
+		}
+	};
+	for (var i = 0; i < friends.length; i++) {
+		var f  = friends[i];
+		var src = (f.picture ? f.picture.data.url: '');
+		$('#invitable').append(newElem('li').append(
+			newElem('img', {'src': src}),
+			newElem('a', {'id': f.id}).text(f.name).click(onSelect)
+		));
+	}
+};
+
+Fixture.renderFriends = function (response) {
+	$('#leaderboard').empty();
+	var friends = response.data;
+	for (var i = 0; i < friends.length; i++) {
+		var f  = friends[i];
+		var src = (f.picture ? f.picture.data.url: '');
+		$('#leaderboard').append(newElem('li').append(
+			newElem('img', {'src': src}),
+			newElem('a', {'id': f.id}).text(f.name).append(
+				newElem('span').text('0 points'),
+				newElem('span').text('Final: ? 0 - 0 ?')
+			)
+		));
+	}
+}
 
 /*
  * JavaScript Pretty Date
