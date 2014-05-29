@@ -125,11 +125,11 @@ class ApiHandler(webapp2.RequestHandler):
         if not isinstance(p, list) or len(p) != 64:
             self.abort(400)
         for i in p:
-            if len(i) != 4 or \
-                    not isinstance(i[0], basestring) or len(i[0]) != 3 or \
-                    not isinstance(i[1], basestring) or len(i[1]) != 3 or \
-                    not isinstance(i[2], int) or i[2] < 0 or \
-                    not isinstance(i[3], int) or i[3] < 0:
+            if not (i is None or (len(i) == 4 and \
+                    isinstance(i[0], basestring) and len(i[0]) == 3 and \
+                    isinstance(i[1], basestring) and len(i[1]) == 3 and \
+                    isinstance(i[2], int) and i[2] >= 0 and \
+                    isinstance(i[3], int) and i[3] >= 0)):
                 self.abort(400)
         return prediction
 

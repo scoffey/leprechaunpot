@@ -1,9 +1,14 @@
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
-	width: 1024px;
 	background: #ccc;
 	margin: 0 auto;
+	width: 760px;
+}
+#container {
+	padding: 0;
+	margin: 0;
+	width: 760px;
 }
 .match {
 	padding: 0;
@@ -54,16 +59,28 @@ body {
 	text-align: center;
 	outline: none;
 }
-.groups-stage {
-	clear: both;
+#fixture .wrapper {
+	overflow: scroll;
+	margin: 10px;
+	padding: 0;
+	width: 732px;
+	height: 210px;
 	float: left;
+	clear: both;
+}
+.groups-stage {
+	width: 2032px;
+	float: left;
+	clear: both;
+	background: #ddd;
 }
 .second-stage {
-	clear: both;
 	float: left;
+	clear: both;
+	width: 674px;
 	background: #fff;
-	padding: 0 20px;
-	margin: 4px 106px;
+	padding: 0 8px;
+	margin: 0 36px;
 }
 .group-matches {
 	width: 238px;
@@ -99,7 +116,10 @@ body {
 	background: #fff;
 }
 .finals {
-	width: 240px;
+	width: 152px;
+}
+.finals .team {
+	width: 42px;
 }
 .round-of-16 .scoreboard, .quarters .scoreboard, .semifinals .scoreboard {
 	clear: both;
@@ -117,24 +137,26 @@ body {
 	padding: 50px 0;
 }
 #match-63 {
-	width: 240px;
-	height: 30px;
-	margin: 200px 0 0 0;
+	width: 150px;
+	height: 60px;
+	margin: 184px 0 0 0;
+	padding: 0 1px;
 }
 #match-62 {
-	width: 238px;
-	height: 30px;
-	margin: 160px 0 0 0;
+	width: 150px;
+	height: 60px;
+	margin: 100px 0 0 0;
 }
 .tabs li {
 	display: block;
 	float: left;
 	margin: 0 10px;
+	font-size: 11pt;
 }
 .tabs li a {
 	display: block;
 	padding: 10px;
-	width: 270px;
+	width: 180px;
 	text-align: center;
 	text-decoration: none;
 	color: black;
@@ -145,8 +167,8 @@ body {
 	background: #eee;
 }
 .panel {
-	width: 1016px;
-	margin: 0 0 40px 0;
+	width: 752px;
+	margin: 0;
 	padding: 4px;
 	float: left;
 	background: #eee;
@@ -184,22 +206,18 @@ body {
 #status.error {
 	color: red;
 }
-#guess .wrapper {
-	margin: 4px;
-	padding: 4px;
-}
 #guess .box {
 	width: 150px;
 	float: left;
 	margin: 4px;
 	padding: 4px;
 	text-align: center;
-	background: #6c9;
+	background: #ddd;
 }
 #guess .sub {
 	padding: 8px;
 	color: white;
-	background-color: black;
+	background-color: #6c9;
 	font-size: 10pt;
 }
 .guessdata {
@@ -222,12 +240,12 @@ body {
 #guess .totalbox {
 	width: 126px;
 	height: 122px;
-	float: right;
-	margin: 4px 8px;
+	float: left;
+	margin: 4px;
 	padding: 16px;
 	font-size: 12pt;
 	color: white;
-	background-color: black;
+	background-color: #6c9;
 	text-align: center;
 }
 #guess .total {
@@ -236,7 +254,7 @@ body {
 	padding: 20px;
 }
 #challenge ul {
-	height: 500px;
+	height: 300px;
 	overflow: scroll;
 	padding: 0;
 	margin: 0;
@@ -271,22 +289,34 @@ body {
 }
 #challenge .wrapper {
 	float: left;
-	margin: 10px;
-	padding: 5px;
 	background: #ddd;
+	padding: 4px;
 }
 #challenge .wrapper p {
 	text-align: center;
 }
 #invitable-box {
 	width: 340px;
+	margin: 10px 180px;
 }
 #leader-box {
 	width: 600px;
+	margin: 10px 70px;
 }
 #leaderboard a span {
 	width: 120px;
 	display: inline-block;
 	text-align: center;
 	float: right;
+}
+.footer {
+	padding: 32px 0;
+	clear: both;
+	color: #333;
+	font-size: 10pt;
+	text-align: center;
+}
+.footer a {
+	text-decoration: none;
+	color: #396;
 }

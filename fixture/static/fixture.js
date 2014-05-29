@@ -18,8 +18,7 @@ var onLogin = function (response) {
 		Fixture.load();
 	} else if (response.status === 'not_authorized') {
 		// The person is logged into Facebook, but not your app.
-		var url = 'https://apps.facebook.com/worldcupfixture/';
-		window.top.location.href = url;
+		FB.login(onLogin);
 	} else {
 		// The person is not logged into Facebook, so we're not sure if
 		// they are logged into this app or not.
@@ -157,7 +156,7 @@ Fixture.renderGroupsStage = function () {
 		);
 		stage.append(div);
 	}
-	return stage;
+	return newElem('div', {'class': 'wrapper'}).append(stage);
 };
 
 Fixture.renderMatch = function (index) {
@@ -177,7 +176,7 @@ Fixture.renderMatch = function (index) {
 	} else {
 		team1.append(trigram1, flag1);
 	}
-	if ([50, 51, 54, 55, 58, 59, 61].indexOf(index) == -1) {
+	if ([50, 51, 54, 55, 58, 59, 61, 62, 63].indexOf(index) == -1) {
 		team2.append(trigram2, flag2);
 	} else {
 		team2.append(flag2, trigram2);
@@ -362,14 +361,10 @@ Fixture.submit = function () {
 		$('#status').text(message).addClass('error');
 		return null;
 	}
+	Fixture.update();
 	var results = [];
 	for (var i = 0; i < 64; i++) {
 		var r  = Fixture.getMatchResult(i);
-		if (!r) {
-			var message = 'You cannot save until you fill in ALL the match results. (Tip: Fix ties by adding an extra goal to the team that wins after penalty shootout.)';
-			$('#status').text(message).addClass('error');
-			return null;
-		}
 		results.push(r);
 	}
 	var payload = {
@@ -442,6 +437,7 @@ Fixture.load = function () {
 			Fixture.setMatchResult(i, r[0], r[1], r[2], r[3]);
 		}
 		Fixture.setLastSaved(fixture.timestamp);
+		Fixture.update();
 	});
 	FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
