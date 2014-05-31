@@ -38,70 +38,70 @@ var getCookie = function (key) {
 var Fixture = {};
 
 Fixture.matches = [
-	['BRA', 'CRO'],
-	['MEX', 'CMR'],
-	['ESP', 'NED'],
-	['CHI', 'AUS'],
-	['COL', 'GRE'],
-	['CIV', 'JPN'],
-	['URU', 'CRC'],
-	['ENG', 'ITA'],
-	['SUI', 'ECU'],
-	['FRA', 'HON'],
-	['ARG', 'BIH'],
-	['IRN', 'NGA'],
-	['GER', 'POR'],
-	['GHA', 'USA'],
-	['BEL', 'ALG'],
-	['RUS', 'KOR'],
-	['BRA', 'MEX'],
-	['CMR', 'CRO'],
-	['AUS', 'NED'],
-	['ESP', 'CHI'],
-	['COL', 'CIV'],
-	['JPN', 'GRE'],
-	['URU', 'ENG'],
-	['ITA', 'CRC'],
-	['SUI', 'FRA'],
-	['HON', 'ECU'],
-	['ARG', 'IRN'],
-	['NGA', 'BIH'],
-	['GER', 'GHA'],
-	['USA', 'POR'],
-	['BEL', 'RUS'],
-	['KOR', 'ALG'],
-	['CMR', 'BRA'],
-	['CRO', 'MEX'],
-	['AUS', 'ESP'],
-	['NED', 'CHI'],
-	['JPN', 'COL'],
-	['GRE', 'CIV'],
-	['ITA', 'URU'],
-	['CRC', 'ENG'],
-	['HON', 'SUI'],
-	['ECU', 'FRA'],
-	['NGA', 'ARG'],
-	['BIH', 'IRN'],
-	['USA', 'GER'],
-	['POR', 'GHA'],
-	['ALG', 'RUS'],
-	['KOR', 'BEL'],
-	['1A', '2B'],
-	['1C', '2D'],
-	['1B', '2A'],
-	['1D', '2C'],
-	['1E', '2F'],
-	['1G', '2H'],
-	['1F', '2E'],
-	['1H', '2G'],
-	['W49', 'W50'],
-	['W53', 'W54'],
-	['W51', 'W52'],
-	['W55', 'W56'],
-	['W57', 'W58'],
-	['W59', 'W60'],
-	['L61', 'L62'],
-	['W61', 'W62']
+	["BRA", "CRO", "12 Jun 2014", "17:00", "S\u00e3o Paulo"],
+	["MEX", "CMR", "13 Jun 2014", "13:00", "Natal"],
+	["ESP", "NED", "13 Jun 2014", "16:00", "Salvador"],
+	["CHI", "AUS", "13 Jun 2014", "18:00", "Cuiab\u00e1"],
+	["COL", "GRE", "14 Jun 2014", "13:00", "Belo Horizonte"],
+	["CIV", "JPN", "14 Jun 2014", "22:00", "Recife"],
+	["URU", "CRC", "14 Jun 2014", "16:00", "Fortaleza"],
+	["ENG", "ITA", "14 Jun 2014", "18:00", "Manaus"],
+	["SUI", "ECU", "15 Jun 2014", "13:00", "Bras\u00edlia"],
+	["FRA", "HON", "15 Jun 2014", "16:00", "Porto Alegre"],
+	["ARG", "BIH", "15 Jun 2014", "19:00", "Rio de Janeiro"],
+	["IRN", "NGA", "16 Jun 2014", "16:00", "Curitiba"],
+	["GER", "POR", "16 Jun 2014", "13:00", "Salvador"],
+	["GHA", "USA", "16 Jun 2014", "19:00", "Natal"],
+	["BEL", "ALG", "17 Jun 2014", "13:00", "Belo Horizonte"],
+	["RUS", "KOR", "17 Jun 2014", "18:00", "Cuiab\u00e1"],
+	["BRA", "MEX", "17 Jun 2014", "16:00", "Fortaleza"],
+	["CMR", "CRO", "18 Jun 2014", "18:00", "Manaus"],
+	["AUS", "NED", "18 Jun 2014", "13:00", "Rio de Janeiro"],
+	["ESP", "CHI", "18 Jun 2014", "16:00", "Porto Alegre"],
+	["COL", "CIV", "19 Jun 2014", "13:00", "Bras\u00edlia"],
+	["JPN", "GRE", "19 Jun 2014", "19:00", "Natal"],
+	["URU", "ENG", "19 Jun 2014", "16:00", "S\u00e3o Paulo"],
+	["ITA", "CRC", "20 Jun 2014", "13:00", "Recife"],
+	["SUI", "FRA", "20 Jun 2014", "16:00", "Salvador"],
+	["HON", "ECU", "20 Jun 2014", "19:00", "Curitiba"],
+	["ARG", "IRN", "21 Jun 2014", "13:00", "Belo Horizonte"],
+	["NGA", "BIH", "21 Jun 2014", "18:00", "Cuiab\u00e1"],
+	["GER", "GHA", "21 Jun 2014", "16:00", "Fortaleza"],
+	["USA", "POR", "22 Jun 2014", "18:00", "Manaus"],
+	["BEL", "RUS", "22 Jun 2014", "13:00", "Rio de Janeiro"],
+	["KOR", "ALG", "22 Jun 2014", "16:00", "Porto Alegre"],
+	["CMR", "BRA", "23 Jun 2014", "17:00", "Bras\u00edlia"],
+	["CRO", "MEX", "23 Jun 2014", "17:00", "Recife"],
+	["AUS", "ESP", "23 Jun 2014", "13:00", "Curitiba"],
+	["NED", "CHI", "23 Jun 2014", "13:00", "S\u00e3o Paulo"],
+	["JPN", "COL", "24 Jun 2014", "16:00", "Cuiab\u00e1"],
+	["GRE", "CIV", "24 Jun 2014", "17:00", "Fortaleza"],
+	["ITA", "URU", "24 Jun 2014", "13:00", "Natal"],
+	["CRC", "ENG", "24 Jun 2014", "13:00", "Belo Horizonte"],
+	["HON", "SUI", "25 Jun 2014", "16:00", "Manaus"],
+	["ECU", "FRA", "25 Jun 2014", "17:00", "Rio de Janeiro"],
+	["NGA", "ARG", "25 Jun 2014", "13:00", "Porto Alegre"],
+	["BIH", "IRN", "25 Jun 2014", "13:00", "Salvador"],
+	["USA", "GER", "26 Jun 2014", "13:00", "Recife"],
+	["POR", "GHA", "26 Jun 2014", "13:00", "Bras\u00edlia"],
+	["ALG", "RUS", "26 Jun 2014", "17:00", "S\u00e3o Paulo"],
+	["KOR", "BEL", "26 Jun 2014", "17:00", "Curitiba"],
+	["1A", "2B", "28 Jun 2014", "13:00", "Belo Horizonte"],
+	["1C", "2D", "28 Jun 2014", "17:00", "Rio de Janeiro"],
+	["1B", "2A", "29 Jun 2014", "13:00", "Fortaleza"],
+	["1D", "2C", "29 Jun 2014", "17:00", "Recife"],
+	["1E", "2F", "30 Jun 2014", "13:00", "Bras\u00edlia"],
+	["1G", "2H", "30 Jun 2014", "17:00", "Porto Alegre"],
+	["1F", "2E", "01 Jul 2014", "13:00", "S\u00e3o Paulo"],
+	["1H", "2G", "01 Jul 2014", "17:00", "Salvador"],
+	["W49", "W50", "04 Jul 2014", "17:00", "Fortaleza"],
+	["W53", "W54", "04 Jul 2014", "13:00", "Rio de Janeiro"],
+	["W51", "W52", "05 Jul 2014", "17:00", "Salvador"],
+	["W55", "W56", "05 Jul 2014", "13:00", "Bras\u00edlia"],
+	["W57", "W58", "08 Jul 2014", "17:00", "Belo Horizonte"],
+	["W59", "W60", "09 Jul 2014", "17:00", "S\u00e3o Paulo"],
+	["L61", "L62", "12 Jul 2014", "17:00", "Bras\u00edlia"],
+	["W61", "W62", "13 Jul 2014", "16:00", "Rio de Janeiro"]
 ];
 
 Fixture.bootstrap = function () {
@@ -117,10 +117,14 @@ Fixture.bootstrap = function () {
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
 	$('#guess').append(Fixture.renderGuesses());
-	Fixture.renderChallenge();
+	$('#challenge').append(Fixture.renderChallenge());
+	$('body').append(newElem('span', {'id': 'tooltip'}).hide());
 
 	// event handlers
-	$('.score').change(Fixture.update);
+	$('.score').change(function () {
+		var n = parseInt(this.value);
+		this.value = (isNaN(n) ? '' : Math.abs(n).toString());
+	}).change(Fixture.update);
 	$('#save').click(Fixture.submit);
 	$('#debug').click(Fixture.random);
 	$('.tabs li a').click(function (e) {
@@ -129,6 +133,13 @@ Fixture.bootstrap = function () {
 		$('.tabs li a').removeClass('tab-on');
 		$(e.target).addClass('tab-on');
 	});
+
+	// mobile hack
+	var re = new RegExp('Android|webOS|iPhone|iPad|iPod|'
+			+ 'BlackBerry|IEMobile|Opera Mini', 'i');
+	if (window.navigator && re.test(window.navigator.userAgent) ) {
+		$('.score').attr('type', 'number');
+	}
 };
 
 Fixture.random = function () {
@@ -156,37 +167,60 @@ Fixture.renderGroupsStage = function () {
 		);
 		stage.append(div);
 	}
-	return newElem('div', {'class': 'wrapper'}).append(stage);
+	return stage;//newElem('div', {'class': 'wrapper'}).append(stage);
 };
 
 Fixture.renderMatch = function (index) {
 	var opps = Fixture.matches[index];
-	var flag1 = newElem('img', {'class': 'flag', 'src': 'static/img/null.png'});
-	var flag2 = newElem('img', {'class': 'flag', 'src': 'static/img/null.png'});
+	var noflag = 'static/img/null.png';
+	var flag1 = newElem('img', {'class': 'flag', 'src': noflag});
+	var flag2 = newElem('img', {'class': 'flag', 'src': noflag});
 	var trigram1 = newElem('div', {'class': 'trigram'}).text('?');
 	var trigram2 = newElem('div', {'class': 'trigram'}).text('?');
 	if (index < 48) {
 		Fixture.setTeam(opps[0], flag1, trigram1);
 		Fixture.setTeam(opps[1], flag2, trigram2);
 	}
-	var team1 = newElem('div', {'class': 'team'});
-	var team2 = newElem('div', {'class': 'team'});
+	var team1 = newElem('div', {'class': 'team left'});
+	var team2 = newElem('div', {'class': 'team right'});
+	team1.append(flag1, trigram1);
+	team2.append(flag2, trigram2);
 	if ([48, 49, 52, 53, 56, 57, 60].indexOf(index) == -1) {
-		team1.append(flag1, trigram1);
-	} else {
-		team1.append(trigram1, flag1);
+		team1.removeClass('left').addClass('right');
 	}
 	if ([50, 51, 54, 55, 58, 59, 61, 62, 63].indexOf(index) == -1) {
-		team2.append(trigram2, flag2);
-	} else {
-		team2.append(flag2, trigram2);
+		team2.removeClass('right').addClass('left');
 	}
 	var score1 = newElem('input', {'class': 'score'});
 	var score2 = newElem('input', {'class': 'score'});
+	score1.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 2));
+	score2.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 3));
 	var scores = newElem('div', {'class': 'scoreboard'});
 	scores.append(score1, ' - ', score2);
-	var match = newElem('a', {'class': 'match', 'id': 'match-' + index});
-	return match.append(team1, scores, team2);
+	var match = newElem('div', {'class': 'match', 'id': 'match-' + index});
+	/*
+	match.hover(function () {
+		$('#tooltip').html('Match #' + (index + 1));
+		var offset = $(this).offset();
+		var width = $(this).outerWidth();
+		var height = $(this).outerHeight();
+		var w = $('#tooltip').outerWidth();
+		$('#tooltip').finish().css({
+			'top': offset.top + height + 2,
+			'left': offset.left + (width - w) / 2
+		}).fadeIn(200);
+	}, function(){
+		$('#tooltip').finish().fadeOut(100);
+	});
+	*/
+	var loc = newElem('div', {'class': 'location'}).append(
+		'#' + (index + 1) + ': ' + opps[4],
+		newElem('br'),
+		opps[2] + ', ' + opps[3]
+	);
+	return (index < 48 ? newElem('a', {'class': 'wrapper'}).append(
+		loc, match.append(team1, scores, team2)
+	) : match.append(team1, scores, team2));
 };
 
 Fixture.renderSecondStage = function () {
@@ -233,8 +267,8 @@ Fixture.renderSecondStage = function () {
 };
 
 Fixture.setTeam = function (team, flag, trigram) {
-	var src = 'static/img/' + (team ? team.toLowerCase() + '.png' : 'null.png');
-	$(flag).attr('src', src);
+	var src = (team ? team.toLowerCase() + '.png' : 'null.png');
+	$(flag).attr('src', 'static/img/' + src);
 	$(trigram).text(team ? team : '?');
 };
 
@@ -298,10 +332,10 @@ Fixture.rankGroupResults = function (matchResults) {
 };
 
 Fixture.getGroupsMatchStats = function (index) {
-	var scores = $('#match-' + index + ' .score');
-	var score1 = (scores.eq(0) ? parseInt($(scores.eq(0)).val()) : NaN);
-	var score2 = (scores.eq(1) ? parseInt($(scores.eq(1)).val()) : NaN);
-	if (isNaN(score1) || isNaN(score2)) return [];
+	var r = Fixture.getMatchResult(index);
+	if (!r) return [];
+	var score1 = r[2];
+	var score2 = r[3];
 	var scorecmp = function (infavor, against) {
 		return (infavor > against ? 3 : (infavor == against ? 1 : 0));
 	};
@@ -320,26 +354,18 @@ Fixture.getGroupsMatchStats = function (index) {
 
 Fixture.updateRoundOf16Match = function(rankings, index) {
 	var opps = Fixture.matches[index];
-	var group1 = opps[0].substr(-1);
-	var group2 = opps[1].substr(-1);
-	if (rankings[group1].length && rankings[group2].length) {
-		var team1 = rankings[group1][0].team;
-		var team2 = rankings[group2][1].team;
-		var flags = $('#match-' + index + ' .flag');
-		var trigrams = $('#match-' + index + ' .trigram');
-		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
-		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
-	}
+	var group1 = rankings[opps[0].substr(-1)];
+	var group2 = rankings[opps[1].substr(-1)];
+	var team1 = (group1.length == 4 ? group1[0].team : null);
+	var team2 = (group2.length == 4 ? group2[1].team : null);
+	Fixture.setMatchResult(index, team1, team2);
 };
 
 Fixture.updateQualifyingMatch = function (index) {
 	var opps = Fixture.matches[index];
 	var team1 = Fixture.getQualifier(opps[0]);
 	var team2 = Fixture.getQualifier(opps[1]);
-	var flags = $('#match-' + index + ' .flag');
-	var trigrams = $('#match-' + index + ' .trigram');
-	Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
-	Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
+	Fixture.setMatchResult(index, team1, team2);
 };
 
 Fixture.getQualifier = function (key) {
@@ -400,23 +426,30 @@ Fixture.submit = function () {
 };
 
 Fixture.getMatchResult = function (index) {
+
 	var scores = $('#match-' + index + ' .score');
 	var score1 = (scores.eq(0) ? parseInt($(scores.eq(0)).val()) : NaN);
 	var score2 = (scores.eq(1) ? parseInt($(scores.eq(1)).val()) : NaN);
 	if (isNaN(score1) || isNaN(score2)) return null;
 	if (score1 < 0 || score2 < 0) return null;
-	var trigrams = $('#match-' + index + ' .trigram');
-	var team1 = (trigrams.eq(0) ? $(trigrams.eq(0)).text() : null);
-	var team2 = (trigrams.eq(1) ? $(trigrams.eq(1)).text() : null);
+
+	var team1 = Fixture.matches[index][0];
+	var team2 = Fixture.matches[index][1];
+	if (index >= 48) {
+		var trigrams = $('#match-' + index + ' .trigram');
+		team1 = (trigrams.eq(0) ? $(trigrams.eq(0)).text() : null);
+		team2 = (trigrams.eq(1) ? $(trigrams.eq(1)).text() : null);
+	}
 	if (!team1 || !team2) return null;
 	if (team1.length != 3 || team2.length != 3) return null;
+
 	return [team1, team2, score1, score2];
 };
 
 Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
 	var scores = $('#match-' + index + ' .score');
-	$(scores.eq(0)).val(score1);
-	$(scores.eq(1)).val(score2);
+	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
+	if (parseInt(score2) == score2) $(scores.eq(1)).val(score2);
 	if (index >= 6 * 8) {
 		var flags = $('#match-' + index + ' .flag');
 		var trigrams = $('#match-' + index + ' .trigram');
@@ -439,7 +472,7 @@ Fixture.load = function () {
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
 	});
-	FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
+	//FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
 	return true;
 };
@@ -521,75 +554,77 @@ Fixture.renderGuessItem = function (item, maxguesses, scalar) {
 };
 
 Fixture.renderChallenge = function () {
-	var t = "These friends haven't made a prediction yet";
-	var ul = newElem('ul', {'id': 'invitable'});
-	var div = newElem('div', {'id': 'invitable-box', 'class': 'wrapper'});
+	var table = newElem('table', {'id': 'leaderboard'}).append(
+		newElem('thead').append(newElem('tr').append(
+			newElem('th').text('Best predictions'),
+			newElem('th').text('Last guess'),
+			newElem('th').text('3rd place'),
+			newElem('th').text('Final'),
+			newElem('th').text('Total points')
+		)),
+		newElem('tbody')
+	);
 	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
 	anchor.click(Fixture.sendAppRequest);
-	div.append(newElem('p').text(t), ul, newElem('p').append(anchor));
-	$('#challenge').append(div);
-	var t = "Best World Cup predictions among your friends";
-	var ul = newElem('ul', {'id': 'leaderboard'});
-	var div = newElem('div', {'id': 'leader-box', 'class': 'wrapper'});
-	div.append(newElem('p').text(t), ul);
-	$('#challenge').append(div);
+	var s = "Check out which of your friends "
+		+ "haven't made a prediction yet: ";
+	return newElem('div', {'class': 'wrapper'}).append(
+		table,
+		newElem('p').text(s).append(anchor)
+	);
 };
 
 Fixture.sendAppRequest = function () {
-	var uids = [];
-	$('#invitable li a.selected').each(function (i, anchor) {
-		uids.push(anchor.id);
-	});
 	var t = "I bet you can't predict the World Cup better than me!";
 	FB.ui({
 		'method': 'apprequests',
-		'to': uids.join(','),
+		'filters': ['app_non_users'],
 		'message': t
 	}, function (response) {
-		FB.api('/v2.0/me/invitable_friends',
-			Fixture.renderInvitableFriends);
+		console.log(response.to);
 	});
 };
 
-Fixture.renderInvitableFriends = function (response) {
-	$('#invitable').empty();
+Fixture.renderFriends = function (response) {
 	var friends = response.data;
-	var onSelect = function (e) {
-		var checkmark = ' \u2713';
-		var anchor = $(e.target);
-		anchor.toggleClass('selected');
-		if (anchor.hasClass('selected')) {
-			anchor.text(anchor.text() + checkmark);
-		} else {
-			var i = anchor.text().lastIndexOf(checkmark);
-			if (i != -1) anchor.text(anchor.text().substr(0, i));
-		}
-	};
+	var uids = [];
+	var rows = [];
 	for (var i = 0; i < friends.length; i++) {
 		var f  = friends[i];
 		var src = (f.picture ? f.picture.data.url: '');
-		$('#invitable').append(newElem('li').append(
-			newElem('img', {'src': src}),
-			newElem('a', {'id': f.id}).text(f.name).click(onSelect)
+		uids.push(f.id);
+		rows.push(newElem('tr', {'id': 'user-' + f.id}).append(
+			newElem('td', {'class': 'friend-name'}).append(
+				newElem('img', {'src': src}),
+				newElem('span').text(f.name)
+			),
+			newElem('td', {'class': 'last-guess'}).text('N/A'),
+			newElem('td', {'class': 'third-pred'}).text('N/A'),
+			newElem('td', {'class': 'final-pred'}).text('N/A'),
+			newElem('td', {'class': 'total-points'}).text('0')
 		));
 	}
+	$('#leaderboard tbody').empty().append(rows);
+	$.getJSON('/fixture/api?user_ids=' + uids.join(','), function (data) {
+		for (var i in data) {
+			Fixture.renderFriendStats(data[i]);
+		}
+	});
 };
 
-Fixture.renderFriends = function (response) {
-	$('#leaderboard').empty();
-	var friends = response.data;
-	for (var i = 0; i < friends.length; i++) {
-		var f  = friends[i];
-		var src = (f.picture ? f.picture.data.url: '');
-		$('#leaderboard').append(newElem('li').append(
-			newElem('img', {'src': src}),
-			newElem('a', {'id': f.id}).text(f.name).append(
-				newElem('span').text('0 points'),
-				newElem('span').text('Final: ? 0 - 0 ?')
-			)
-		));
+Fixture.renderFriendStats = function (fixture) {
+	if (!fixture || !fixture.prediction) return;
+	var r = fixture.prediction[63];
+	if (r && r.length == 4) {
+		$('#user-' + fixture.user_id + ' .final-pred').text(
+			r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
 	}
-}
+	var r = fixture.prediction[62];
+	if (r && r.length == 4) {
+		$('#user-' + fixture.user_id + ' .third-pred').text(
+			r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
+	}
+};
 
 /*
  * JavaScript Pretty Date

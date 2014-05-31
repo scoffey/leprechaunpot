@@ -1,5 +1,5 @@
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Liberation Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	background: #ccc;
 	margin: 0 auto;
@@ -11,9 +11,11 @@ body {
 	width: 760px;
 }
 .match {
+	width: 240px;
 	padding: 0;
 	margin: 0;
 	font-size: 11pt;
+	float: left;
 	clear: both;
 	display: block;
 }
@@ -29,20 +31,30 @@ body {
 	border: 1pt solid #ccc;
 }
 .trigram {
-	width: 34px;
+	min-width: 30px;
 	height: 18px;
 	margin: 5px;
 	padding: 0;
 	float: left;
 	text-align: center;
 }
+.second-stage .trigram {
+	width: 34px;
+}
+.left .flag {
+	float: right;
+}
+.left .trigram {
+	float: right;
+}
 .team {
 	width: 86px;
 	height: 30px;
+	padding: 0;
+	margin: 0;
 	float: left;
 }
 .scoreboard {
-	width: 66px;
 	height: 30px;
 	margin: 0;
 	padding: 0;
@@ -59,17 +71,7 @@ body {
 	text-align: center;
 	outline: none;
 }
-#fixture .wrapper {
-	overflow: scroll;
-	margin: 10px;
-	padding: 0;
-	width: 732px;
-	height: 210px;
-	float: left;
-	clear: both;
-}
 .groups-stage {
-	width: 2032px;
 	float: left;
 	clear: both;
 	background: #ddd;
@@ -82,22 +84,34 @@ body {
 	padding: 0 8px;
 	margin: 0 36px;
 }
+.location {
+	float: left;
+	width: 110px;
+	height: 32px;
+	padding: 2px 4px;
+	font-size: 8pt;
+	text-align: center;
+}
 .group-matches {
-	width: 238px;
+	width: 360px;
 	padding: 4px;
 	margin: 4px;
 	float: left;
 	background: #fff;
 }
 .group-matches .match {
-	width: 238px;
 	height: 30px;
+	margin: 3px 0;
+	clear: none;
 }
 .second-stage .match {
 	width: 86px;
 	height: 90px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+}
+.second-stage .location {
+	display: none;
 }
 #match-48, #match-49, #match-52, #match-53, #match-56, #match-57, #match-60 {
 	border-right: 1px solid black;
@@ -129,17 +143,17 @@ body {
 	margin: 10px 0;
 }
 .quarters .match {
-	margin: 60px 0;
+	margin: 52px 0;
 	padding: 15px 0;
 }
 .semifinals .match {
-	margin: 120px 0;
+	margin: 132px 0;
 	padding: 50px 0;
 }
 #match-63 {
 	width: 150px;
 	height: 60px;
-	margin: 184px 0 0 0;
+	margin: 200px 0 0 0;
 	padding: 0 1px;
 }
 #match-62 {
@@ -184,6 +198,7 @@ body {
 	text-align: center;
 }
 .action {
+	margin: 0 8px;
 	width: 120px;
 	padding: 16px;
 	cursor: pointer;
@@ -253,61 +268,41 @@ body {
 	display: block;
 	padding: 20px;
 }
-#challenge ul {
-	height: 300px;
-	overflow: scroll;
-	padding: 0;
-	margin: 0;
-	background: #eee;
-}
-#leaderboard {
-	width: 600px;
-}
-#challenge ul li {
-	padding: 0;
-	margin: 1px;
-	list-style-type: none;
-}
-#challenge ul img {
-	width: 50px;
-	height: 50px;
-	float: left;
-}
-#challenge ul a {
-	height: 20px;
-	display: block;
-	background: white;
-	padding: 15px 10px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	cursor: pointer;
-}
-#challenge ul a:hover, #challenge ul a.selected {
-	color: white;
-	background: #6c9;
-}
 #challenge .wrapper {
-	float: left;
 	background: #ddd;
 	padding: 4px;
+	margin: 16px;
 }
 #challenge .wrapper p {
 	text-align: center;
 }
-#invitable-box {
-	width: 340px;
-	margin: 10px 180px;
+#challenge table {
+	width: 100%;
+	font-size: 10pt;
 }
-#leader-box {
-	width: 600px;
-	margin: 10px 70px;
+#challenge thead {
+	background-color: #6c9;
 }
-#leaderboard a span {
-	width: 120px;
-	display: inline-block;
+#challenge tbody {
+	background-color: white;
+}
+#challenge tr {
+	height: 50px;
+}
+#challenge tbody tr:hover {
+	background-color: #dfe;
+}
+#challenge td {
 	text-align: center;
-	float: right;
+	margin: 0;
+	padding: 0;
+}
+#challenge .friend-name {
+	text-align: left;
+}
+#challenge .friend-name img {
+	vertical-align: middle;
+	margin-right: 8px;
 }
 .footer {
 	padding: 32px 0;
@@ -319,4 +314,27 @@ body {
 .footer a {
 	text-decoration: none;
 	color: #396;
+}
+#tooltip {
+      position: absolute;
+      width: 220px;
+      padding: 10px;
+      font-size: 10pt;
+      text-align: center;
+      color: black;
+      background: #dfe;
+      border: 3px solid #dfe;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px 0px;
+}
+#tooltip:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 7px;
+      border-style: solid;
+      border-color: transparent transparent #dfe transparent;
+      top: -16px;
+      left: 114px;
 }
