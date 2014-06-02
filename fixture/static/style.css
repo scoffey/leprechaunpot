@@ -19,16 +19,31 @@ body {
 	clear: both;
 	display: block;
 }
-.match:hover {
-	background: #eee;
+.groups-stage .wrapper {
+	float: left;
+}
+.groups-stage .wrapper:hover {
+	background: #dfe;
+}
+.second-stage .match {
+	float: left;
+}
+.second-stage .match:hover {
+	background: #dfe;
 }
 .flag {
 	width: 36px;
 	height: 24px;
 	margin: 2px;
 	padding: 0;
-	float: left;
 	border: 1pt solid #ccc;
+}
+#fixture .flag {
+	float: left;
+}
+#challenge .flag {
+	margin: 0 8px;
+	vertical-align: middle;
 }
 .trigram {
 	min-width: 30px;
@@ -91,6 +106,23 @@ body {
 	padding: 2px 4px;
 	font-size: 8pt;
 	text-align: center;
+}
+.label {
+	text-align: center;
+	margin: 0;
+	padding: 6px;
+	background-color: #6c9;
+	font-size: 8pt;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+.second-stage .label {
+	margin-top: 8px;
+}
+.match-info {
+	clear: both;
+	text-align: center;
+	font-size: 10pt;
 }
 .group-matches {
 	width: 360px;
@@ -194,7 +226,7 @@ body {
 }
 .controls {
 	clear: both;
-	padding: 20px 0 0 0;
+	padding: 10px 0;
 	text-align: center;
 }
 .action {
@@ -221,6 +253,7 @@ body {
 #status.error {
 	color: red;
 }
+/*
 #guess .box {
 	width: 150px;
 	float: left;
@@ -268,6 +301,7 @@ body {
 	display: block;
 	padding: 20px;
 }
+*/
 #challenge .wrapper {
 	background: #ddd;
 	padding: 4px;
@@ -311,7 +345,7 @@ body {
 	font-size: 10pt;
 	text-align: center;
 }
-.footer a {
+.footer a, #challenge a {
 	text-decoration: none;
 	color: #396;
 }

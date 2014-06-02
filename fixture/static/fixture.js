@@ -107,8 +107,13 @@ Fixture.matches = [
 Fixture.bootstrap = function () {
 	// setup panels
 	$('.panel').hide();
-	var save = newElem('a', {'class': 'action', 'id': 'save'}).text('Save');
+	var save = newElem('a', {'class': 'action', 'id': 'save'});
+	save.attr('href', 'javascript:void(0);').text('Save');
+	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
+	anchor.click(Fixture.sendAppRequest);
+	var s = "Invite friends that haven't made a prediction yet: ";
 	$('#fixture').append(
+		newElem('p', {'class': 'controls'}).text(s).append(anchor),
 		Fixture.renderGroupsStage(),
 		Fixture.renderSecondStage(),
 		newElem('p', {'class': 'controls'}).append(save),
@@ -116,7 +121,7 @@ Fixture.bootstrap = function () {
 	);
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
-	$('#guess').append(Fixture.renderGuesses());
+	//$('#guess').append(Fixture.renderGuesses());
 	$('#challenge').append(Fixture.renderChallenge());
 	$('body').append(newElem('span', {'id': 'tooltip'}).hide());
 
@@ -157,7 +162,10 @@ Fixture.renderGroupsStage = function () {
 	var stage = newElem('div', {'class': 'groups-stage'});
 	for (var i = 0; i < 8; i++) {
 		var div = newElem('div', {'class': 'group-matches'});
+		var groupname = String.fromCharCode('A'.charCodeAt(0) + i);
+		var p = newElem('p', {'class': 'label'});
 		div.append(
+			p.text('GROUP ' + groupname),
 			Fixture.renderMatch(2 * i + 0),
 			Fixture.renderMatch(2 * i + 1),
 			Fixture.renderMatch(2 * i + 16),
@@ -167,7 +175,7 @@ Fixture.renderGroupsStage = function () {
 		);
 		stage.append(div);
 	}
-	return stage;//newElem('div', {'class': 'wrapper'}).append(stage);
+	return stage;
 };
 
 Fixture.renderMatch = function (index) {
@@ -220,11 +228,23 @@ Fixture.renderMatch = function (index) {
 	);
 	return (index < 48 ? newElem('a', {'class': 'wrapper'}).append(
 		loc, match.append(team1, scores, team2)
-	) : match.append(team1, scores, team2));
+	) : match.append(team1, scores, team2)).hover(function () {
+		var round = (index < 48 + 8 ? 'Round of 16' :
+			(index < 48 + 8 + 4 ? 'Quarter-finals' :
+			(index < 48 + 8 + 4 + 2 ? 'Semi-finals' :
+			(index == 62 ? '3rd place playoff' : 'Final'))));
+		var t = 'Match #' + (index + 1) + ' (' + round + '): '
+			+ opps[4] + ', ' + opps[2] + ', ' + opps[3]
+		$('.match-info').css('visibility', 'visible').text(t);
+	}, function () {
+		$('.match-info').css('visibility', 'hidden');
+	});
 };
 
 Fixture.renderSecondStage = function () {
 	var stage = newElem('div', {'class': 'second-stage'});
+
+	stage.append(newElem('p', {'class': 'label'}).text('SECOND STAGE'));
 
 	stage.append(newElem('div', {'class': 'round-of-16'}).append(
 		Fixture.renderMatch(6 * 8 + 0),
@@ -262,6 +282,9 @@ Fixture.renderSecondStage = function () {
 		Fixture.renderMatch(6 * 8 + 6),
 		Fixture.renderMatch(6 * 8 + 7)
 	));
+
+	stage.append(newElem('p', {'class': 'match-info'}).css(
+			'visibility', 'hidden').text('Second stage'));
 
 	return stage;
 };
@@ -504,6 +527,7 @@ Fixture.delete = function () {
 	return true;
 };
 
+/*
 Fixture.renderGuesses = function () {
 	return newElem('div', {'class': 'wrapper'}).append(
 		newElem('div', {'class': 'box'}).text('Groups stage').append(
@@ -552,26 +576,18 @@ Fixture.renderGuessItem = function (item, maxguesses, scalar) {
 		)
 	);
 };
+*/
 
 Fixture.renderChallenge = function () {
 	var table = newElem('table', {'id': 'leaderboard'}).append(
 		newElem('thead').append(newElem('tr').append(
-			newElem('th').text('Best predictions'),
-			newElem('th').text('Last guess'),
-			newElem('th').text('3rd place'),
-			newElem('th').text('Final'),
+			newElem('th').text(''),
+			newElem('th').text('Prediction'),
 			newElem('th').text('Total points')
 		)),
 		newElem('tbody')
 	);
-	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
-	anchor.click(Fixture.sendAppRequest);
-	var s = "Check out which of your friends "
-		+ "haven't made a prediction yet: ";
-	return newElem('div', {'class': 'wrapper'}).append(
-		table,
-		newElem('p').text(s).append(anchor)
-	);
+	return newElem('div', {'class': 'wrapper'}).append(table);
 };
 
 Fixture.sendAppRequest = function () {
@@ -585,26 +601,33 @@ Fixture.sendAppRequest = function () {
 	});
 };
 
+Fixture.sendPredictionRequest = function (userId) {
+	var t = "Hurry up! Complete your World Cup prediction!";
+	FB.ui({
+		'method': 'apprequests',
+		'to': userId,
+		'message': t
+	}, function (response) {
+		console.log(response.to);
+	});
+};
+
 Fixture.renderFriends = function (response) {
 	var friends = response.data;
+	FB.api('/v2.0/me?fields=name,picture', function (me) {
+		friends.unshift(me);
+		Fixture.renderFriendsHelper(friends);
+	});
+};
+
+Fixture.renderFriendsHelper = function (friends) {
 	var uids = [];
 	var rows = [];
 	for (var i = 0; i < friends.length; i++) {
-		var f  = friends[i];
-		var src = (f.picture ? f.picture.data.url: '');
-		uids.push(f.id);
-		rows.push(newElem('tr', {'id': 'user-' + f.id}).append(
-			newElem('td', {'class': 'friend-name'}).append(
-				newElem('img', {'src': src}),
-				newElem('span').text(f.name)
-			),
-			newElem('td', {'class': 'last-guess'}).text('N/A'),
-			newElem('td', {'class': 'third-pred'}).text('N/A'),
-			newElem('td', {'class': 'final-pred'}).text('N/A'),
-			newElem('td', {'class': 'total-points'}).text('0')
-		));
+		uids.push(friends[i].id);
+		rows.push(Fixture.renderFriendRow(friends[i]));
 	}
-	$('#leaderboard tbody').empty().append(rows);
+	$('#leaderboard tbody').append(rows);
 	$.getJSON('/fixture/api?user_ids=' + uids.join(','), function (data) {
 		for (var i in data) {
 			Fixture.renderFriendStats(data[i]);
@@ -612,17 +635,41 @@ Fixture.renderFriends = function (response) {
 	});
 };
 
+Fixture.renderFriendRow = function (friend) {
+	var src = (friend.picture ? friend.picture.data.url : '');
+	var anchor = newElem('a', {'href': 'javascript:void(0);'});
+	anchor.click(function () {
+		Fixture.sendPredictionRequest(friend.id);
+	}).text('Ask your friend to make a prediction');
+	return newElem('tr', {'id': 'user-' + friend.id}).append(
+		newElem('td', {'class': 'friend-name'}).append(
+			newElem('img', {'src': src}),
+			newElem('span').text(friend.name)
+		),
+		newElem('td', {'class': 'friend-pred'}).append(anchor),
+		newElem('td', {'class': 'total-points'}).text('0')
+	);
+};
+
 Fixture.renderFriendStats = function (fixture) {
 	if (!fixture || !fixture.prediction) return;
+	var flag = function (team) {
+		var img = newElem('img', {'class': 'flag'});
+		var src = (team ? team.toLowerCase() + '.png' : 'null.png');
+		return img.attr('src', 'static/img/' + src);
+	};
+	var td = $('#user-' + fixture.user_id + ' .friend-pred');
+	td.data('fixture', JSON.stringify(fixture));
 	var r = fixture.prediction[63];
 	if (r && r.length == 4) {
-		$('#user-' + fixture.user_id + ' .final-pred').text(
-			r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
-	}
-	var r = fixture.prediction[62];
-	if (r && r.length == 4) {
-		$('#user-' + fixture.user_id + ' .third-pred').text(
-			r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
+		var details = newElem('a', {'href': 'javascript:void(0);'});
+		details.click(function () {
+			alert('Coming soon!');
+		}).text('More details');
+		var span = newElem('span');
+		span.text(r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
+		td.empty().append(flag(r[0]), span, flag(r[1]),
+				newElem('br'), details);
 	}
 };
 
