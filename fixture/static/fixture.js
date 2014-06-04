@@ -10,6 +10,25 @@ $(document).ready(function () {
 		});
 		FB.getLoginStatus(onLogin);
 	});
+	$('.share-fb').click(function () {
+		window.open('https://www.facebook.com/sharer/sharer.php?u='
+			+ encodeURIComponent(window.top.location.href),
+			'facebook-share-dialog', 'width=626,height=436');
+	});
+	$('.share-tw').click(function () {
+		var tweet = "I've made my prediction for the World Cup. ";
+		// TODO: hook final data
+		window.open('http://twitter.com/intent/tweet?text='
+			+ encodeURIComponent(tweet) + '&url='
+			+ encodeURIComponent(window.top.location.href)
+			+ '&hashtags=WorldCup,Brazil2014',
+			'twitter-share-dialog', 'width=550,height=420');
+	});
+	$('.share-gp').click(function () {
+		window.open('https://plus.google.com/share?url='
+			+ encodeURIComponent(window.top.location.href),
+			'google-share-dialog', 'width=600,height=600');
+	});
 });
 
 var onLogin = function (response) {
@@ -112,10 +131,28 @@ Fixture.bootstrap = function () {
 	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
 	anchor.click(Fixture.sendAppRequest);
 	var s = "Invite friends that haven't made a prediction yet: ";
+	var t = "I'm too lazy to fill in all the scores... ";
+	var u = 'Auto-complete some random results';
+	var v = 'Clear all results';
+	var autofill = newElem('a', {'href': 'javascript:void(0);'}).text(u);
+	autofill.click(function () {
+		Fixture.random();
+		$('.autofill').hide();
+		$('.reset').show();
+	});
+	var clear = newElem('a', {'href': 'javascript:void(0);'}).text(v);
+	clear.click(function () {
+		$('.score').val('');
+		Fixture.update();
+		$('.autofill').show();
+		$('.reset').hide();
+	});
 	$('#fixture').append(
 		newElem('p', {'class': 'controls'}).text(s).append(anchor),
 		Fixture.renderGroupsStage(),
 		Fixture.renderSecondStage(),
+		newElem('p', {'class': 'autofill'}).text(t).append(autofill),
+		newElem('p', {'class': 'reset'}).append(clear).hide(),
 		newElem('p', {'class': 'controls'}).append(save),
 		newElem('p', {'id': 'status'})
 	);
@@ -131,7 +168,6 @@ Fixture.bootstrap = function () {
 		this.value = (isNaN(n) ? '' : Math.abs(n).toString());
 	}).change(Fixture.update);
 	$('#save').click(Fixture.submit);
-	$('#debug').click(Fixture.random);
 	$('.tabs li a').click(function (e) {
 		$('.panel').hide();
 		$('#' + e.target.id.split('-')[0]).show();
@@ -148,12 +184,11 @@ Fixture.bootstrap = function () {
 };
 
 Fixture.random = function () {
-	var i = 0;
 	$('.score').each(function (i, e) {
-		var max = 13;
-		var min = 2;
+		var min = 0; var max = 2;
+		var n = parseInt(this.value);
 		var r = Math.floor(Math.random() * (max - min + 1)) + min;
-		$(e).val(i++ % r);
+		this.value = (isNaN(n) ? r : Math.abs(n).toString());
 	});
 	Fixture.update();
 };
@@ -179,15 +214,15 @@ Fixture.renderGroupsStage = function () {
 };
 
 Fixture.renderMatch = function (index) {
-	var opps = Fixture.matches[index];
+	var m = Fixture.matches[index];
 	var noflag = 'static/img/null.png';
 	var flag1 = newElem('img', {'class': 'flag', 'src': noflag});
 	var flag2 = newElem('img', {'class': 'flag', 'src': noflag});
 	var trigram1 = newElem('div', {'class': 'trigram'}).text('?');
 	var trigram2 = newElem('div', {'class': 'trigram'}).text('?');
 	if (index < 48) {
-		Fixture.setTeam(opps[0], flag1, trigram1);
-		Fixture.setTeam(opps[1], flag2, trigram2);
+		Fixture.setTeam(m[0], flag1, trigram1);
+		Fixture.setTeam(m[1], flag2, trigram2);
 	}
 	var team1 = newElem('div', {'class': 'team left'});
 	var team2 = newElem('div', {'class': 'team right'});
@@ -222,23 +257,23 @@ Fixture.renderMatch = function (index) {
 	});
 	*/
 	var loc = newElem('div', {'class': 'location'}).append(
-		'#' + (index + 1) + ': ' + opps[4],
+		'#' + (index + 1) + ': ' + m[4],
 		newElem('br'),
-		opps[2] + ', ' + opps[3]
+		m[2] + ', ' + m[3]
 	);
 	return (index < 48 ? newElem('a', {'class': 'wrapper'}).append(
 		loc, match.append(team1, scores, team2)
-	) : match.append(team1, scores, team2)).hover(function () {
+	) : match.append(team1, scores, team2).hover(function () {
 		var round = (index < 48 + 8 ? 'Round of 16' :
 			(index < 48 + 8 + 4 ? 'Quarter-finals' :
 			(index < 48 + 8 + 4 + 2 ? 'Semi-finals' :
 			(index == 62 ? '3rd place playoff' : 'Final'))));
 		var t = 'Match #' + (index + 1) + ' (' + round + '): '
-			+ opps[4] + ', ' + opps[2] + ', ' + opps[3]
+			+ m[4] + ', ' + m[2] + ', ' + m[3]
 		$('.match-info').css('visibility', 'visible').text(t);
 	}, function () {
 		$('.match-info').css('visibility', 'hidden');
-	});
+	}));
 };
 
 Fixture.renderSecondStage = function () {
@@ -376,18 +411,18 @@ Fixture.getGroupsMatchStats = function (index) {
 };
 
 Fixture.updateRoundOf16Match = function(rankings, index) {
-	var opps = Fixture.matches[index];
-	var group1 = rankings[opps[0].substr(-1)];
-	var group2 = rankings[opps[1].substr(-1)];
+	var m = Fixture.matches[index];
+	var group1 = rankings[m[0].substr(-1)];
+	var group2 = rankings[m[1].substr(-1)];
 	var team1 = (group1.length == 4 ? group1[0].team : null);
 	var team2 = (group2.length == 4 ? group2[1].team : null);
 	Fixture.setMatchResult(index, team1, team2);
 };
 
 Fixture.updateQualifyingMatch = function (index) {
-	var opps = Fixture.matches[index];
-	var team1 = Fixture.getQualifier(opps[0]);
-	var team2 = Fixture.getQualifier(opps[1]);
+	var m = Fixture.matches[index];
+	var team1 = Fixture.getQualifier(m[0]);
+	var team2 = Fixture.getQualifier(m[1]);
 	Fixture.setMatchResult(index, team1, team2);
 };
 
@@ -487,6 +522,8 @@ Fixture.load = function () {
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
 		if (!fixture || !fixture.prediction) return;
+		$('.autofill').hide();
+		$('.reset').hide();
 		for (var i = 0; i < 64; i++) {
 			var r = fixture.prediction[i];
 			if (!r || r.length != 4) continue;
@@ -594,7 +631,7 @@ Fixture.sendAppRequest = function () {
 	var t = "I bet you can't predict the World Cup better than me!";
 	FB.ui({
 		'method': 'apprequests',
-		'filters': ['app_non_users'],
+		//'filters': ['app_non_users'],
 		'message': t
 	}, function (response) {
 		console.log(response.to);
@@ -627,15 +664,39 @@ Fixture.renderFriendsHelper = function (friends) {
 		uids.push(friends[i].id);
 		rows.push(Fixture.renderFriendRow(friends[i]));
 	}
-	$('#leaderboard tbody').append(rows);
 	$.getJSON('/fixture/api?user_ids=' + uids.join(','), function (data) {
-		for (var i in data) {
-			Fixture.renderFriendStats(data[i]);
+		var cmp = function (a, b) {
+			return (a ? 2 : 0) + (b ? 1 : 0);
+		};
+		rows.sort(function (a, b) {
+			var id1 = $(a).attr('id').split('-')[1];
+			var id2 = $(b).attr('id').split('-')[1];
+			var b = cmp(data[id1], data[id2]);
+			if (b == 3) {
+				var p1 = data[id1].prediction;
+				var p2 = data[id2].prediction;
+				var b = cmp(p1 ? p1[63] : 0, p2 ? p2[63] : 0);
+				if (b == 3 || b == 0) {
+					var t1 = data[id1].timestamp;
+					var t2 = data[id2].timestamp;
+					return t1 - t2;
+				} else {
+					return (b == 2 ? -1 : 1);
+				}
+			} else if (b == 0) {
+				return parseInt(id1) - parseInt(id2);
+			}
+			return (b == 2 ? -1 : 1);
+		});
+		for (var i = 0; i < rows.length; i++) {
+			var id = $(rows[i]).attr('id').split('-')[1];
+			Fixture.renderFriendStats(data[id], rows[i]);
 		}
+		$('#leaderboard tbody').append(rows);
 	});
 };
 
-Fixture.renderFriendRow = function (friend) {
+Fixture.renderFriendRow = function (friend, row) {
 	var src = (friend.picture ? friend.picture.data.url : '');
 	var anchor = newElem('a', {'href': 'javascript:void(0);'});
 	anchor.click(function () {
@@ -651,27 +712,27 @@ Fixture.renderFriendRow = function (friend) {
 	);
 };
 
-Fixture.renderFriendStats = function (fixture) {
+Fixture.renderFriendStats = function (fixture, row) {
 	if (!fixture || !fixture.prediction) return;
+	$(row).data('fixture', JSON.stringify(fixture));
 	var flag = function (team) {
 		var img = newElem('img', {'class': 'flag'});
 		var src = (team ? team.toLowerCase() + '.png' : 'null.png');
 		return img.attr('src', 'static/img/' + src);
 	};
-	var td = $('#user-' + fixture.user_id + ' .friend-pred');
-	td.data('fixture', JSON.stringify(fixture));
 	var r = fixture.prediction[63];
 	if (r && r.length == 4) {
 		var details = newElem('a', {'href': 'javascript:void(0);'});
 		details.click(function () {
 			alert('Coming soon!');
 		}).text('More details');
-		var span = newElem('span');
-		span.text(r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
-		td.empty().append(flag(r[0]), span, flag(r[1]),
-				newElem('br'), details);
+		var s = newElem('span');
+		s.text(r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
+		var td = $(row).children('.friend-pred').empty();
+		td.append(flag(r[0]), s, flag(r[1]), newElem('br'), details);
 	}
 };
+
 
 /*
  * JavaScript Pretty Date

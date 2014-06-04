@@ -338,14 +338,17 @@ body {
 	vertical-align: middle;
 	margin-right: 8px;
 }
-.footer {
-	padding: 32px 0;
+.footer, .autofill, .reset {
+	padding: 8px 0;
 	clear: both;
 	color: #333;
 	font-size: 10pt;
 	text-align: center;
 }
-.footer a, #challenge a {
+.footer {
+	padding: 32px 0;
+}
+.footer a, #challenge a, .autofill a, .reset a {
 	text-decoration: none;
 	color: #396;
 }
