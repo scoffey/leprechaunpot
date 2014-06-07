@@ -4,6 +4,7 @@ body {
 	background: #ccc;
 	margin: 0 auto;
 	width: 760px;
+	min-height: 1750px;
 }
 #container {
 	padding: 0;
@@ -374,4 +375,14 @@ body {
       border-color: transparent transparent #dfe transparent;
       top: -16px;
       left: 114px;
+}
+.tweet-button {
+	display: inline-block;
+	width: 55px;
+	height: 21px;
+	background-image: url(http://platform.twitter.com/widgets/images/tweet.dfbf1dd98bad9f5b5addd80494650dca.png);
+	background-position: 0 0;
+}
+.tweet-button:hover {
+	background-position: 0 -21px;
 }

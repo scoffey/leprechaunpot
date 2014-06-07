@@ -4,37 +4,21 @@ $(document).ready(function () {
 	$.getScript('//connect.facebook.net/en_US/all.js', function() {
 		FB.init({
 			'appId': '181581748697602',
-			//'xfbml': true,
+			'xfbml': true,
 			'cookie': true,
 			'version': 'v2.0'
 		});
 		FB.getLoginStatus(onLogin);
 	});
-	$('.share-fb').click(function () {
-		window.open('https://www.facebook.com/sharer/sharer.php?u='
-			+ encodeURIComponent(window.top.location.href),
-			'facebook-share-dialog', 'width=626,height=436');
-	});
-	$('.share-tw').click(function () {
-		var tweet = "I've made my prediction for the World Cup. ";
-		// TODO: hook final data
-		window.open('http://twitter.com/intent/tweet?text='
-			+ encodeURIComponent(tweet) + '&url='
-			+ encodeURIComponent(window.top.location.href)
-			+ '&hashtags=WorldCup,Brazil2014',
-			'twitter-share-dialog', 'width=550,height=420');
-	});
-	$('.share-gp').click(function () {
-		window.open('https://plus.google.com/share?url='
-			+ encodeURIComponent(window.top.location.href),
-			'google-share-dialog', 'width=600,height=600');
-	});
+	$.getScript('https://apis.google.com/js/platform.js');
+	$.getScript('//platform.twitter.com/widgets.js');
 });
 
 var onLogin = function (response) {
 	if (response.status === 'connected') {
 		// Logged into your app and Facebook.
 		Fixture.load();
+		FB.Canvas.setSize();
 	} else if (response.status === 'not_authorized') {
 		// The person is logged into Facebook, but not your app.
 		FB.login(onLogin);
@@ -619,8 +603,9 @@ Fixture.renderChallenge = function () {
 	var table = newElem('table', {'id': 'leaderboard'}).append(
 		newElem('thead').append(newElem('tr').append(
 			newElem('th').text(''),
-			newElem('th').text('Prediction'),
-			newElem('th').text('Total points')
+			newElem('th').text('Final match prediction'),
+			newElem('th').text('Total points'),
+			newElem('th').text('')
 		)),
 		newElem('tbody')
 	);
@@ -702,13 +687,18 @@ Fixture.renderFriendRow = function (friend, row) {
 	anchor.click(function () {
 		Fixture.sendPredictionRequest(friend.id);
 	}).text('Ask your friend to make a prediction');
+	var details = newElem('a', {'href': 'javascript:void(0);'});
+	details.click(function () {
+		details.text('Coming soon!');
+	}).text('More details');
 	return newElem('tr', {'id': 'user-' + friend.id}).append(
 		newElem('td', {'class': 'friend-name'}).append(
 			newElem('img', {'src': src}),
 			newElem('span').text(friend.name)
 		),
 		newElem('td', {'class': 'friend-pred'}).append(anchor),
-		newElem('td', {'class': 'total-points'}).text('0')
+		newElem('td', {'class': 'total-points'}).text('0'),
+		newElem('td', {'class': 'more-details'}).append(details)
 	);
 };
 
@@ -722,14 +712,9 @@ Fixture.renderFriendStats = function (fixture, row) {
 	};
 	var r = fixture.prediction[63];
 	if (r && r.length == 4) {
-		var details = newElem('a', {'href': 'javascript:void(0);'});
-		details.click(function () {
-			alert('Coming soon!');
-		}).text('More details');
-		var s = newElem('span');
-		s.text(r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1]);
+		var s = r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1];
 		var td = $(row).children('.friend-pred').empty();
-		td.append(flag(r[0]), s, flag(r[1]), newElem('br'), details);
+		td.append(flag(r[0]), newElem('span').text(s), flag(r[1]));
 	}
 };
 

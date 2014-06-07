@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <title>World Cup Fixture</title>
+<meta property="fb:app_id" content="181581748697602" />
 <meta property="og:title" content="World Cup Fixture" />
 <meta property="og:description" content="Can you predict the World Cup better than your friends?" />
-<meta property="og:image" content="https://fbcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t39.2081-0/10173508_247647775424332_155685279_n.png" />
+<meta property="og:image" content="https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t39.2081-0/10173508_249400775249032_724964224_n.png" />
 <meta name="viewport" content="width=760, user-scalable=yes">
 <link rel="stylesheet" type="text/css" href="static/style.css"></link>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -18,7 +19,12 @@
 </ul>
 <div id="fixture" class="panel"></div>
 <div id="challenge" class="panel"></div>
-<p class="footer">Feel free to share on <a href="javascript:void(0);" class="share-fb">Facebook</a>, <a href="javascript:void(0);" class="share-tw">Twitter</a> and <a href="javascript:void(0);" class="share-gp">Google+</a><br /><br />This app was made by <a target="_blank" href="https://twitter.com/scoffey">@scoffey</a></p>
+<div id="fb-root" style="clear: both;"></div>
+<p class="footer">Feel free to share:
+<fb:share-button href="https://apps.facebook.com/worldcupfixture/" type="button_count"></fb:share-button>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://apps.facebook.com/worldcupfixture/" data-hashtags="WorldCup,Brazil2014">Tweet</a>
+<span class="g-plus" data-action="share" data-annotation="bubble" data-height="20" data-href="https://apps.facebook.com/worldcupfixture/"></span>
+</p>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
