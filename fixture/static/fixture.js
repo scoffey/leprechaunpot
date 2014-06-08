@@ -208,16 +208,12 @@ Fixture.renderMatch = function (index) {
 		Fixture.setTeam(m[0], flag1, trigram1);
 		Fixture.setTeam(m[1], flag2, trigram2);
 	}
-	var team1 = newElem('div', {'class': 'team left'});
-	var team2 = newElem('div', {'class': 'team right'});
-	team1.append(flag1, trigram1);
-	team2.append(flag2, trigram2);
-	if ([48, 49, 52, 53, 56, 57, 60].indexOf(index) == -1) {
-		team1.removeClass('left').addClass('right');
-	}
-	if ([50, 51, 54, 55, 58, 59, 61, 62, 63].indexOf(index) == -1) {
-		team2.removeClass('right').addClass('left');
-	}
+	var team1 = newElem('div', {'class': 'team'});
+	var team2 = newElem('div', {'class': 'team'});
+	var c = (index < 48 || index >= 62);
+	var left = [48, 49, 52, 53, 56, 57, 60].indexOf(index) == -1;
+	team1.append(flag1, trigram1).addClass(c || left ? 'left' : 'right');
+	team2.append(flag2, trigram2).addClass(!c && left ? 'left' : 'right');
 	var score1 = newElem('input', {'class': 'score'});
 	var score2 = newElem('input', {'class': 'score'});
 	score1.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 2));

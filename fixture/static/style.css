@@ -37,10 +37,11 @@ body {
 	height: 24px;
 	margin: 2px;
 	padding: 0;
+	float: left;
 	border: 1pt solid #ccc;
 }
-#fixture .flag {
-	float: left;
+.right .flag {
+	float: right;
 }
 #challenge .flag {
 	margin: 0 8px;
@@ -55,12 +56,9 @@ body {
 	text-align: center;
 }
 .second-stage .trigram {
-	width: 34px;
+	width: 30px;
 }
-.left .flag {
-	float: right;
-}
-.left .trigram {
+.right .trigram {
 	float: right;
 }
 .team {
@@ -77,7 +75,7 @@ body {
 	float: left;
 }
 .score {
-	width: 24px;
+	width: 22px;
 	height: 24px;
 	padding: 0;
 	margin: 2px 0;
@@ -95,10 +93,10 @@ body {
 .second-stage {
 	float: left;
 	clear: both;
-	width: 674px;
+	width: 700px;
 	background: #fff;
 	padding: 0 8px;
-	margin: 0 36px;
+	margin: 0 20px;
 }
 .location {
 	float: left;
@@ -138,7 +136,7 @@ body {
 	clear: none;
 }
 .second-stage .match {
-	width: 86px;
+	width: 89px;
 	height: 90px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -156,7 +154,7 @@ body {
 	border: 1px solid black;
 }
 .round-of-16, .quarters, .semifinals, .finals {
-	width: 87px;
+	width: 90px;
 	padding: 0;
 	margin: 0;
 	float: left;
