@@ -157,6 +157,7 @@ Fixture.bootstrap = function () {
 		$('#' + e.target.id.split('-')[0]).show();
 		$('.tabs li a').removeClass('tab-on');
 		$(e.target).addClass('tab-on');
+		$('.details').remove();
 	});
 
 	// mobile hack
@@ -220,7 +221,7 @@ Fixture.renderMatch = function (index) {
 	score2.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 3));
 	var scores = newElem('div', {'class': 'scoreboard'});
 	scores.append(score1, ' - ', score2);
-	var match = newElem('div', {'class': 'match', 'id': 'match-' + index});
+	var match = newElem('div', {'class': 'match match-' + index});
 	/*
 	match.hover(function () {
 		$('#tooltip').html('Match #' + (index + 1));
@@ -329,7 +330,6 @@ Fixture.update = function () {
 	for (var i = 6 * 8 + 8; i < 64; i++) {
 		Fixture.updateQualifyingMatch(i);
 	}
-	// TODO: hook guess updates
 };
 
 Fixture.rankGroupResults = function (matchResults) {
@@ -464,8 +464,8 @@ Fixture.submit = function () {
 };
 
 Fixture.getMatchResult = function (index) {
-
-	var scores = $('#match-' + index + ' .score');
+	var match = $('#fixture .match-' + index);
+	var scores = match.find('.score');
 	var score1 = (scores.eq(0) ? parseInt($(scores.eq(0)).val()) : NaN);
 	var score2 = (scores.eq(1) ? parseInt($(scores.eq(1)).val()) : NaN);
 	if (isNaN(score1) || isNaN(score2)) return null;
@@ -474,7 +474,7 @@ Fixture.getMatchResult = function (index) {
 	var team1 = Fixture.matches[index][0];
 	var team2 = Fixture.matches[index][1];
 	if (index >= 48) {
-		var trigrams = $('#match-' + index + ' .trigram');
+		var trigrams = $('#fixture .match-' + index + ' .trigram');
 		team1 = (trigrams.eq(0) ? $(trigrams.eq(0)).text() : null);
 		team2 = (trigrams.eq(1) ? $(trigrams.eq(1)).text() : null);
 	}
@@ -485,12 +485,13 @@ Fixture.getMatchResult = function (index) {
 };
 
 Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
-	var scores = $('#match-' + index + ' .score');
+	var match = $('#fixture .match-' + index);
+	var scores = match.find('.score');
 	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
 	if (parseInt(score2) == score2) $(scores.eq(1)).val(score2);
 	if (index >= 6 * 8) {
-		var flags = $('#match-' + index + ' .flag');
-		var trigrams = $('#match-' + index + ' .trigram');
+		var flags = match.find('.flag');
+		var trigrams = match.find('.trigram');
 		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
 		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
 	}
@@ -685,7 +686,14 @@ Fixture.renderFriendRow = function (friend, row) {
 	}).text('Ask your friend to make a prediction');
 	var details = newElem('a', {'href': 'javascript:void(0);'});
 	details.click(function () {
-		details.text('Coming soon!');
+		var id = $('.details').data('fbid');
+		$('.details').remove();
+		if (id == friend.id) return;
+		var row = $('#user-' + friend.id);
+		var fixture = JSON.parse(row.data('fixture') || 'null');
+		var td = Fixture.renderDetails(fixture);
+		td.find('.label').text(friend.name + "'s prediction");
+		row.after(td.data('fbid', friend.id));
 	}).text('More details');
 	return newElem('tr', {'id': 'user-' + friend.id}).append(
 		newElem('td', {'class': 'friend-name'}).append(
@@ -696,6 +704,26 @@ Fixture.renderFriendRow = function (friend, row) {
 		newElem('td', {'class': 'total-points'}).text('0'),
 		newElem('td', {'class': 'more-details'}).append(details)
 	);
+};
+
+Fixture.renderDetails = function (fixture) {
+	if (!fixture || !fixture.prediction) return;
+	var stage = Fixture.renderSecondStage();
+	$(stage).find('.score').attr('disabled', '');
+	for (var i = 48; i < 64; i++) {
+		var r = fixture.prediction[i];
+		var match = stage.find('.match-' + i);
+		if (!r || r.length != 4 || match.length < 1) continue;
+		var flags = match.find('.flag');
+		var trigrams = match.find('.trigram');
+		Fixture.setTeam(r[0], flags.eq(0), trigrams.eq(0));
+		Fixture.setTeam(r[1], flags.eq(1), trigrams.eq(1));
+		var scores = match.find('.score');
+		$(scores.eq(0)).val(r[2] != null ? r[2] : '');
+		$(scores.eq(1)).val(r[3] != null ? r[3] : '');
+	}
+	var td = newElem('td', {'class': 'details', 'colspan': '4'});
+	return td.append(stage);
 };
 
 Fixture.renderFriendStats = function (fixture, row) {
@@ -709,7 +737,7 @@ Fixture.renderFriendStats = function (fixture, row) {
 	var r = fixture.prediction[63];
 	if (r && r.length == 4) {
 		var s = r[0] + ' ' + r[2] + ' - ' + r[3] + ' ' + r[1];
-		var td = $(row).children('.friend-pred').empty();
+		var td = $(row).find('.friend-pred').empty();
 		td.append(flag(r[0]), newElem('span').text(s), flag(r[1]));
 	}
 };

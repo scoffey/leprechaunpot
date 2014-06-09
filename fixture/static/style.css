@@ -43,7 +43,8 @@ body {
 .right .flag {
 	float: right;
 }
-#challenge .flag {
+.friend-pred .flag {
+	float: none;
 	margin: 0 8px;
 	vertical-align: middle;
 }
@@ -96,6 +97,8 @@ body {
 	width: 700px;
 	background: #fff;
 	padding: 0 8px;
+}
+#fixture .second-stage {
 	margin: 0 20px;
 }
 .location {
@@ -144,13 +147,13 @@ body {
 .second-stage .location {
 	display: none;
 }
-#match-48, #match-49, #match-52, #match-53, #match-56, #match-57, #match-60 {
+.match-48, .match-49, .match-52, .match-53, .match-56, .match-57, .match-60 {
 	border-right: 1px solid black;
 }
-#match-50, #match-51, #match-54, #match-55, #match-58, #match-59, #match-61 {
+.match-50, .match-51, .match-54, .match-55, .match-58, .match-59, .match-61 {
 	border-left: 1px solid black;
 }
-#match-62 {
+.match-62 {
 	border: 1px solid black;
 }
 .round-of-16, .quarters, .semifinals, .finals {
@@ -181,13 +184,13 @@ body {
 	margin: 132px 0;
 	padding: 50px 0;
 }
-#match-63 {
+.finals .match-63 {
 	width: 150px;
 	height: 60px;
 	margin: 200px 0 0 0;
 	padding: 0 1px;
 }
-#match-62 {
+.finals .match-62 {
 	width: 150px;
 	height: 60px;
 	margin: 100px 0 0 0;
@@ -304,7 +307,7 @@ body {
 #challenge .wrapper {
 	background: #ddd;
 	padding: 4px;
-	margin: 16px;
+	margin: 8px;
 }
 #challenge .wrapper p {
 	text-align: center;
