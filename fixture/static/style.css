@@ -309,6 +309,12 @@ body {
 	padding: 4px;
 	margin: 8px;
 }
+#howto .wrapper {
+	background: #fff;
+	padding: 16px;
+	margin: 16px;
+	font-size: 11pt;
+}
 #challenge .wrapper p {
 	text-align: center;
 }
@@ -350,7 +356,7 @@ body {
 .footer {
 	padding: 32px 0;
 }
-.footer a, #challenge a, .autofill a, .reset a {
+.footer a, #challenge a, .autofill a, .reset a, #howto a {
 	text-decoration: none;
 	color: #396;
 }

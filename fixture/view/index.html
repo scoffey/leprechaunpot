@@ -14,18 +14,56 @@
 <body>
 <div id="container">
 <ul class="tabs">
-<li><a id="fixture-tab" href="javascript:void(0);">Make a prediction</a></li>
-<li><a id="challenge-tab" href="javascript:void(0);">Friends leaderboard</a></li>
+<li><a id="fixture-tab" href="javascript:void(0);">Your prediction</a></li>
+<li><a id="challenge-tab" href="javascript:void(0);">Your friends</a></li>
+<li><a id="howto-tab" href="javascript:void(0);">How to play</a></li>
 </ul>
 <div id="fixture" class="panel"></div>
 <div id="challenge" class="panel"></div>
-<div id="fb-root" style="clear: both;"></div>
-<p class="footer">Feel free to share:
+<div id="howto" class="panel">
+<div class="wrapper">
+<h3>How to play</h3>
+
+<ol>
+<li><p><strong>Make a prediction:</strong> Fill in the results of all 64 matches. The World Cup tournament consists of 2 stages:</p>
+
+<ul><li><em>Group stage</em>, a round-robin tournament where each team plays every other team in its four-team group. Both the winner and runner-up from each group advance to the knockout stage.</li>
+<li><p><em>Knockout stage</em>, 4 series of single-elimination games between the 16 qualifying teams from the group stage.</p>
+
+<p><strong>IMPORTANT:</strong> REGARDING TIES: This app applies the <a href="http://en.wikipedia.org/wiki/2014_FIFA_World_Cup#Format">official FIFA rules</a>. (If group play does not break a tie, drawing of lots will be simulated.) In case of a tie-break by penalty shootout during the knockout stage, an extra point in the original score will be considered for the winner.</p></li></ul></li>
+<li><p><strong>Challenge your friends:</strong> Invite your friends to make predictions so you can compare results.</p></li>
+<li><p><strong>Check out the leaderboard:</strong> Find out who makes the best World Cup prediction according to the following scoring system:</p>
+
+<ul><li>2 points for each exact score guessed in the group stage</li>
+<li>3 points for each exact score guessed in the knockout stage</li>
+<li>1 point for each match result guessed in the group stage (who wins or if there is a tie only)</li>
+<li>2 points for each group winner or runner-up guessed (out of 16)</li>
+<li>3 points for each quarter-finalist guessed (out of 8)</li>
+<li>4 points for each semi-finalist guessed (out of 4)</li>
+<li>5 points for each finalist guessed (out of 2)</li>
+<li>6 points for the 3rd place guess</li>
+<li>7 points for the World Cup winner guess</li></ul></li>
+</ol>
+
+<h3>Credits</h3>
+
+<p>This is an unofficial app made by <a href="https://twitter.com/scoffey" target="_blank">@scoffey</a>.</p>
+
+<p>Special thanks to users that reported bugs and helped to improve the app.</p>
+
+<p><em>FIFA, the FIFA logo, the emblems and mascots of FIFA events, including the emblem and mascot of the 2014 FIFA World Cup Brazil&trade; and other FIFA logos, FIFA event marks and product and service names are trademarks and copyright material of FIFA, F&eacute;d&eacute;ration Internationale de Football Association.</em></p>
+
+</div>
+</div>
+<p class="footer">
+<span>Feel free to share: </span>
 <fb:share-button href="https://apps.facebook.com/worldcupfixture/" type="button_count"></fb:share-button>
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://apps.facebook.com/worldcupfixture/" data-hashtags="WorldCup,Brazil2014">Tweet</a>
 <span class="g-plus" data-action="share" data-annotation="bubble" data-height="20" data-href="https://apps.facebook.com/worldcupfixture/"></span>
 </p>
 </div>
+
+<div id="fb-root"></div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

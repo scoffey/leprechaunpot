@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	Fixture.bootstrap();
+	//if (!window.location.hostname) return local();
 	$.ajaxSetup({'cache': true});
 	$.getScript('//connect.facebook.net/en_US/all.js', function() {
 		FB.init({
@@ -39,6 +40,9 @@ var getCookie = function (key) {
 };
 
 var Fixture = {};
+
+Fixture.results = (typeof latestFixtureResults != 'undefined'
+		? latestFixtureResults : null);
 
 Fixture.matches = [
 	["BRA", "CRO", "12 Jun 2014", "17:00", "S\u00e3o Paulo"],
@@ -545,61 +549,10 @@ Fixture.delete = function () {
 	return true;
 };
 
-/*
-Fixture.renderGuesses = function () {
-	return newElem('div', {'class': 'wrapper'}).append(
-		newElem('div', {'class': 'box'}).text('Groups stage').append(
-			Fixture.renderGuessItem('round qualifiers', 2 * 8, 2),
-			Fixture.renderGuessItem('exact scores', 6 * 8, 2),
-			Fixture.renderGuessItem('wins or ties', 6 * 8, 1)
-		),
-		newElem('div', {'class': 'box'}).text('Round of 16').append(
-			Fixture.renderGuessItem('quarter-finalists', 8, 3),
-			Fixture.renderGuessItem('exact scores', 8, 3)
-		),
-		newElem('div', {'class': 'box'}).text('Quarter-finals').append(
-			Fixture.renderGuessItem('semi-finalists', 4, 4),
-			Fixture.renderGuessItem('exact scores', 4, 3)
-		),
-		newElem('div', {'class': 'box'}).text('Semi-finals').append(
-			Fixture.renderGuessItem('finalists', 2, 5),
-			Fixture.renderGuessItem('exact scores', 2, 3)
-		),
-		newElem('div', {'class': 'box'}).text('3rd place').append(
-			Fixture.renderGuessItem('3rd place winner', 1, 6),
-			Fixture.renderGuessItem('exact scores', 1, 3)
-		),
-		newElem('div', {'class': 'box'}).text('Final').append(
-			Fixture.renderGuessItem('World Cup winner', 1, 7),
-			Fixture.renderGuessItem('exact scores', 1, 3)
-		),
-		newElem('div', {'class': 'totalbox'}).append(
-			newElem('span', {'class': 'total'}).text('0'),
-			'Total Points'
-		)
-	);
-};
-
-Fixture.renderGuessItem = function (item, maxguesses, scalar) {
-	return newElem('div').append(
-		newElem('div', {'class': 'guessdata'}).append(
-			newElem('span').text('You guessed '),
-			newElem('span', {'class': 'guesses'}).text('0'),
-			newElem('span').text(' ' + item),
-			newElem('span').text(' out of ' + maxguesses)
-		),
-		newElem('div', {'class': 'sub'}).append(
-			newElem('span').text(' x ' + scalar + ' points = '),
-			newElem('span', {'class': 'subtotal'}).text('0')
-		)
-	);
-};
-*/
-
 Fixture.renderChallenge = function () {
 	var table = newElem('table', {'id': 'leaderboard'}).append(
 		newElem('thead').append(newElem('tr').append(
-			newElem('th').text(''),
+			newElem('th').text('Leaderboard'),
 			newElem('th').text('Final match prediction'),
 			newElem('th').text('Total points'),
 			newElem('th').text('')
@@ -616,7 +569,7 @@ Fixture.sendAppRequest = function () {
 		//'filters': ['app_non_users'],
 		'message': t
 	}, function (response) {
-		console.log(response.to);
+		console.log(response);
 	});
 };
 
@@ -627,14 +580,42 @@ Fixture.sendPredictionRequest = function (userId) {
 		'to': userId,
 		'message': t
 	}, function (response) {
-		console.log(response.to);
+		console.log(response);
 	});
 };
 
+Fixture.rowCompare = function (a, b) {
+	var cmp = function (a, b) {
+		return (a ? 2 : 0) + (b ? 1 : 0);
+	};
+	var data = Fixture.data;
+	var id1 = $(a).attr('id').split('-')[1];
+	var id2 = $(b).attr('id').split('-')[1];
+	var r1 = Fixture.evaluate(data[id1]).points;
+	var r2 = Fixture.evaluate(data[id2]).points;
+	if (r1 != r2) return (r2 - r1);
+	var b = cmp(data[id1], data[id2]);
+	if (b == 3) {
+		var p1 = data[id1].prediction;
+		var p2 = data[id2].prediction;
+		var b = cmp(p1 ? p1[63] : 0, p2 ? p2[63] : 0);
+		if (b == 3 || b == 0) {
+			var t1 = data[id1].timestamp;
+			var t2 = data[id2].timestamp;
+			return t1 - t2;
+		} else {
+			return (b == 2 ? -1 : 1);
+		}
+	} else if (b == 0) {
+		return parseInt(id1) - parseInt(id2);
+	}
+	return (b == 2 ? -1 : 1);
+};
+
 Fixture.renderFriends = function (response) {
-	var friends = response.data;
+	var friends = (response ? response.data : []);
 	FB.api('/v2.0/me?fields=name,picture', function (me) {
-		friends.unshift(me);
+		if (me) friends.unshift(me);
 		Fixture.renderFriendsHelper(friends);
 	});
 };
@@ -647,29 +628,8 @@ Fixture.renderFriendsHelper = function (friends) {
 		rows.push(Fixture.renderFriendRow(friends[i]));
 	}
 	$.getJSON('/fixture/api?user_ids=' + uids.join(','), function (data) {
-		var cmp = function (a, b) {
-			return (a ? 2 : 0) + (b ? 1 : 0);
-		};
-		rows.sort(function (a, b) {
-			var id1 = $(a).attr('id').split('-')[1];
-			var id2 = $(b).attr('id').split('-')[1];
-			var b = cmp(data[id1], data[id2]);
-			if (b == 3) {
-				var p1 = data[id1].prediction;
-				var p2 = data[id2].prediction;
-				var b = cmp(p1 ? p1[63] : 0, p2 ? p2[63] : 0);
-				if (b == 3 || b == 0) {
-					var t1 = data[id1].timestamp;
-					var t2 = data[id2].timestamp;
-					return t1 - t2;
-				} else {
-					return (b == 2 ? -1 : 1);
-				}
-			} else if (b == 0) {
-				return parseInt(id1) - parseInt(id2);
-			}
-			return (b == 2 ? -1 : 1);
-		});
+		Fixture.data = data;
+		rows.sort(Fixture.rowCompare);
 		for (var i = 0; i < rows.length; i++) {
 			var id = $(rows[i]).attr('id').split('-')[1];
 			Fixture.renderFriendStats(data[id], rows[i]);
@@ -740,8 +700,41 @@ Fixture.renderFriendStats = function (fixture, row) {
 		var td = $(row).find('.friend-pred').empty();
 		td.append(flag(r[0]), newElem('span').text(s), flag(r[1]));
 	}
+	var rank = Fixture.evaluate(fixture);
+	$(row).find('.total-points').text(rank.points);
 };
 
+Fixture.evaluate = function (fixture) {
+	var rank = {'points': 0, 'qualifiers': [], 'exact': [], 'winners': []};
+	if (!fixture || !fixture.prediction || !Fixture.results) return rank;
+	var ds = [3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 7];
+	var p = fixture.prediction;
+	var q = Fixture.results;
+	for (var i = 0; i < 64; i++) {
+		var r = p[i];
+		var s = q[i];
+		if (!r || r.length != 4 || !s || s.length != 4) continue;
+		var exact = (r[2] == s[2] && r[3] == s[3] ? true : false);
+		var diffr = (r[3] - r[2]) / Math.max(1, Math.abs(r[3] - r[2]));
+		var diffs = (s[3] - s[2]) / Math.max(1, Math.abs(s[3] - s[2]));
+		var winner = (diffr == diffs ? true : false);
+		rank.points += (exact ? (i < 48 ? 2 : 3) : 0);
+		rank.points += (winner ? (i < 48 ? 1 : ds[i - 48]) : 0);
+		if (exact) rank.exact.push(i);
+		if (winner) rank.winners.push(i);
+		if (i >= 48 && i < 48 + 8) {
+			if (r[0] != null && r[0] == s[0]) {
+				rank.qualifiers.push(r[0]);
+				rank.points += 2;
+			}
+			if (r[1] != null && r[1] == s[1]) {
+				rank.qualifiers.push(r[1]);
+				rank.points += 2;
+			}
+		}
+	}
+	return rank;
+};
 
 /*
  * JavaScript Pretty Date
