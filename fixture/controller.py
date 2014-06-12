@@ -26,7 +26,7 @@ _FIXTURE = [
     ['ESP', 'NED', datetime.datetime(2014, 6, 13, 19, 0)],
     ['CHI', 'AUS', datetime.datetime(2014, 6, 13, 22, 0)],
     ['COL', 'GRE', datetime.datetime(2014, 6, 14, 16, 0)],
-    ['CIV', 'JPN', datetime.datetime(2014, 6, 14, 1, 0)],
+    ['CIV', 'JPN', datetime.datetime(2014, 6, 15, 1, 0)],
     ['URU', 'CRC', datetime.datetime(2014, 6, 14, 19, 0)],
     ['ENG', 'ITA', datetime.datetime(2014, 6, 14, 22, 0)],
     ['SUI', 'ECU', datetime.datetime(2014, 6, 15, 16, 0)],
@@ -193,7 +193,7 @@ class ApiHandler(webapp2.RequestHandler):
             self.abort(400)
         if not isinstance(p, list) or len(p) != 64:
             self.abort(400)
-        now = datetime.datetime.now()
+        now = datetime.datetime.utcnow()
         for i, m in enumerate(p):
             if m is not None:
                 if not (len(m) == 4 and \
@@ -202,7 +202,7 @@ class ApiHandler(webapp2.RequestHandler):
                         isinstance(m[2], int) and m[2] >= 0 and \
                         isinstance(m[3], int) and m[3] >= 0):
                     self.abort(400)
-                if _FIXTURE[i][2] > now:
+                if _FIXTURE[i][2] < now:
                     p[i] = None
                 elif i < 48:
                     p[i][0] = _FIXTURE[i][0]

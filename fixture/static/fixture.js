@@ -456,6 +456,7 @@ Fixture.submit = function () {
 		return null;
 	}
 	Fixture.update();
+	$('#status').text('');
 	var results = [];
 	for (var i = 0; i < 64; i++) {
 		var r  = Fixture.getMatchResult(i);
