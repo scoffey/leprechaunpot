@@ -18,6 +18,75 @@ from google.appengine.ext import ndb
 _FB_APP_SECRET = os.environ.get('FB_APP_SECRET')
 _HERE_DIR = os.path.dirname(__file__)
 
+# Data
+
+_FIXTURE = [
+    ['BRA', 'CRO', datetime.datetime(2014, 6, 12, 20, 0)],
+    ['MEX', 'CMR', datetime.datetime(2014, 6, 13, 16, 0)],
+    ['ESP', 'NED', datetime.datetime(2014, 6, 13, 19, 0)],
+    ['CHI', 'AUS', datetime.datetime(2014, 6, 13, 22, 0)],
+    ['COL', 'GRE', datetime.datetime(2014, 6, 14, 16, 0)],
+    ['CIV', 'JPN', datetime.datetime(2014, 6, 14, 1, 0)],
+    ['URU', 'CRC', datetime.datetime(2014, 6, 14, 19, 0)],
+    ['ENG', 'ITA', datetime.datetime(2014, 6, 14, 22, 0)],
+    ['SUI', 'ECU', datetime.datetime(2014, 6, 15, 16, 0)],
+    ['FRA', 'HON', datetime.datetime(2014, 6, 15, 19, 0)],
+    ['ARG', 'BIH', datetime.datetime(2014, 6, 15, 22, 0)],
+    ['IRN', 'NGA', datetime.datetime(2014, 6, 16, 19, 0)],
+    ['GER', 'POR', datetime.datetime(2014, 6, 16, 16, 0)],
+    ['GHA', 'USA', datetime.datetime(2014, 6, 16, 22, 0)],
+    ['BEL', 'ALG', datetime.datetime(2014, 6, 17, 16, 0)],
+    ['RUS', 'KOR', datetime.datetime(2014, 6, 17, 22, 0)],
+    ['BRA', 'MEX', datetime.datetime(2014, 6, 17, 19, 0)],
+    ['CMR', 'CRO', datetime.datetime(2014, 6, 18, 22, 0)],
+    ['AUS', 'NED', datetime.datetime(2014, 6, 18, 16, 0)],
+    ['ESP', 'CHI', datetime.datetime(2014, 6, 18, 19, 0)],
+    ['COL', 'CIV', datetime.datetime(2014, 6, 19, 16, 0)],
+    ['JPN', 'GRE', datetime.datetime(2014, 6, 19, 22, 0)],
+    ['URU', 'ENG', datetime.datetime(2014, 6, 19, 19, 0)],
+    ['ITA', 'CRC', datetime.datetime(2014, 6, 20, 16, 0)],
+    ['SUI', 'FRA', datetime.datetime(2014, 6, 20, 19, 0)],
+    ['HON', 'ECU', datetime.datetime(2014, 6, 20, 22, 0)],
+    ['ARG', 'IRN', datetime.datetime(2014, 6, 21, 16, 0)],
+    ['NGA', 'BIH', datetime.datetime(2014, 6, 21, 22, 0)],
+    ['GER', 'GHA', datetime.datetime(2014, 6, 21, 19, 0)],
+    ['USA', 'POR', datetime.datetime(2014, 6, 22, 22, 0)],
+    ['BEL', 'RUS', datetime.datetime(2014, 6, 22, 16, 0)],
+    ['KOR', 'ALG', datetime.datetime(2014, 6, 22, 19, 0)],
+    ['CMR', 'BRA', datetime.datetime(2014, 6, 23, 20, 0)],
+    ['CRO', 'MEX', datetime.datetime(2014, 6, 23, 20, 0)],
+    ['AUS', 'ESP', datetime.datetime(2014, 6, 23, 16, 0)],
+    ['NED', 'CHI', datetime.datetime(2014, 6, 23, 16, 0)],
+    ['JPN', 'COL', datetime.datetime(2014, 6, 24, 20, 0)],
+    ['GRE', 'CIV', datetime.datetime(2014, 6, 24, 20, 0)],
+    ['ITA', 'URU', datetime.datetime(2014, 6, 24, 16, 0)],
+    ['CRC', 'ENG', datetime.datetime(2014, 6, 24, 16, 0)],
+    ['HON', 'SUI', datetime.datetime(2014, 6, 25, 20, 0)],
+    ['ECU', 'FRA', datetime.datetime(2014, 6, 25, 20, 0)],
+    ['NGA', 'ARG', datetime.datetime(2014, 6, 25, 16, 0)],
+    ['BIH', 'IRN', datetime.datetime(2014, 6, 25, 16, 0)],
+    ['USA', 'GER', datetime.datetime(2014, 6, 26, 16, 0)],
+    ['POR', 'GHA', datetime.datetime(2014, 6, 26, 16, 0)],
+    ['ALG', 'RUS', datetime.datetime(2014, 6, 26, 20, 0)],
+    ['KOR', 'BEL', datetime.datetime(2014, 6, 26, 20, 0)],
+    ['1A', '2B', datetime.datetime(2014, 6, 28, 16, 0)],
+    ['1C', '2D', datetime.datetime(2014, 6, 28, 20, 0)],
+    ['1B', '2A', datetime.datetime(2014, 6, 29, 16, 0)],
+    ['1D', '2C', datetime.datetime(2014, 6, 29, 20, 0)],
+    ['1E', '2F', datetime.datetime(2014, 6, 30, 16, 0)],
+    ['1G', '2H', datetime.datetime(2014, 6, 30, 20, 0)],
+    ['1F', '2E', datetime.datetime(2014, 7, 1, 16, 0)],
+    ['1H', '2G', datetime.datetime(2014, 7, 1, 20, 0)],
+    ['W49', 'W50', datetime.datetime(2014, 7, 4, 20, 0)],
+    ['W53', 'W54', datetime.datetime(2014, 7, 4, 16, 0)],
+    ['W51', 'W52', datetime.datetime(2014, 7, 5, 20, 0)],
+    ['W55', 'W56', datetime.datetime(2014, 7, 5, 16, 0)],
+    ['W57', 'W58', datetime.datetime(2014, 7, 8, 20, 0)],
+    ['W59', 'W60', datetime.datetime(2014, 7, 9, 20, 0)],
+    ['L61', 'L62', datetime.datetime(2014, 7, 12, 20, 0)],
+    ['W61', 'W62', datetime.datetime(2014, 7, 13, 19, 0)]
+]
+
 # Helper codec functions
 
 def base64_url_decode(s):
@@ -124,14 +193,21 @@ class ApiHandler(webapp2.RequestHandler):
             self.abort(400)
         if not isinstance(p, list) or len(p) != 64:
             self.abort(400)
-        for i in p:
-            if not (i is None or (len(i) == 4 and \
-                    isinstance(i[0], basestring) and len(i[0]) == 3 and \
-                    isinstance(i[1], basestring) and len(i[1]) == 3 and \
-                    isinstance(i[2], int) and i[2] >= 0 and \
-                    isinstance(i[3], int) and i[3] >= 0)):
-                self.abort(400)
-        return prediction
+        now = datetime.datetime.now()
+        for i, m in enumerate(p):
+            if m is not None:
+                if not (len(m) == 4 and \
+                        isinstance(m[0], basestring) and len(m[0]) == 3 and \
+                        isinstance(m[1], basestring) and len(m[1]) == 3 and \
+                        isinstance(m[2], int) and m[2] >= 0 and \
+                        isinstance(m[3], int) and m[3] >= 0):
+                    self.abort(400)
+                if _FIXTURE[i][2] > now:
+                    p[i] = None
+                elif i < 48:
+                    p[i][0] = _FIXTURE[i][0]
+                    p[i][1] = _FIXTURE[i][1]
+        return json.dumps(p, separators=',:')
 
     def _fixture_to_dict(self, f):
         return {

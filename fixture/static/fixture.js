@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	Fixture.bootstrap();
-	//if (!window.location.hostname) return local();
 	$.ajaxSetup({'cache': true});
 	$.getScript('//connect.facebook.net/en_US/all.js', function() {
 		FB.init({
@@ -152,9 +151,13 @@ Fixture.bootstrap = function () {
 
 	// event handlers
 	$('.score').change(function () {
-		var n = parseInt(this.value);
-		this.value = (isNaN(n) ? '' : Math.abs(n).toString());
-	}).change(Fixture.update);
+		var score = $(this);
+		var n = parseInt(score.val());
+		score.val(isNaN(n) ? '' : Math.abs(n).toString());
+
+		Fixture.validateScore(score);
+		Fixture.update();
+	});
 	$('#save').click(Fixture.submit);
 	$('.tabs li a').click(function (e) {
 		$('.panel').hide();
@@ -169,6 +172,23 @@ Fixture.bootstrap = function () {
 			+ 'BlackBerry|IEMobile|Opera Mini', 'i');
 	if (window.navigator && re.test(window.navigator.userAgent) ) {
 		$('.score').attr('type', 'number');
+	}
+};
+
+Fixture.validateScore = function (score) {
+	var index = parseInt(score.data('match'));
+	var timediff = Fixture.getTimeToMatch(index);
+	if (timediff > 3600000) return;
+	score.val(''); // TODO
+	var team = parseInt(score.data('team'));
+	var userId = (FB ? FB.getUserID() : null);
+	if (!isNaN(index) && Fixture.data && Fixture.data[userId]) {
+		var fixture = Fixture.data[userId];
+		var r = fixture.prediction[index];
+		if (r && r.length == 4) {
+			if (r[2] != null && team == 0) score.val(r[2]);
+			if (r[3] != null && team == 1) score.val(r[3]);
+		}
 	}
 };
 
@@ -223,6 +243,12 @@ Fixture.renderMatch = function (index) {
 	var score2 = newElem('input', {'class': 'score'});
 	score1.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 2));
 	score2.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 3));
+	score1.data('match', index).data('team', 0);
+	score2.data('match', index).data('team', 1);
+	if (Fixture.getTimeToMatch(index) < 3600000) {
+		score1.attr('disabled', 'disabled');
+		score2.attr('disabled', 'disabled');
+	}
 	var scores = newElem('div', {'class': 'scoreboard'});
 	scores.append(score1, ' - ', score2);
 	var match = newElem('div', {'class': 'match match-' + index});
@@ -264,7 +290,7 @@ Fixture.renderMatch = function (index) {
 Fixture.renderSecondStage = function () {
 	var stage = newElem('div', {'class': 'second-stage'});
 
-	stage.append(newElem('p', {'class': 'label'}).text('SECOND STAGE'));
+	stage.append(newElem('p', {'class': 'label'}).text('KNOCKOUT STAGE'));
 
 	stage.append(newElem('div', {'class': 'round-of-16'}).append(
 		Fixture.renderMatch(6 * 8 + 0),
@@ -304,7 +330,7 @@ Fixture.renderSecondStage = function () {
 	));
 
 	stage.append(newElem('p', {'class': 'match-info'}).css(
-			'visibility', 'hidden').text('Second stage'));
+			'visibility', 'hidden').text('Knockout stage'));
 
 	return stage;
 };
@@ -507,6 +533,8 @@ Fixture.load = function () {
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
 		if (!fixture || !fixture.prediction) return;
+		if (!Fixture.data) Fixture.data = {};
+		Fixture.data[userId] = fixture;
 		$('.autofill').hide();
 		$('.reset').hide();
 		for (var i = 0; i < 64; i++) {
@@ -617,6 +645,7 @@ Fixture.renderFriends = function (response) {
 	FB.api('/v2.0/me?fields=name,picture', function (me) {
 		if (me) friends.unshift(me);
 		Fixture.renderFriendsHelper(friends);
+		FB.Canvas.setSize();
 	});
 };
 
@@ -649,11 +678,10 @@ Fixture.renderFriendRow = function (friend, row) {
 		var id = $('.details').data('fbid');
 		$('.details').remove();
 		if (id == friend.id) return;
-		var row = $('#user-' + friend.id);
-		var fixture = JSON.parse(row.data('fixture') || 'null');
+		var fixture = Fixture.data[friend.id];
 		var td = Fixture.renderDetails(fixture);
 		td.find('.label').text(friend.name + "'s prediction");
-		row.after(td.data('fbid', friend.id));
+		$('#user-' + friend.id).after(td.data('fbid', friend.id));
 	}).text('More details');
 	return newElem('tr', {'id': 'user-' + friend.id}).append(
 		newElem('td', {'class': 'friend-name'}).append(
@@ -688,7 +716,6 @@ Fixture.renderDetails = function (fixture) {
 
 Fixture.renderFriendStats = function (fixture, row) {
 	if (!fixture || !fixture.prediction) return;
-	$(row).data('fixture', JSON.stringify(fixture));
 	var flag = function (team) {
 		var img = newElem('img', {'class': 'flag'});
 		var src = (team ? team.toLowerCase() + '.png' : 'null.png');
@@ -734,6 +761,21 @@ Fixture.evaluate = function (fixture) {
 		}
 	}
 	return rank;
+};
+
+Fixture.getTimeToMatch = function (index) {
+	var m = Fixture.matches[index];
+	var date = m[2];
+	var time = m[3];
+	var loc = m[4];
+	var m = (date.substr(3, 3) == 'Jul' ? 6 : 5);
+	var d = parseInt(date.substr(0, 2));
+	var h = parseInt(time.substr(0, 2));
+	var i = parseInt(time.substr(3, 2));
+	var tz = (["Cuiab\u00e1", "Manaus"].indexOf(loc) == -1 ? -3 : -4);
+	var datetime = new Date(2014, m, d, h + tz, i, 0, 0);
+	var now = new Date();
+	return (datetime.getTime() - now.getTime());
 };
 
 /*
