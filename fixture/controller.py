@@ -152,10 +152,9 @@ class ApiHandler(webapp2.RequestHandler):
 
     def post(self):
         user_id = self._authenticate()
-        prediction = self._get_prediction()
         f = Fixture.get_or_insert(user_id)
         f.user_id = user_id
-        f.prediction = prediction
+        f.prediction = self._get_prediction(f.prediction)
         f.put()
         self.response.out.write(json.dumps(self._fixture_to_dict(f)))
 
@@ -183,7 +182,7 @@ class ApiHandler(webapp2.RequestHandler):
             self.abort(403) # forbidden
         return user_id
 
-    def _get_prediction(self):
+    def _get_prediction(self, old_prediction):
         prediction = self.request.get('prediction')
         if not prediction:
             self.abort(400)
@@ -194,6 +193,7 @@ class ApiHandler(webapp2.RequestHandler):
         if not isinstance(p, list) or len(p) != 64:
             self.abort(400)
         now = datetime.datetime.utcnow()
+        op = json.loads(old_prediction) if old_prediction else []
         for i, m in enumerate(p):
             if m is not None:
                 if not (len(m) == 4 and \
@@ -202,9 +202,9 @@ class ApiHandler(webapp2.RequestHandler):
                         isinstance(m[2], int) and m[2] >= 0 and \
                         isinstance(m[3], int) and m[3] >= 0):
                     self.abort(400)
-                if _FIXTURE[i][2] < now:
-                    p[i] = None
-                elif i < 48:
+                if _FIXTURE[i][2] < now: # keep prediction of past matches
+                    p[i] = op[i] if i < len(op) else None
+                if i < 48 and p[i] is not None: # force teams in group stage
                     p[i][0] = _FIXTURE[i][0]
                     p[i][1] = _FIXTURE[i][1]
         return json.dumps(p, separators=',:')

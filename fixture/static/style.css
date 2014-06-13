@@ -86,6 +86,21 @@ body {
 	text-align: center;
 	outline: none;
 }
+.score.past {
+	border: solid transparent 1px;
+	background-color: #f3f3f3;
+}
+.score.guess {
+	border: solid transparent 1px;
+	background-color: #ffc;
+}
+.score.exact {
+	border: solid transparent 1px;
+	background-color: #9fc;
+}
+.details .score {
+	border: solid transparent 1px;
+}
 .groups-stage {
 	float: left;
 	clear: both;

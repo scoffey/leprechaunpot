@@ -246,8 +246,8 @@ Fixture.renderMatch = function (index) {
 	score1.data('match', index).data('team', 0);
 	score2.data('match', index).data('team', 1);
 	if (Fixture.getTimeToMatch(index) < 3600000) {
-		score1.attr('disabled', 'disabled');
-		score2.attr('disabled', 'disabled');
+		score1.attr('disabled', 'disabled').addClass('past');
+		score2.attr('disabled', 'disabled').addClass('past');
 	}
 	var scores = newElem('div', {'class': 'scoreboard'});
 	scores.append(score1, ' - ', score2);
@@ -515,7 +515,7 @@ Fixture.getMatchResult = function (index) {
 	return [team1, team2, score1, score2];
 };
 
-Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
+Fixture.setMatchResult = function (index, team1, team2, score1, score2, rank) {
 	var match = $('#fixture .match-' + index);
 	var scores = match.find('.score');
 	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
@@ -525,6 +525,12 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2) {
 		var trigrams = match.find('.trigram');
 		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
 		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
+	}
+	if (rank) {
+		if (rank.winners.indexOf(index) != -1)
+			scores.addClass('guess');
+		if (rank.exact.indexOf(index) != -1)
+			scores.addClass('exact');
 	}
 };
 
@@ -538,10 +544,11 @@ Fixture.load = function () {
 		Fixture.data[userId] = fixture;
 		$('.autofill').hide();
 		$('.reset').hide();
+		var rank = Fixture.evaluate(fixture);
 		for (var i = 0; i < 64; i++) {
 			var r = fixture.prediction[i];
 			if (!r || r.length != 4) continue;
-			Fixture.setMatchResult(i, r[0], r[1], r[2], r[3]);
+			Fixture.setMatchResult(i, r[0], r[1], r[2], r[3], rank);
 		}
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
@@ -698,7 +705,7 @@ Fixture.renderFriendRow = function (friend, row) {
 Fixture.renderDetails = function (fixture) {
 	if (!fixture || !fixture.prediction) return;
 	var stage = Fixture.renderSecondStage();
-	$(stage).find('.score').attr('disabled', '');
+	$(stage).find('.score').attr('disabled', 'disabled');
 	for (var i = 48; i < 64; i++) {
 		var r = fixture.prediction[i];
 		var match = stage.find('.match-' + i);
