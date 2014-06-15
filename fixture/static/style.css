@@ -20,10 +20,10 @@ body {
 	clear: both;
 	display: block;
 }
-.groups-stage .wrapper {
+.groups-stage .row {
 	float: left;
 }
-.groups-stage .wrapper:hover {
+.groups-stage .row:hover {
 	background: #dfe;
 }
 .second-stage .match {
@@ -87,18 +87,21 @@ body {
 	outline: none;
 }
 .score.past {
-	border: solid transparent 1px;
-	background-color: #f3f3f3;
-}
-.score.guess {
-	border: solid transparent 1px;
-	background-color: #ffc;
+	border-color: transparent;
+	background-color: transparent;
+	color: #333;
+	font-weight: bold;
 }
 .score.exact {
-	border: solid transparent 1px;
-	background-color: #9fc;
+	color: #6c9;
 }
-.details .score {
+.score.guess {
+	color: #fc0;
+}
+.score.fail {
+	color: #f66;
+}
+#details .score {
 	border: solid transparent 1px;
 }
 .groups-stage {
@@ -112,8 +115,6 @@ body {
 	width: 700px;
 	background: #fff;
 	padding: 0 8px;
-}
-#fixture .second-stage {
 	margin: 0 20px;
 }
 .location {
@@ -270,59 +271,12 @@ body {
 #status.error {
 	color: red;
 }
-/*
-#guess .box {
-	width: 150px;
-	float: left;
-	margin: 4px;
-	padding: 4px;
-	text-align: center;
-	background: #ddd;
-}
-#guess .sub {
-	padding: 8px;
-	color: white;
-	background-color: #6c9;
-	font-size: 10pt;
-}
-.guessdata {
-	margin: 8px 0 0 0;
-	padding: 8px;
-	background: white;
-}
-.guessdata span {
-	display: block;
-	text-align: center;
-}
-.guessdata span:last-child {
-	color: #ccc;
-	font-size: 10pt;
-}
-.guesses {
-	font-size: 24pt;
-	padding: 8px;
-}
-#guess .totalbox {
-	width: 126px;
-	height: 122px;
-	float: left;
-	margin: 4px;
-	padding: 16px;
-	font-size: 12pt;
-	color: white;
-	background-color: #6c9;
-	text-align: center;
-}
-#guess .total {
-	font-size: 36pt;
-	display: block;
-	padding: 20px;
-}
-*/
 #challenge .wrapper {
 	background: #ddd;
 	padding: 4px;
 	margin: 8px;
+	max-height: 600px;
+	overflow-y: scroll;
 }
 #howto .wrapper {
 	background: #fff;
@@ -357,7 +311,7 @@ body {
 #challenge .friend-name {
 	text-align: left;
 }
-#challenge .friend-name img {
+.friend-name img {
 	vertical-align: middle;
 	margin-right: 8px;
 }
@@ -371,7 +325,7 @@ body {
 .footer {
 	padding: 32px 0;
 }
-.footer a, #challenge a, .autofill a, .reset a, #howto a {
+.footer a, table a, #details p a, .autofill a, .reset a, #howto a {
 	text-decoration: none;
 	color: #396;
 }

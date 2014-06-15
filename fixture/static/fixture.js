@@ -113,27 +113,30 @@ Fixture.matches = [
 Fixture.bootstrap = function () {
 	// setup panels
 	$('.panel').hide();
+	var href = 'javascript:void(0);';
 	var save = newElem('a', {'class': 'action', 'id': 'save'});
-	save.attr('href', 'javascript:void(0);').text('Save');
+	save.attr('href', href).text('Save');
 	var anchor = newElem('a', {'class': 'action'}).text('Challenge them!');
 	anchor.click(Fixture.sendAppRequest);
 	var s = "Invite friends that haven't made a prediction yet: ";
 	var t = "I'm too lazy to fill in all the scores... ";
 	var u = 'Auto-complete some random results';
 	var v = 'Clear all results';
-	var autofill = newElem('a', {'href': 'javascript:void(0);'}).text(u);
+	var w = 'Go back';
+	var autofill = newElem('a', {'href': href}).text(u);
 	autofill.click(function () {
 		Fixture.random();
 		$('.autofill').hide();
 		$('.reset').show();
 	});
-	var clear = newElem('a', {'href': 'javascript:void(0);'}).text(v);
+	var clear = newElem('a', {'href': href}).text(v);
 	clear.click(function () {
 		$('.score').val('');
 		Fixture.update();
 		$('.autofill').show();
 		$('.reset').hide();
 	});
+	var back = newElem('a', {'class': 'back', 'href': href}).text(w);
 	$('#fixture').append(
 		newElem('p', {'class': 'controls'}).text(s).append(anchor),
 		Fixture.renderGroupsStage(),
@@ -145,8 +148,14 @@ Fixture.bootstrap = function () {
 	);
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
-	//$('#guess').append(Fixture.renderGuesses());
 	$('#challenge').append(Fixture.renderChallenge());
+	$('#details').append(
+		newElem('p', {'class': 'controls'}).append(back),
+		newElem('p', {'class': 'controls friend-name'}).text(' '),
+		Fixture.renderGroupsStage(),
+		Fixture.renderSecondStage(),
+		newElem('p', {'class': 'controls'}).append(back.clone())
+	);
 	$('body').append(newElem('span', {'id': 'tooltip'}).hide());
 
 	// event handlers
@@ -166,6 +175,12 @@ Fixture.bootstrap = function () {
 		$(e.target).addClass('tab-on');
 		$('.details').remove();
 	});
+	$('.back').click(function () {
+		$('#details').slideUp(400, function () {
+			$('body').scrollTop(0);
+			$('#challenge').slideDown();
+		});
+	});
 
 	// mobile hack
 	var re = new RegExp('Android|webOS|iPhone|iPad|iPod|'
@@ -177,8 +192,7 @@ Fixture.bootstrap = function () {
 
 Fixture.validateScore = function (score) {
 	var index = parseInt(score.data('match'));
-	var timediff = Fixture.getTimeToMatch(index);
-	if (timediff > 3600000) return;
+	if (!Fixture.isTimeUp(index)) return;
 	score.val(''); // TODO
 	var team = parseInt(score.data('team'));
 	var userId = (FB ? FB.getUserID() : null);
@@ -245,7 +259,7 @@ Fixture.renderMatch = function (index) {
 	score2.attr('tabindex', (index < 48 ? 1 : (index - 48) * 2 + 3));
 	score1.data('match', index).data('team', 0);
 	score2.data('match', index).data('team', 1);
-	if (Fixture.getTimeToMatch(index) < 3600000) {
+	if (Fixture.isTimeUp(index)) {
 		score1.attr('disabled', 'disabled').addClass('past');
 		score2.attr('disabled', 'disabled').addClass('past');
 	}
@@ -272,7 +286,7 @@ Fixture.renderMatch = function (index) {
 		newElem('br'),
 		m[2] + ', ' + m[3]
 	);
-	return (index < 48 ? newElem('a', {'class': 'wrapper'}).append(
+	return (index < 48 ? newElem('a', {'class': 'row'}).append(
 		loc, match.append(team1, scores, team2)
 	) : match.append(team1, scores, team2).hover(function () {
 		var round = (index < 48 + 8 ? 'Round of 16' :
@@ -515,9 +529,12 @@ Fixture.getMatchResult = function (index) {
 	return [team1, team2, score1, score2];
 };
 
-Fixture.setMatchResult = function (index, team1, team2, score1, score2, rank) {
-	var match = $('#fixture .match-' + index);
+Fixture.setMatchResult = function (index, team1, team2, score1, score2,
+		isFriend, rank) {
+	var panel = (isFriend ? '#details' : '#fixture');
+	var match = $(panel + ' .match-' + index);
 	var scores = match.find('.score');
+	scores.removeClass('exact').removeClass('guess').removeClass('fail');
 	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
 	if (parseInt(score2) == score2) $(scores.eq(1)).val(score2);
 	if (index >= 6 * 8) {
@@ -527,10 +544,16 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2, rank) {
 		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
 	}
 	if (rank) {
-		if (rank.winners.indexOf(index) != -1)
-			scores.addClass('guess');
-		if (rank.exact.indexOf(index) != -1)
-			scores.addClass('exact');
+		var isGuess = (rank.winners.indexOf(index) != -1);
+		var isExact = (rank.exact.indexOf(index) != -1);
+		if (isExact) scores.addClass('exact');
+		else if (isGuess) scores.addClass('guess');
+		var rs = Fixture.results;
+		if (!isGuess && !isExact && rs) {
+			if (index < rs.length && rs[index] != null) {
+				scores.addClass('fail');
+			}
+		}
 	}
 };
 
@@ -544,18 +567,27 @@ Fixture.load = function () {
 		Fixture.data[userId] = fixture;
 		$('.autofill').hide();
 		$('.reset').hide();
-		var rank = Fixture.evaluate(fixture);
-		for (var i = 0; i < 64; i++) {
-			var r = fixture.prediction[i];
-			if (!r || r.length != 4) continue;
-			Fixture.setMatchResult(i, r[0], r[1], r[2], r[3], rank);
-		}
+		Fixture.doLoad(fixture);
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
 	});
 	//FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
 	return true;
+};
+
+Fixture.doLoad = function (fixture, isFriend) {
+	$('#details .score').val('');
+	$('#details .second-stage .trigram').text('?');
+	$('#details .second-stage .flag').attr('src', 'static/img/null.png');
+	if (!fixture) return;
+	var rank = Fixture.evaluate(fixture);
+	for (var i = 0; i < 64; i++) {
+		var r = fixture.prediction[i];
+		if (!r || r.length != 4) continue;
+		Fixture.setMatchResult(i, r[0], r[1], r[2], r[3],
+				isFriend, rank);
+	}
 };
 
 Fixture.setLastSaved = function (timestamp) {
@@ -653,7 +685,6 @@ Fixture.renderFriends = function (response) {
 	FB.api('/v2.0/me?fields=name,picture', function (me) {
 		if (me) friends.unshift(me);
 		Fixture.renderFriendsHelper(friends);
-		FB.Canvas.setSize();
 	});
 };
 
@@ -681,15 +712,16 @@ Fixture.renderFriendRow = function (friend, row) {
 	anchor.click(function () {
 		Fixture.sendPredictionRequest(friend.id);
 	}).text('Ask your friend to make a prediction');
-	var details = newElem('a', {'href': 'javascript:void(0);'});
-	details.click(function () {
-		var id = $('.details').data('fbid');
-		$('.details').remove();
-		if (id == friend.id) return;
-		var fixture = Fixture.data[friend.id];
-		var td = Fixture.renderDetails(fixture);
-		td.find('.label').text(friend.name + "'s prediction");
-		$('#user-' + friend.id).after(td.data('fbid', friend.id));
+	var more = newElem('a', {'href': 'javascript:void(0);'});
+	more.click(function () {
+		$('#challenge').slideUp(400, function () {
+			Fixture.doLoad(Fixture.data[friend.id], true);
+			$('#details .friend-name').empty().append(
+				newElem('img', {'src': src}),
+				newElem('span').text(friend.name)
+			);
+			$('#details').slideDown();
+		});
 	}).text('More details');
 	return newElem('tr', {'id': 'user-' + friend.id}).append(
 		newElem('td', {'class': 'friend-name'}).append(
@@ -698,28 +730,8 @@ Fixture.renderFriendRow = function (friend, row) {
 		),
 		newElem('td', {'class': 'friend-pred'}).append(anchor),
 		newElem('td', {'class': 'total-points'}).text('0'),
-		newElem('td', {'class': 'more-details'}).append(details)
+		newElem('td', {'class': 'more-details'}).append(more)
 	);
-};
-
-Fixture.renderDetails = function (fixture) {
-	if (!fixture || !fixture.prediction) return;
-	var stage = Fixture.renderSecondStage();
-	$(stage).find('.score').attr('disabled', 'disabled');
-	for (var i = 48; i < 64; i++) {
-		var r = fixture.prediction[i];
-		var match = stage.find('.match-' + i);
-		if (!r || r.length != 4 || match.length < 1) continue;
-		var flags = match.find('.flag');
-		var trigrams = match.find('.trigram');
-		Fixture.setTeam(r[0], flags.eq(0), trigrams.eq(0));
-		Fixture.setTeam(r[1], flags.eq(1), trigrams.eq(1));
-		var scores = match.find('.score');
-		$(scores.eq(0)).val(r[2] != null ? r[2] : '');
-		$(scores.eq(1)).val(r[3] != null ? r[3] : '');
-	}
-	var td = newElem('td', {'class': 'details', 'colspan': '4'});
-	return td.append(stage);
 };
 
 Fixture.renderFriendStats = function (fixture, row) {
@@ -771,19 +783,22 @@ Fixture.evaluate = function (fixture) {
 	return rank;
 };
 
+Fixture.isTimeUp = function (index) {
+	return Fixture.getTimeToMatch(index) < 3600000;
+};
+
 Fixture.getTimeToMatch = function (index) {
 	var m = Fixture.matches[index];
 	var date = m[2];
 	var time = m[3];
-	var loc = m[4];
-	var m = (date.substr(3, 3) == 'Jul' ? 6 : 5);
-	var d = parseInt(date.substr(0, 2));
-	var h = parseInt(time.substr(0, 2));
-	var i = parseInt(time.substr(3, 2));
-	var tz = (["Cuiab\u00e1", "Manaus"].indexOf(loc) == -1 ? -3 : -4);
-	var datetime = new Date(2014, m, d, h + tz, i, 0, 0);
-	var now = new Date();
-	return (datetime.getTime() - now.getTime());
+	var tz = (["Cuiab\u00e1", "Manaus"].indexOf(m[4]) != -1 ? 4 : 3);
+	var monthIndex = (date.substr(3, 3) == 'Jul' ? 6 : 5);
+	var day = parseInt(date.substr(0, 2));
+	var hour = parseInt(time.substr(0, 2));
+	var min = parseInt(time.substr(3, 2));
+	var timestamp = Date.UTC(2014, monthIndex, day, hour + tz, min, 0, 0);
+	var now = new Date().getTime();
+	return (timestamp - now);
 };
 
 /*
