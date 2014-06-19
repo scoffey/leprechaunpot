@@ -41,7 +41,7 @@ var getCookie = function (key) {
 var Fixture = {};
 
 Fixture.results = (typeof latestFixtureResults != 'undefined'
-		? latestFixtureResults : null);
+		? latestFixtureResults : []);
 
 Fixture.matches = [
 	["BRA", "CRO", "12 Jun 2014", "17:00", "S\u00e3o Paulo"],
@@ -543,17 +543,31 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
 		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
 	}
-	if (rank) {
+	if (rank && index < Fixture.results.length && Fixture.results[index]) {
 		var isGuess = (rank.winners.indexOf(index) != -1);
 		var isExact = (rank.exact.indexOf(index) != -1);
 		if (isExact) scores.addClass('exact');
 		else if (isGuess) scores.addClass('guess');
-		var rs = Fixture.results;
-		if (!isGuess && !isExact && rs) {
-			if (index < rs.length && rs[index] != null) {
-				scores.addClass('fail');
-			}
-		}
+		else scores.addClass('fail');
+		var msg = (isExact ? 'Exact guess! +3 points' : (isGuess
+				? 'Result guess! +1 point'
+				: 'No points earned'));
+		var row = match.parent('.row');
+		row.hover(function () {
+			var r = Fixture.results[index];
+			row.find('.location').empty().append(
+				'Actual result: ' + r[2] + ' - ' + r[3],
+				newElem('br'),
+				msg
+			);
+		}, function () {
+			var m = Fixture.matches[index];
+			row.find('.location').empty().append(
+				'#' + (index + 1) + ': ' + m[4],
+				newElem('br'),
+				m[2] + ', ' + m[3]
+			);
+		});
 	}
 };
 
@@ -753,13 +767,11 @@ Fixture.renderFriendStats = function (fixture, row) {
 
 Fixture.evaluate = function (fixture) {
 	var rank = {'points': 0, 'qualifiers': [], 'exact': [], 'winners': []};
-	if (!fixture || !fixture.prediction || !Fixture.results) return rank;
+	if (!fixture || !fixture.prediction) return rank;
 	var ds = [3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 7];
-	var p = fixture.prediction;
-	var q = Fixture.results;
 	for (var i = 0; i < 64; i++) {
-		var r = p[i];
-		var s = q[i];
+		var r = fixture.prediction[i];
+		var s = Fixture.results[i];
 		if (!r || r.length != 4 || !s || s.length != 4) continue;
 		var exact = (r[2] == s[2] && r[3] == s[3] ? true : false);
 		var diffr = (r[3] - r[2]) / Math.max(1, Math.abs(r[3] - r[2]));

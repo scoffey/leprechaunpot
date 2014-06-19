@@ -96,10 +96,10 @@ body {
 	color: #6c9;
 }
 .score.guess {
-	color: #fc0;
+	color: #c90;
 }
 .score.fail {
-	color: #f66;
+	color: #c33;
 }
 #details .score {
 	border: solid transparent 1px;
