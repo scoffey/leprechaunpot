@@ -17,6 +17,7 @@ $(document).ready(function () {
 var onLogin = function (response) {
 	if (response.status === 'connected') {
 		// Logged into your app and Facebook.
+		Fixture.userId = FB.getUserID();
 		Fixture.load();
 		FB.Canvas.setSize();
 	} else if (response.status === 'not_authorized') {
@@ -38,7 +39,17 @@ var getCookie = function (key) {
         return (m ? decodeURIComponent(m[1]) : null);
 };
 
+var getParameterByName = function (name) {
+	//name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+	var results = regex.exec(location.search);
+	return (results == null ? ""
+		: decodeURIComponent(results[1].replace(/\+/g, " ")));
+}
+
 var Fixture = {};
+
+Fixture.userId = null;
 
 Fixture.results = (typeof latestFixtureResults != 'undefined'
 		? latestFixtureResults : []);
@@ -123,6 +134,7 @@ Fixture.bootstrap = function () {
 	var u = 'Auto-complete some random results';
 	var v = 'Clear all results';
 	var w = 'Go back';
+	/*
 	var autofill = newElem('a', {'href': href}).text(u);
 	autofill.click(function () {
 		Fixture.random();
@@ -136,24 +148,25 @@ Fixture.bootstrap = function () {
 		$('.autofill').show();
 		$('.reset').hide();
 	});
+	*/
 	var back = newElem('a', {'class': 'back', 'href': href}).text(w);
 	$('#fixture').append(
-		newElem('p', {'class': 'controls'}).text(s).append(anchor),
-		Fixture.renderGroupsStage(),
+		// newElem('p', {'class': 'controls'}).text(s).append(anchor),
 		Fixture.renderSecondStage(),
-		newElem('p', {'class': 'autofill'}).text(t).append(autofill),
-		newElem('p', {'class': 'reset'}).append(clear).hide(),
+		Fixture.renderGroupsStage(),
+		//newElem('p', {'class': 'autofill'}).text(t).append(autofill),
+		//newElem('p', {'class': 'reset'}).append(clear).hide(),
 		newElem('p', {'class': 'controls'}).append(save),
 		newElem('p', {'id': 'status'})
 	);
 	$('#fixture').show();
 	$('#fixture-tab').addClass('tab-on');
 	$('#challenge').append(Fixture.renderChallenge());
-	$('#details').append(
+	$('#details').hide().append(
 		newElem('p', {'class': 'controls'}).append(back),
 		newElem('p', {'class': 'controls friend-name'}).text(' '),
-		Fixture.renderGroupsStage(),
 		Fixture.renderSecondStage(),
+		Fixture.renderGroupsStage(),
 		newElem('p', {'class': 'controls'}).append(back.clone())
 	);
 	$('body').append(newElem('span', {'id': 'tooltip'}).hide());
@@ -173,7 +186,6 @@ Fixture.bootstrap = function () {
 		$('#' + e.target.id.split('-')[0]).show();
 		$('.tabs li a').removeClass('tab-on');
 		$(e.target).addClass('tab-on');
-		$('.details').remove();
 	});
 	$('.back').click(function () {
 		$('#details').slideUp(400, function () {
@@ -195,7 +207,7 @@ Fixture.validateScore = function (score) {
 	if (!Fixture.isTimeUp(index)) return;
 	score.val(''); // TODO
 	var team = parseInt(score.data('team'));
-	var userId = (FB ? FB.getUserID() : null);
+	var userId = Fixture.userId;
 	if (!isNaN(index) && Fixture.data && Fixture.data[userId]) {
 		var fixture = Fixture.data[userId];
 		var r = fixture.prediction[index];
@@ -463,7 +475,7 @@ Fixture.getQualifier = function (key) {
 };
 
 Fixture.submit = function () {
-	var userId = (FB ? FB.getUserID() : null);
+	var userId = Fixture.userId;
 	if (!userId) {
 		var message = 'Unknown user. Facebook login required.';
 		$('#status').text(message).addClass('error');
@@ -477,7 +489,7 @@ Fixture.submit = function () {
 		results.push(r);
 	}
 	var payload = {
-		'user_id': FB.getUserID(),
+		'user_id': Fixture.userId,
 		'prediction': JSON.stringify(results),
 		'signed_request': FB.getAuthResponse().signedRequest
 	};
@@ -533,27 +545,44 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 		isFriend, rank) {
 	var panel = (isFriend ? '#details' : '#fixture');
 	var match = $(panel + ' .match-' + index);
+	var flags = match.find('.flag');
+	var trigrams = match.find('.trigram');
 	var scores = match.find('.score');
-	scores.removeClass('exact').removeClass('guess').removeClass('fail');
-	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
-	if (parseInt(score2) == score2) $(scores.eq(1)).val(score2);
+
 	if (index >= 6 * 8) {
-		var flags = match.find('.flag');
-		var trigrams = match.find('.trigram');
 		Fixture.setTeam(team1, flags.eq(0), trigrams.eq(0));
 		Fixture.setTeam(team2, flags.eq(1), trigrams.eq(1));
 	}
+	if (isFriend) {
+		scores.removeClass('exact guess fail')
+		trigrams.removeClass('exact fail')
+	}
+	if (parseInt(score1) == score1) $(scores.eq(0)).val(score1);
+	if (parseInt(score2) == score2) $(scores.eq(1)).val(score2);
+
 	if (rank && index < Fixture.results.length && Fixture.results[index]) {
-		var isGuess = (rank.winners.indexOf(index) != -1);
-		var isExact = (rank.exact.indexOf(index) != -1);
-		if (isExact) scores.addClass('exact');
-		else if (isGuess) scores.addClass('guess');
-		else scores.addClass('fail');
+		var r = Fixture.results[index];
+		var s = rank.matches[index];
+		var isGuess = (s[0] != 0);
+		var isExact = (s[1] != 0);
+
+		if (index >= 6 * 8) {
+			var c = (team1 == r[0] ? 'exact' : 'fail');
+			$(trigrams.eq(0)).addClass(c);
+			var c = (team2 == r[1] ? 'exact' : 'fail');
+			$(trigrams.eq(1)).addClass(c);
+		}
+
+		if (r[2] != null && r[3] != null) {
+			if (isExact) scores.addClass('exact');
+			else if (isGuess) scores.addClass('guess');
+			else scores.addClass('fail');
+		}
 		var msg = (isExact ? 'Exact guess! +3 points' : (isGuess
 				? 'Result guess! +1 point'
 				: 'No points earned'));
 		var row = match.parent('.row');
-		row.hover(function () {
+		if (index < 6 * 8) row.hover(function () {
 			var r = Fixture.results[index];
 			row.find('.location').empty().append(
 				'Actual result: ' + r[2] + ' - ' + r[3],
@@ -572,21 +601,29 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 };
 
 Fixture.load = function () {
-	var userId = (FB ? FB.getUserID() : null);
+	var userId = Fixture.userId;
 	if (!userId) return false;
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
 		if (!fixture || !fixture.prediction) return;
 		if (!Fixture.data) Fixture.data = {};
 		Fixture.data[userId] = fixture;
-		$('.autofill').hide();
-		$('.reset').hide();
+		//$('.autofill').hide();
+		//$('.reset').hide();
 		Fixture.doLoad(fixture);
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
 	});
-	//FB.api('/v2.0/me/invitable_friends', Fixture.renderInvitableFriends);
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
+
+	var requestIds = getParameterByName('request_ids').split(',');
+	for (var i = 0; i < requestIds.length; i++) {
+		if (!$.isNumeric(requestIds[i])) continue;
+		var key = requestIds[i] + '_' + userId;
+		FB.api(key, 'delete', function (response) {
+			// console.log(response);
+		});
+	}
 	return true;
 };
 
@@ -613,10 +650,10 @@ Fixture.setLastSaved = function (timestamp) {
 };
 
 Fixture.delete = function () {
-	var userId = (FB ? FB.getUserID() : null);
+	var userId = Fixture.userId;
 	if (!userId) return false;
 	var payload = {
-		'user_id': FB.getUserID(),
+		'user_id': userId,
 		'signed_request': FB.getAuthResponse().signedRequest
 	};
 	var onSuccess = function (data) {
@@ -651,7 +688,7 @@ Fixture.sendAppRequest = function () {
 		//'filters': ['app_non_users'],
 		'message': t
 	}, function (response) {
-		console.log(response);
+		// console.log(response);
 	});
 };
 
@@ -662,7 +699,7 @@ Fixture.sendPredictionRequest = function (userId) {
 		'to': userId,
 		'message': t
 	}, function (response) {
-		console.log(response);
+		// console.log(response);
 	});
 };
 
@@ -766,31 +803,40 @@ Fixture.renderFriendStats = function (fixture, row) {
 };
 
 Fixture.evaluate = function (fixture) {
-	var rank = {'points': 0, 'qualifiers': [], 'exact': [], 'winners': []};
+	var rank = {'points': 0, 'matches': []};
 	if (!fixture || !fixture.prediction) return rank;
 	var ds = [3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 7];
 	for (var i = 0; i < 64; i++) {
+		rank.matches.push([0, 0, 0, 0]);
 		var r = fixture.prediction[i];
 		var s = Fixture.results[i];
 		if (!r || r.length != 4 || !s || s.length != 4) continue;
-		var exact = (r[2] == s[2] && r[3] == s[3] ? true : false);
+
+		var q1 = q2 = 0;
+		if (i >= 6 * 8 && i < 6 * 8 + 8) {
+			if (r[0] == s[0]) q1 = 2;
+			if (r[1] == s[1]) q2 = 2;
+		}
+		rank.matches[i] = [0, 0, q1, q2];
+		rank.points += q1 + q2;
+
+		if (s[2] == null || s[3] == null) continue;
 		var diffr = (r[3] - r[2]) / Math.max(1, Math.abs(r[3] - r[2]));
 		var diffs = (s[3] - s[2]) / Math.max(1, Math.abs(s[3] - s[2]));
-		var winner = (diffr == diffs ? true : false);
-		rank.points += (exact ? (i < 48 ? 2 : 3) : 0);
-		rank.points += (winner ? (i < 48 ? 1 : ds[i - 48]) : 0);
-		if (exact) rank.exact.push(i);
-		if (winner) rank.winners.push(i);
-		if (i >= 48 && i < 48 + 8) {
-			if (r[0] != null && r[0] == s[0]) {
-				rank.qualifiers.push(r[0]);
-				rank.points += 2;
-			}
-			if (r[1] != null && r[1] == s[1]) {
-				rank.qualifiers.push(r[1]);
-				rank.points += 2;
+		var w = e = 0;
+		if (r[2] == s[2] && r[3] == s[3]) { // exact guess
+			e = (i < 48 ? 2 : 3);
+		}
+		if (diffr == diffs) { // winner guess
+			if (i < 48) {
+				w = 1;
+			} else {
+				if (diffs < 0 && r[0] == s[0]) w = ds[i - 48];
+				if (diffs > 0 && r[1] == s[1]) w = ds[i - 48];
 			}
 		}
+		rank.matches[i] = [w, e, q1, q2];
+		rank.points += w + e;
 	}
 	return rank;
 };

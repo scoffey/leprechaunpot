@@ -92,14 +92,17 @@ body {
 	color: #333;
 	font-weight: bold;
 }
-.score.exact {
+.score.exact, .trigram.exact {
 	color: #6c9;
+	font-weight: bold;
 }
 .score.guess {
 	color: #c90;
+	font-weight: bold;
 }
-.score.fail {
+.score.fail, .trigram.fail {
 	color: #c33;
+	font-weight: bold;
 }
 #details .score {
 	border: solid transparent 1px;
