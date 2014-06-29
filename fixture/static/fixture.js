@@ -568,9 +568,9 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 
 		if (index >= 6 * 8) {
 			var c = (team1 == r[0] ? 'exact' : 'fail');
-			$(trigrams.eq(0)).addClass(c);
+			if (r[0] != null) $(trigrams.eq(0)).addClass(c);
 			var c = (team2 == r[1] ? 'exact' : 'fail');
-			$(trigrams.eq(1)).addClass(c);
+			if (r[1] != null) $(trigrams.eq(1)).addClass(c);
 		}
 
 		if (r[2] != null && r[3] != null) {
