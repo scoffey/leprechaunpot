@@ -51,8 +51,78 @@ var Fixture = {};
 
 Fixture.userId = null;
 
-Fixture.results = (typeof latestFixtureResults != 'undefined'
-		? latestFixtureResults : []);
+Fixture.data = (typeof userDataBase != 'undefined' ? userDataBase : {});
+
+Fixture.results = [
+	["BRA", "CRO", 3, 1],
+	["MEX", "CMR", 1, 0],
+	["ESP", "NED", 1, 5],
+	["CHI", "AUS", 3, 1],
+	["COL", "GRE", 3, 0],
+	["CIV", "JPN", 2, 1],
+	["URU", "CRC", 1, 3],
+	["ENG", "ITA", 1, 2],
+	["SUI", "ECU", 2, 1],
+	["FRA", "HON", 3, 0],
+	["ARG", "BIH", 2, 1],
+	["IRN", "NGA", 0, 0],
+	["GER", "POR", 4, 0],
+	["GHA", "USA", 1, 2],
+	["BEL", "ALG", 2, 1],
+	["RUS", "KOR", 1, 1],
+	["BRA", "MEX", 0, 0],
+	["CMR", "CRO", 0, 4],
+	["AUS", "NED", 2, 3],
+	["ESP", "CHI", 0, 2],
+	["COL", "CIV", 2, 1],
+	["JPN", "GRE", 0, 0],
+	["URU", "ENG", 2, 1],
+	["ITA", "CRC", 0, 1],
+	["SUI", "FRA", 2, 5],
+	["HON", "ECU", 1, 2],
+	["ARG", "IRN", 1, 0],
+	["NGA", "BIH", 1, 0],
+	["GER", "GHA", 2, 2],
+	["USA", "POR", 2, 2],
+	["BEL", "RUS", 1, 0],
+	["KOR", "ALG", 2, 4],
+	["CMR", "BRA", 1, 4],
+	["CRO", "MEX", 1, 3],
+	["AUS", "ESP", 0, 3],
+	["NED", "CHI", 2, 0],
+	["JPN", "COL", 1, 4],
+	["GRE", "CIV", 2, 1],
+	["ITA", "URU", 0, 1],
+	["CRC", "ENG", 0, 0],
+	["HON", "SUI", 0, 3],
+	["ECU", "FRA", 0, 0],
+	["NGA", "ARG", 2, 3],
+	["BIH", "IRN", 3, 1],
+	["USA", "GER", 0, 1],
+	["POR", "GHA", 2, 1],
+	["ALG", "RUS", 1, 1],
+	["KOR", "BEL", 0, 1],
+	
+	["BRA", "CHI", 2, 1],
+	["COL", "URU", 2, 0],
+	["NED", "MEX", 2, 1],
+	["CRC", "GRE", 2, 1],
+	["FRA", "NGA", 2, 0],
+	["GER", "ALG", 2, 1],
+	["ARG", "SUI", 1, 0],
+	["BEL", "USA", 2, 1],
+	
+	["BRA", "COL", 2, 1],
+	["FRA", "GER", 0, 1],
+	["NED", "CRC", 1, 0],
+	["ARG", "BEL", 1, 0],
+	
+	["BRA", "GER", 1, 7],
+	["NED", "ARG", 0, 1],
+	
+	["BRA", "NED", 0, 3],
+	["GER", "ARG", 1, 0]
+];
 
 Fixture.matches = [
 	["BRA", "CRO", "12 Jun 2014", "17:00", "S\u00e3o Paulo"],
@@ -156,7 +226,7 @@ Fixture.bootstrap = function () {
 		Fixture.renderGroupsStage(),
 		//newElem('p', {'class': 'autofill'}).text(t).append(autofill),
 		//newElem('p', {'class': 'reset'}).append(clear).hide(),
-		newElem('p', {'class': 'controls'}).append(save),
+		//newElem('p', {'class': 'controls'}).append(save),
 		newElem('p', {'id': 'status'})
 	);
 	$('#fixture').show();
@@ -180,7 +250,7 @@ Fixture.bootstrap = function () {
 		Fixture.validateScore(score);
 		Fixture.update();
 	});
-	$('#save').click(Fixture.submit);
+	//$('#save').click(Fixture.submit);
 	$('.tabs li a').click(function (e) {
 		$('.panel').hide();
 		$('#' + e.target.id.split('-')[0]).show();
@@ -475,6 +545,7 @@ Fixture.getQualifier = function (key) {
 };
 
 Fixture.submit = function () {
+	/*
 	var userId = Fixture.userId;
 	if (!userId) {
 		var message = 'Unknown user. Facebook login required.';
@@ -518,6 +589,7 @@ Fixture.submit = function () {
 		'error': onError
 	});
 	return results;
+	*/
 };
 
 Fixture.getMatchResult = function (index) {
@@ -568,9 +640,9 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 
 		if (index >= 6 * 8) {
 			var c = (team1 == r[0] ? 'exact' : 'fail');
-			$(trigrams.eq(0)).addClass(c);
+			if (r[0] != null) $(trigrams.eq(0)).addClass(c);
 			var c = (team2 == r[1] ? 'exact' : 'fail');
-			$(trigrams.eq(1)).addClass(c);
+			if (r[1] != null) $(trigrams.eq(1)).addClass(c);
 		}
 
 		if (r[2] != null && r[3] != null) {
@@ -603,6 +675,7 @@ Fixture.setMatchResult = function (index, team1, team2, score1, score2,
 Fixture.load = function () {
 	var userId = Fixture.userId;
 	if (!userId) return false;
+	/*
 	$.getJSON('/fixture/api?user_ids=' + userId, function (data) {
 		var fixture = data[userId];
 		if (!fixture || !fixture.prediction) return;
@@ -614,6 +687,13 @@ Fixture.load = function () {
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
 	});
+	*/
+	var fixture = Fixture.data[userId];
+	if (fixture) {
+		Fixture.doLoad(fixture);
+		Fixture.setLastSaved(fixture.timestamp);
+		Fixture.update();
+	}
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
 
 	var requestIds = getParameterByName('request_ids').split(',');
@@ -650,6 +730,7 @@ Fixture.setLastSaved = function (timestamp) {
 };
 
 Fixture.delete = function () {
+	/*
 	var userId = Fixture.userId;
 	if (!userId) return false;
 	var payload = {
@@ -666,6 +747,7 @@ Fixture.delete = function () {
 		'success': onSuccess
 	});
 	return true;
+	*/
 };
 
 Fixture.renderChallenge = function () {
@@ -743,9 +825,13 @@ Fixture.renderFriendsHelper = function (friends) {
 	var uids = [];
 	var rows = [];
 	for (var i = 0; i < friends.length; i++) {
-		uids.push(friends[i].id);
-		rows.push(Fixture.renderFriendRow(friends[i]));
+		var id = friends[i].id;
+		if (Fixture.data[id]) {
+			uids.push(id);
+			rows.push(Fixture.renderFriendRow(friends[i]));
+		}
 	}
+	/*
 	$.getJSON('/fixture/api?user_ids=' + uids.join(','), function (data) {
 		Fixture.data = data;
 		rows.sort(Fixture.rowCompare);
@@ -755,6 +841,13 @@ Fixture.renderFriendsHelper = function (friends) {
 		}
 		$('#leaderboard tbody').append(rows);
 	});
+	*/
+	rows.sort(Fixture.rowCompare);
+	for (var i = 0; i < rows.length; i++) {
+		var id = $(rows[i]).attr('id').split('-')[1];
+		Fixture.renderFriendStats(Fixture.data[id], rows[i]);
+	}
+	$('#leaderboard tbody').append(rows);
 };
 
 Fixture.renderFriendRow = function (friend, row) {
