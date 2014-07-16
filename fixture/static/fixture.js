@@ -10,8 +10,8 @@ $(document).ready(function () {
 		});
 		FB.getLoginStatus(onLogin);
 	});
-	$.getScript('https://apis.google.com/js/platform.js');
-	$.getScript('//platform.twitter.com/widgets.js');
+	//$.getScript('https://apis.google.com/js/platform.js');
+	//$.getScript('//platform.twitter.com/widgets.js');
 });
 
 var onLogin = function (response) {
@@ -220,18 +220,20 @@ Fixture.bootstrap = function () {
 	});
 	*/
 	var back = newElem('a', {'class': 'back', 'href': href}).text(w);
+	back.addClass('action');
 	$('#fixture').append(
 		// newElem('p', {'class': 'controls'}).text(s).append(anchor),
-		Fixture.renderSecondStage(),
-		Fixture.renderGroupsStage(),
+		//Fixture.renderSecondStage(),
+		//Fixture.renderGroupsStage(),
 		//newElem('p', {'class': 'autofill'}).text(t).append(autofill),
 		//newElem('p', {'class': 'reset'}).append(clear).hide(),
 		//newElem('p', {'class': 'controls'}).append(save),
-		newElem('p', {'id': 'status'})
+		//newElem('p', {'id': 'status'})
+		Fixture.renderChallenge('-global')
 	);
-	$('#fixture').show();
-	$('#fixture-tab').addClass('tab-on');
-	$('#challenge').append(Fixture.renderChallenge());
+	$('#challenge').show();
+	$('#challenge-tab').addClass('tab-on');
+	$('#challenge').append(Fixture.renderChallenge(''));
 	$('#details').hide().append(
 		newElem('p', {'class': 'controls'}).append(back),
 		newElem('p', {'class': 'controls friend-name'}).text(' '),
@@ -260,16 +262,21 @@ Fixture.bootstrap = function () {
 	$('.back').click(function () {
 		$('#details').slideUp(400, function () {
 			$('body').scrollTop(0);
-			$('#challenge').slideDown();
+			if ($('#fixture-tab').hasClass('tab-on'))
+				$('#fixture').slideDown();
+			if ($('#challenge-tab').hasClass('tab-on'))
+				$('#challenge').slideDown();
 		});
 	});
 
+	/*
 	// mobile hack
 	var re = new RegExp('Android|webOS|iPhone|iPad|iPod|'
 			+ 'BlackBerry|IEMobile|Opera Mini', 'i');
 	if (window.navigator && re.test(window.navigator.userAgent) ) {
 		$('.score').attr('type', 'number');
 	}
+	*/
 };
 
 Fixture.validateScore = function (score) {
@@ -688,13 +695,56 @@ Fixture.load = function () {
 		Fixture.update();
 	});
 	*/
+	/*
 	var fixture = Fixture.data[userId];
 	if (fixture) {
 		Fixture.doLoad(fixture);
 		Fixture.setLastSaved(fixture.timestamp);
 		Fixture.update();
 	}
+	*/
+
 	FB.api('/v2.0/me/friends?fields=name,picture', Fixture.renderFriends);
+
+	var onLoad = function (rows) {
+		rows.sort(Fixture.rowCompare);
+		for (var i = 0; i < rows.length; i++) {
+			var id = $(rows[i]).attr('id').split('-')[1];
+			Fixture.renderFriendStats(Fixture.data[id], rows[i]);
+		}
+		$('#leaderboard-global tbody').append(rows);
+	};
+	var rows = [];
+	var uids = [
+		"1037229780",
+		"1556820465",
+		"100002604420998",
+		"1185566086",
+		"702005268",
+		"644139729",
+		"1210843607",
+		"572169698",
+		"607746756",
+		"1558017095",
+		"1069504673",
+		"620876500",
+		"100003547311028",
+		"100008025731734",
+		"1423179652",
+		"100000005526870",
+		"100000049992875",
+		"564411285",
+		"1290256494",
+		"724438643"
+	];
+	var pending = uids.length;
+	for (var i = 0; i < uids.length; i++) {
+		var qs = '?fields=name,picture';
+		FB.api('/v2.0/' + uids[i] + qs, function (response) {
+			rows.push(Fixture.renderFriendRow(response));
+			if (--pending == 0) onLoad(rows);
+		});
+	}
 
 	var requestIds = getParameterByName('request_ids').split(',');
 	for (var i = 0; i < requestIds.length; i++) {
@@ -724,7 +774,7 @@ Fixture.doLoad = function (fixture, isFriend) {
 Fixture.setLastSaved = function (timestamp) {
 	if (timestamp) {
 		var date = new Date(1000 * timestamp);
-		$('#status').text('Last saved: ' + prettyDate(date));
+		$('#status').text('Last saved: ' + date); //prettyDate(date));
 		$('#status').removeClass('error');
 	}
 };
@@ -750,8 +800,8 @@ Fixture.delete = function () {
 	*/
 };
 
-Fixture.renderChallenge = function () {
-	var table = newElem('table', {'id': 'leaderboard'}).append(
+Fixture.renderChallenge = function (n) {
+	var table = newElem('table', {'id': 'leaderboard' + n}).append(
 		newElem('thead').append(newElem('tr').append(
 			newElem('th').text('Leaderboard'),
 			newElem('th').text('Final match prediction'),
@@ -852,13 +902,18 @@ Fixture.renderFriendsHelper = function (friends) {
 
 Fixture.renderFriendRow = function (friend, row) {
 	var src = (friend.picture ? friend.picture.data.url : '');
+	/*
 	var anchor = newElem('a', {'href': 'javascript:void(0);'});
 	anchor.click(function () {
 		Fixture.sendPredictionRequest(friend.id);
 	}).text('Ask your friend to make a prediction');
+	*/
+	var anchor = newElem('span').text('N/A');
 	var more = newElem('a', {'href': 'javascript:void(0);'});
 	more.click(function () {
-		$('#challenge').slideUp(400, function () {
+		var panel = $('#challenge-tab').hasClass('tab-on')
+				? '#challenge' : '#fixture';
+		$(panel).slideUp(400, function () {
 			Fixture.doLoad(Fixture.data[friend.id], true);
 			$('#details .friend-name').empty().append(
 				newElem('img', {'src': src}),
@@ -956,7 +1011,7 @@ Fixture.getTimeToMatch = function (index) {
  * JavaScript Pretty Date
  * Copyright (c) 2011 John Resig (ejohn.org)
  * Licensed under the MIT and GPL licenses.
- */
+ * //
 function prettyDate(date){
 	var diff = (((new Date()).getTime() - date.getTime()) / 1000),
 		day_diff = Math.floor(diff / 86400);
@@ -974,4 +1029,4 @@ function prettyDate(date){
 		day_diff < 7 && day_diff + " days ago" ||
 		day_diff < 31 && Math.ceil( day_diff / 7 ) + " weeks ago";
 }
-
+*/

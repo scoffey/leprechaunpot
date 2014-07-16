@@ -267,6 +267,8 @@ body {
 	background: #6c9;
 }
 #status {
+	clear: both;
+	padding: 24px 0;
 	text-align: center;
 	font-size: 10pt;
 	color: #999;
@@ -274,12 +276,10 @@ body {
 #status.error {
 	color: red;
 }
-#challenge .wrapper {
+.panel .wrapper {
 	background: #ddd;
 	padding: 4px;
 	margin: 8px;
-	max-height: 600px;
-	overflow-y: scroll;
 }
 #howto .wrapper {
 	background: #fff;
@@ -287,31 +287,31 @@ body {
 	margin: 16px;
 	font-size: 11pt;
 }
-#challenge .wrapper p {
+#leaderboard .wrapper p, #leaderboard-global .wrapper p {
 	text-align: center;
 }
-#challenge table {
+.panel table {
 	width: 100%;
 	font-size: 10pt;
 }
-#challenge thead {
+.panel thead {
 	background-color: #6c9;
 }
-#challenge tbody {
+.panel tbody {
 	background-color: white;
 }
-#challenge tr {
+.panel tr {
 	height: 50px;
 }
-#challenge tbody tr:hover {
+.panel tbody tr:hover {
 	background-color: #dfe;
 }
-#challenge td {
+.panel td {
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
-#challenge .friend-name {
+#leaderboard .friend-name, #leaderboard-global .friend-name {
 	text-align: left;
 }
 .friend-name img {
@@ -332,6 +332,7 @@ body {
 	text-decoration: none;
 	color: #396;
 }
+/*
 #tooltip {
       position: absolute;
       width: 220px;
@@ -364,4 +365,10 @@ body {
 }
 .tweet-button:hover {
 	background-position: 0 -21px;
+}
+*/
+#announcement {
+	background-color: #dfe;
+	margin: 16px;
+	padding: 4px 24px;
 }
