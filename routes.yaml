@@ -25,6 +25,12 @@ handlers:
 - url: /fixture/?.*
   script: fixture.controller.app
 
+- url: /elegilegi/static
+  static_dir: elegilegi/static
+
+- url: /elegilegi/?.*
+  script: elegilegi.controller.app
+
 - url: /.*
   script: main.app
 
