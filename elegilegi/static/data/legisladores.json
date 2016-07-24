@@ -1,0 +1,5270 @@
+{
+    "abdala-de-matarazzo-norma-amanda": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/nabdaladem_medium.jpg", 
+        "nombre": "ABDALA de MATARAZZO, Norma Amanda", 
+        "url": "http://www.diputados.gob.ar/diputados/nabdaladem/"
+    }, 
+    "abdala-josefina": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "ABDALA, Josefina"
+    }, 
+    "abrameto-jacobo-alberto": {
+        "bloque": "Radical Rionegrino", 
+        "camara": "Senado", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "ABRAMETO, Jacobo Alberto"
+    }, 
+    "accastello-eduardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "ACCASTELLO, Eduardo"
+    }, 
+    "acosta-de-ahumada-maria-julia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "ACOSTA de AHUMADA, Mar\u00eda Julia"
+    }, 
+    "acuna-hugo-rodolfo": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "ACU\u00d1A, Hugo Rodolfo"
+    }, 
+    "acuna-kunz-juan": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "ACU\u00d1A KUNZ, Juan"
+    }, 
+    "agosto-walter": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "AGOSTO, Walter"
+    }, 
+    "aguad-oscar-raul": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "C\u00f3rdoba", 
+            "lista": "UNI\u00d3N C\u00cdVICA RADICAL", 
+            "orden": 1
+        }, 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oaguad_medium.jpg", 
+        "nombre": "AGUAD, Oscar Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/oaguad/"
+    }, 
+    "aguero-elda-susana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "AGUERO, Elda Susana"
+    }, 
+    "aguilar-lino-walter": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/laguilar_medium.jpg", 
+        "nombre": "AGUILAR, Lino Walter", 
+        "url": "http://www.diputados.gob.ar/diputados/laguilar/"
+    }, 
+    "aguirre-de-soria-hilda": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "AGUIRRE de SORIA, Hilda"
+    }, 
+    "aguirre-hilda-clelia": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Rioja", 
+        "nombre": "AGUIRRE, Hilda Clelia"
+    }, 
+    "alarcon-maria-del-carmen": {
+        "bloque": "Movimiento Pampa Sur", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "ALARCON, Mar\u00eda del Carmen"
+    }, 
+    "albarracin-jorge-luis": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jalbarracin_medium.jpg", 
+        "nombre": "ALBARRACIN, Jorge Luis", 
+        "url": "http://www.diputados.gob.ar/diputados/jalbarracin/"
+    }, 
+    "albrieu-oscar-edmundo-nicolas": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oalbrieu_medium.jpg", 
+        "nombre": "ALBRIEU, Oscar Edmundo Nicolas", 
+        "url": "http://www.diputados.gob.ar/diputados/oalbrieu/"
+    }, 
+    "albrisi-cesar-alfredo": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "ALBRISI, C\u00e9sar Alfredo"
+    }, 
+    "alchouron-guillermo-eduardo": {
+        "bloque": "Acci\u00f3n por la Rep\u00fablica", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ALCHOURON, Guillermo Eduardo"
+    }, 
+    "alcuaz-horacio-alberto": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ALCUAZ, Horacio Alberto"
+    }, 
+    "alfaro-german-enrique": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "ALFARO, Germ\u00e1n Enrique"
+    }, 
+    "alfonsin-ricardo-luis": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE PROGRESISTA, CIVICO Y SOCIAL", 
+            "orden": 2
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ralfonsin_medium.jpg", 
+        "nombre": "ALFONSIN, Ricardo Luis", 
+        "url": "http://www.diputados.gob.ar/diputados/ralfonsin/"
+    }, 
+    "alizegui-antonio-anibal": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "ALIZEGUI, Antonio Anibal"
+    }, 
+    "alonso-gumersindo-federico": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/galonso_medium.jpg", 
+        "nombre": "ALONSO, Gumersindo Federico", 
+        "url": "http://www.diputados.gob.ar/diputados/galonso/"
+    }, 
+    "alonso-laura": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNION PRO", 
+            "orden": 3
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lalonso_medium.jpg", 
+        "nombre": "ALONSO, Laura", 
+        "url": "http://www.diputados.gob.ar/diputados/lalonso/"
+    }, 
+    "alonso-maria-luz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/malonso_medium.jpg", 
+        "nombre": "ALONSO, Mar\u00eda Luz", 
+        "url": "http://www.diputados.gob.ar/diputados/malonso/"
+    }, 
+    "alvarez-elsa-maria": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ealvarez_medium.jpg", 
+        "nombre": "ALVAREZ, Elsa Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/ealvarez/"
+    }, 
+    "alvarez-jorge-mario": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jmalvarez_medium.jpg", 
+        "nombre": "ALVAREZ, Jorge Mario", 
+        "url": "http://www.diputados.gob.ar/diputados/jmalvarez/"
+    }, 
+    "alvarez-juan-jose": {
+        "bloque": "Nucleo Unidad Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ALVAREZ, Juan Jos\u00e9"
+    }, 
+    "alvarez-rodriguez-cristina": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ALVAREZ RODRIGUEZ, Cristina"
+    }, 
+    "alvaro-hector-jorge": {
+        "bloque": "De la Concertaci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "ALVARO, H\u00e9ctor Jorge"
+    }, 
+    "amadeo-eduardo-pablo": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/eamadeo_medium.jpg", 
+        "nombre": "AMADEO, Eduardo Pablo", 
+        "url": "http://www.diputados.gob.ar/diputados/eamadeo/"
+    }, 
+    "amenta-marcelo-eduardo": {
+        "bloque": "Convergencia Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "AMENTA, Marcelo Eduardo"
+    }, 
+    "aragon-santiago": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ARAGON, Santiago"
+    }, 
+    "arbo-jose-ameghino": {
+        "bloque": "Liberal de Corrientes", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "ARBO, Jos\u00e9 Ameghino"
+    }, 
+    "ardid-mario-rolando": {
+        "bloque": "Partido Nuevo Contra la Corrupci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "ARDID, Mario Rolando"
+    }, 
+    "arena-celia-isabel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/carena_medium.jpg", 
+        "nombre": "ARENA, Celia Isabel", 
+        "url": "http://www.diputados.gob.ar/diputados/carena/"
+    }, 
+    "areta-maria-josefa": {
+        "bloque": "Frente de Todos", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "ARETA, Mar\u00eda Josefa"
+    }, 
+    "arguello-jorge": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "ARG\u00dcELLO, Jorge"
+    }, 
+    "arguello-octavio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ARG\u00dcELLO, Octavio"
+    }, 
+    "argumedo-alcira-susana": {
+        "bloque": "Proyecto Sur", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNEN", 
+            "orden": 5
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aargumedo_medium.jpg", 
+        "nombre": "ARGUMEDO, Alcira Susana", 
+        "url": "http://www.diputados.gob.ar/diputados/aargumedo/"
+    }, 
+    "arnold-eduardo-ariel": {
+        "bloque": "No Integra Bloque", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "ARNOLD, Eduardo Ariel"
+    }, 
+    "arregui-andres-roberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aarregui_medium.jpg", 
+        "nombre": "ARREGUI, Andr\u00e9s Roberto", 
+        "url": "http://www.diputados.gob.ar/diputados/aarregui/"
+    }, 
+    "arriaga-julio-esteban": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "ARRIAGA, Julio Esteban"
+    }, 
+    "artaza-eugenio-justiniano": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Corrientes", 
+            "lista": "ALIANZA CAMBIO POPULAR", 
+            "orden": 1
+        }, 
+        "distrito": "Corrientes", 
+        "nombre": "ARTAZA, Eugenio Justiniano"
+    }, 
+    "artola-isabel-amanda": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ARTOLA, Isabel Amanda"
+    }, 
+    "asef-daniel-edgardo": {
+        "bloque": "Nucleo Unidad Peronista", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "ASEF, Daniel Edgardo"
+    }, 
+    "aspiazu-lucio-bernardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/laspiazu_medium.jpg", 
+        "nombre": "ASPIAZU, Lucio Bernardo", 
+        "url": "http://www.diputados.gob.ar/diputados/laspiazu/"
+    }, 
+    "asseff-alberto-emilio": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aasseff_medium.jpg", 
+        "nombre": "ASSEFF, Alberto Emilio", 
+        "url": "http://www.diputados.gob.ar/diputados/aasseff/"
+    }, 
+    "atanasof-alfredo-nestor": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "UNIDOS POR LA LIBERTAD Y EL TRABAJO", 
+            "orden": 7
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aatanasof_medium.jpg", 
+        "nombre": "ATANASOF, Alfredo N\u00e9stor", 
+        "url": "http://www.diputados.gob.ar/diputados/aatanasof/"
+    }, 
+    "augsburger-silvia": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "AUGSBURGER, Silvia"
+    }, 
+    "avoscan-herman-horacio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/havoscan_medium.jpg", 
+        "nombre": "AVOSCAN, Herman Horacio", 
+        "url": "http://www.diputados.gob.ar/diputados/havoscan/"
+    }, 
+    "azcoiti-pedro-jose": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "AZCOITI, Pedro Jos\u00e9"
+    }, 
+    "baigorri-guillermo-francisco": {
+        "bloque": "Vida y Compromiso", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "nombre": "BAIGORRI, Guillermo Francisco"
+    }, 
+    "baladron-manuel-justo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "BALADRON, Manuel Justo"
+    }, 
+    "balcedo-maria-ester": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbalcedo_medium.jpg", 
+        "nombre": "BALCEDO, Mar\u00eda Ester", 
+        "url": "http://www.diputados.gob.ar/diputados/mbalcedo/"
+    }, 
+    "baldata-griselda-angela": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "BALDATA, Griselda Angela"
+    }, 
+    "banicevich-jorge-esteban": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "BANICEVICH, Jorge Esteban"
+    }, 
+    "bar-graciela-yolanda": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "BAR, Graciela Yolanda"
+    }, 
+    "baragiola-vilma-rosana": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BARAGIOLA, Vilma Rosana"
+    }, 
+    "barbieri-mario-leandro": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbarbieri_medium.jpg", 
+        "nombre": "BARBIERI, Mario Leandro", 
+        "url": "http://www.diputados.gob.ar/diputados/mbarbieri/"
+    }, 
+    "barchetta-omar-segundo": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/obarchetta_medium.jpg", 
+        "nombre": "BARCHETTA, Omar Segundo", 
+        "url": "http://www.diputados.gob.ar/diputados/obarchetta/"
+    }, 
+    "barrandeguy-raul-enrique": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rbarrandeguy_medium.jpg", 
+        "nombre": "BARRANDEGUY, Ra\u00fal Enrique", 
+        "url": "http://www.diputados.gob.ar/diputados/rbarrandeguy/"
+    }, 
+    "barrionuevo-jose-luis": {
+        "bloque": "Nacional Sindical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Catamarca", 
+            "lista": "FRENTE TERCERA POSICION - UNIDAD CATAMARQUE\u00d1A", 
+            "orden": 1
+        }, 
+        "distrito": "Catamarca", 
+        "nombre": "BARRIONUEVO, Jos\u00e9 Luis"
+    }, 
+    "barrionuevo-walter-basilio": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Jujuy", 
+        "nombre": "BARRIONUEVO, Walter Basilio"
+    }, 
+    "barrios-miguel-angel": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "BARRIOS, Miguel Angel"
+    }, 
+    "bartolucci-gilda-liliana": {
+        "bloque": "Frente Justicia Uni\u00f3n y Libertad", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "BARTOLUCCI, Gilda Liliana"
+    }, 
+    "basteiro-sergio-ariel": {
+        "bloque": "Nuevo Encuentro Popular y Solidario", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BASTEIRO, Sergio Ariel"
+    }, 
+    "basterra-luis-eugenio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lbasterra_medium.jpg", 
+        "nombre": "BASTERRA, Luis Eugenio", 
+        "url": "http://www.diputados.gob.ar/diputados/lbasterra/"
+    }, 
+    "basualdo-roberto-gustavo": {
+        "bloque": "Producci\u00f3n y Trabajo", 
+        "camara": "Senado", 
+        "distrito": "San Juan", 
+        "nombre": "BASUALDO, Roberto Gustavo"
+    }, 
+    "bayonzo-liliana-amelia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "BAYONZO, Liliana Amelia"
+    }, 
+    "bazze-miguel-angel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbazze_medium.jpg", 
+        "nombre": "BAZZE, Miguel \u00c1ngel", 
+        "url": "http://www.diputados.gob.ar/diputados/mbazze/"
+    }, 
+    "beccani-alberto-juan": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "BECCANI, Alberto Juan"
+    }, 
+    "bedano-nora-esther": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/nbedano_medium.jpg", 
+        "nombre": "BEDANO, Nora Esther", 
+        "url": "http://www.diputados.gob.ar/diputados/nbedano/"
+    }, 
+    "bejarano-mario-fernando": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "BEJARANO, Mario Fernando"
+    }, 
+    "belous-nelida": {
+        "bloque": "Bloque Social Patag\u00f3nico", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "BELOUS, N\u00e9lida"
+    }, 
+    "benas-veronica-claudia": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "BENAS, Ver\u00f3nica Claudia"
+    }, 
+    "benedetti-atilio-francisco-salvador": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "UNION CIVICA RADICAL", 
+            "orden": 1
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/abenedetti_medium.jpg", 
+        "nombre": "BENEDETTI, Atilio Francisco Salvador", 
+        "url": "http://www.diputados.gob.ar/diputados/abenedetti/"
+    }, 
+    "bermejo-rolando-adolfo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "BERMEJO, Rolando Adolfo"
+    }, 
+    "bernal-maria-eugenia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbernal_medium.jpg", 
+        "nombre": "BERNAL, Mar\u00eda Eugenia", 
+        "url": "http://www.diputados.gob.ar/diputados/mbernal/"
+    }, 
+    "bernazza-claudia-alicia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BERNAZZA, Claudia Alicia"
+    }, 
+    "berraute-ana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "BERRAUTE, Ana"
+    }, 
+    "bertol-paula-maria": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/pbertol_medium.jpg", 
+        "nombre": "BERTOL, Paula Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/pbertol/"
+    }, 
+    "bertone-rosana-andrea": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Tierra del Fuego", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Tierra del Fuego", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rbertone_medium.jpg", 
+        "nombre": "BERTONE, Rosana Andrea", 
+        "url": "http://www.diputados.gob.ar/diputados/rbertone/"
+    }, 
+    "beveraggi-margarita-beatriz": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "BEVERAGGI, Margarita Beatriz"
+    }, 
+    "biancalani-fabio-dario": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "BIANCALANI, Fabio Dar\u00edo"
+    }, 
+    "bianchi-ivana-maria": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ibianchi_medium.jpg", 
+        "nombre": "BIANCHI, Ivana Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/ibianchi/"
+    }, 
+    "bianchi-maria-del-carmen": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbianchi_medium.jpg", 
+        "nombre": "BIANCHI, Mar\u00eda del Carmen", 
+        "url": "http://www.diputados.gob.ar/diputados/mbianchi/"
+    }, 
+    "bianchi-silvestre-marcela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BIANCHI SILVESTRE, Marcela"
+    }, 
+    "bianco-lia-fabiola": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "BIANCO, L\u00eda Fabiola"
+    }, 
+    "bidegain-gloria-mercedes": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gbidegain_medium.jpg", 
+        "nombre": "BIDEGAIN, Gloria Mercedes", 
+        "url": "http://www.diputados.gob.ar/diputados/gbidegain/"
+    }, 
+    "biella-calvet-bernardo-jose": {
+        "bloque": "U.De.So. Salta", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Salta", 
+            "lista": "UNION POR LA REPUBLICA - FRENTE POR LA JUSTICIA", 
+            "orden": 1
+        }, 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/bbiellac_medium.jpg", 
+        "nombre": "BIELLA CALVET, Bernardo Jos\u00e9", 
+        "url": "http://www.diputados.gob.ar/diputados/bbiellac/"
+    }, 
+    "bielsa-rafael": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "BIELSA, Rafael"
+    }, 
+    "binner-hermes": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Santa Fe", 
+            "lista": "FRENTE PROGRESISTA CIVICO Y SOCIAL", 
+            "orden": 1
+        }, 
+        "distrito": "Santa Fe", 
+        "nombre": "BINNER, Hermes"
+    }, 
+    "bisutti-delia-beatriz": {
+        "bloque": "Solidaridad e Igualdad (SI)", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "BISUTTI, Delia Beatriz"
+    }, 
+    "blanco-de-peralta-blanca": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/bblanco_medium.jpg", 
+        "nombre": "BLANCO de PERALTA, Blanca", 
+        "url": "http://www.diputados.gob.ar/diputados/bblanco/"
+    }, 
+    "blas-ines-imelda": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "BLAS, In\u00e9s Imelda"
+    }, 
+    "bonacorsi-juan-carlos": {
+        "bloque": "Partido Unidad Federalista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BONACORSI, Juan Carlos"
+    }, 
+    "bonasso-miguel": {
+        "bloque": "Di\u00e1logo por Buenos Aires", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "BONASSO, Miguel"
+    }, 
+    "bongiorno-maria-jose": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "BONGIORNO, Mar\u00eda Jos\u00e9"
+    }, 
+    "borello-marta-teresita": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "BORELLO, Marta Teresita"
+    }, 
+    "borsani-luis-gustavo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "BORSANI, Luis Gustavo"
+    }, 
+    "bortolozzi-adriana-raquel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Formosa", 
+        "nombre": "BORTOLOZZI, Adriana Raquel"
+    }, 
+    "bosch-de-sartori-irene-miriam": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "BOSCH de SARTORI, Irene Miriam"
+    }, 
+    "brawer-mara": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mbrawer_medium.jpg", 
+        "nombre": "BRAWER, Mara", 
+        "url": "http://www.diputados.gob.ar/diputados/mbrawer/"
+    }, 
+    "brillo-jose-ricardo": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jbrillo_medium.jpg", 
+        "nombre": "BRILLO, Jos\u00e9 Ricardo", 
+        "url": "http://www.diputados.gob.ar/diputados/jbrillo/"
+    }, 
+    "brizuela-y-doria-de-cara-olga-ines": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/obrizueladc_medium.jpg", 
+        "nombre": "BRIZUELA Y DORIA DE CARA, Olga In\u00e9s", 
+        "url": "http://www.diputados.gob.ar/diputados/obrizueladc/"
+    }, 
+    "bromberg-isaac-benjamin": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ibromberg_medium.jpg", 
+        "nombre": "BROMBERG, Isaac Benjam\u00edn", 
+        "url": "http://www.diputados.gob.ar/diputados/ibromberg/"
+    }, 
+    "brown-carlos-ramon": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cbrown_medium.jpg", 
+        "nombre": "BROWN, Carlos Ram\u00f3n", 
+        "url": "http://www.diputados.gob.ar/diputados/cbrown/"
+    }, 
+    "brue-daniel-agustin": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Santiago del Estero", 
+            "lista": "FRENTE CIVICO POR SANTIAGO", 
+            "orden": 1
+        }, 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dbrue_medium.jpg", 
+        "nombre": "BRUE, Daniel Agust\u00edn", 
+        "url": "http://www.diputados.gob.ar/diputados/dbrue/"
+    }, 
+    "bullrich-esteban": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "BULLRICH, Esteban"
+    }, 
+    "bullrich-patricia": {
+        "bloque": "Uni\u00f3n por Todos", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/pbullrich_medium.jpg", 
+        "nombre": "BULLRICH, Patricia", 
+        "url": "http://www.diputados.gob.ar/diputados/pbullrich/"
+    }, 
+    "buryaile-ricardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Formosa", 
+            "lista": "FRENTE AMPLIO FORMOSE\u00d1O", 
+            "orden": 1
+        }, 
+        "distrito": "Formosa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rburyaile_medium.jpg", 
+        "nombre": "BURYAILE, Ricardo", 
+        "url": "http://www.diputados.gob.ar/diputados/rburyaile/"
+    }, 
+    "burzaco-eugenio": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "BURZACO, Eugenio"
+    }, 
+    "bussi-ricardo-argentino": {
+        "bloque": "Fuerza Republicana", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Tucum\u00e1n", 
+            "lista": "FUERZA REPUBLICANA", 
+            "orden": 1
+        }, 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "BUSSI, Ricardo Argentino"
+    }, 
+    "cabanchik-samuel-manuel": {
+        "bloque": "Proyecto Buenos Aires Federal", 
+        "camara": "Senado", 
+        "distrito": "CABA", 
+        "nombre": "CABANCHIK, Samuel Manuel"
+    }, 
+    "cabral-salvador": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "CABRAL, Salvador"
+    }, 
+    "calcagno-eric": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CALCAGNO, Eric"
+    }, 
+    "calcagno-y-maillman-eric": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ecalcagno_medium.jpg", 
+        "nombre": "CALCAGNO Y MAILLMAN, Eric", 
+        "url": "http://www.diputados.gob.ar/diputados/ecalcagno/"
+    }, 
+    "calchaqui-mariel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "CALCHAQUI, Mariel"
+    }, 
+    "calza-nelio-higinio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "CALZA, Nelio Higinio"
+    }, 
+    "camano-dante": {
+        "bloque": "Nacional Sindical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CAMA\u00d1O, Dante"
+    }, 
+    "camano-eduardo-oscar": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CAMA\u00d1O, Eduardo Oscar"
+    }, 
+    "camano-graciela": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gcamano_medium.jpg", 
+        "nombre": "CAMA\u00d1O, Graciela", 
+        "url": "http://www.diputados.gob.ar/diputados/gcamano/"
+    }, 
+    "cambareri-fortunato-rafael": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "CAMBARERI, Fortunato Rafael"
+    }, 
+    "canela-susana-mercedes": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "CANELA, Susana Mercedes"
+    }, 
+    "canevarolo-dante-omar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "CANEVAROLO, Dante Omar"
+    }, 
+    "cano-jose-manuel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Tucum\u00e1n", 
+            "lista": "FRENTE ACUERDO CIVICO Y SOCIAL", 
+            "orden": 1
+        }, 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "CANO, Jos\u00e9 Manuel"
+    }, 
+    "cantero-gutierrez-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "CANTERO GUTIERREZ, Alberto"
+    }, 
+    "canteros-gustavo-jesus-adolfo": {
+        "bloque": "Proyecto Corrientes", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "CANTEROS, Gustavo Jes\u00fas Adolfo"
+    }, 
+    "cantos-jose-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "CANTOS, Jos\u00e9 Mar\u00eda"
+    }, 
+    "caparros-mabel-luisa": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "CAPARROS, Mabel Luisa"
+    }, 
+    "capitanich-jorge-milton": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "CAPITANICH, Jorge Milton"
+    }, 
+    "capos-liliana-delia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "CAPOS, Liliana Delia"
+    }, 
+    "carca-elisa-beatriz": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CARCA, Elisa Beatriz"
+    }, 
+    "cardelli-jorge-justo": {
+        "bloque": "Proyecto Sur", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jcardelli_medium.jpg", 
+        "nombre": "CARDELLI, Jorge Justo", 
+        "url": "http://www.diputados.gob.ar/diputados/jcardelli/"
+    }, 
+    "carlotto-remo-gerardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 5
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rcarlotto_medium.jpg", 
+        "nombre": "CARLOTTO, Remo Gerardo", 
+        "url": "http://www.diputados.gob.ar/diputados/rcarlotto/"
+    }, 
+    "carmona-guillermo-ramon": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gcarmona_medium.jpg", 
+        "nombre": "CARMONA, Guillermo Ram\u00f3n", 
+        "url": "http://www.diputados.gob.ar/diputados/gcarmona/"
+    }, 
+    "carmona-maria-araceli": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "CARMONA, Mar\u00eda Araceli"
+    }, 
+    "carranza-carlos-alberto": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ccarranza_medium.jpg", 
+        "nombre": "CARRANZA, Carlos Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/ccarranza/"
+    }, 
+    "carrillo-maria-del-carmen": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mcarrillo_medium.jpg", 
+        "nombre": "CARRILLO, Mar\u00eda Del Carmen", 
+        "url": "http://www.diputados.gob.ar/diputados/mcarrillo/"
+    }, 
+    "carrio-elisa-maria": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNEN", 
+            "orden": 1
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ecarrio_medium.jpg", 
+        "nombre": "CARRIO, Elisa Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/ecarrio/"
+    }, 
+    "casanas-juan-francisco": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Tucum\u00e1n", 
+            "lista": "FRENTE ACUERDO CIVICO Y SOCIAL", 
+            "orden": 3
+        }, 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jcasanas_medium.jpg", 
+        "nombre": "CASA\u00d1AS, Juan Francisco", 
+        "url": "http://www.diputados.gob.ar/diputados/jcasanas/"
+    }, 
+    "caselles-graciela-maria": {
+        "bloque": "Frente para la Victoria - Partido Bloqui", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gcaselles_medium.jpg", 
+        "nombre": "CASELLES, Graciela Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/gcaselles/"
+    }, 
+    "caserio-carlos-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "C\u00f3rdoba", 
+            "lista": "ALIANZA UNI\u00d3N POR C\u00d3RDOBA", 
+            "orden": 3
+        }, 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "CASERIO, Carlos Alberto"
+    }, 
+    "cassese-marina": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CASSESE, Marina"
+    }, 
+    "castaldo-norah-susana": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "CASTALDO, Norah Susana"
+    }, 
+    "castanon-hugo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hcastanon_medium.jpg", 
+        "nombre": "CASTA\u00d1ON, Hugo", 
+        "url": "http://www.diputados.gob.ar/diputados/hcastanon/"
+    }, 
+    "castillo-oscar-anibal": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "CASTILLO, Oscar An\u00edbal"
+    }, 
+    "castro-maria-elisa": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "CASTRO, Mar\u00eda Elisa"
+    }, 
+    "catalan-magni-julio-cesar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Tierra del Fuego", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Tierra del Fuego", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jcatalanm_medium.jpg", 
+        "nombre": "CATALAN MAGNI, Julio C\u00e9sar", 
+        "url": "http://www.diputados.gob.ar/diputados/jcatalanm/"
+    }, 
+    "cavadini-eduardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "CAVADINI, Eduardo"
+    }, 
+    "cecco-carlos-jaime": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "CECCO, Carlos Jaime"
+    }, 
+    "cejas-jorge-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jcejas_medium.jpg", 
+        "nombre": "CEJAS, Jorge Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/jcejas/"
+    }, 
+    "cesar-nora": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CESAR, Nora"
+    }, 
+    "chemes-jorge-omar": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jchemes_medium.jpg", 
+        "nombre": "CHEMES, Jorge Omar", 
+        "url": "http://www.diputados.gob.ar/diputados/jchemes/"
+    }, 
+    "chiacchio-nora-alicia": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "CHIACCHIO, Nora Alicia"
+    }, 
+    "chieno-maria-elena": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Corrientes", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mchieno_medium.jpg", 
+        "nombre": "CHIENO, Mar\u00eda Elena", 
+        "url": "http://www.diputados.gob.ar/diputados/mchieno/"
+    }, 
+    "chiquichano-rosa-laudelina": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "CHIQUICHANO, Rosa Laudelina"
+    }, 
+    "chironi-fernando-gustavo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "CHIRONI, Fernando Gustavo"
+    }, 
+    "ciampini-jose-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aciampini_medium.jpg", 
+        "nombre": "CIAMPINI, Jos\u00e9 Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/aciampini/"
+    }, 
+    "ciciliani-alicia-mabel": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Santa Fe", 
+            "lista": "FRENTE PROGRESISTA CIVICO Y SOCIAL", 
+            "orden": 3
+        }, 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aciciliani_medium.jpg", 
+        "nombre": "CICILIANI, Alicia Mabel", 
+        "url": "http://www.diputados.gob.ar/diputados/aciciliani/"
+    }, 
+    "cigogna-luis-francisco-jorge": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 13
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lcigogna_medium.jpg", 
+        "nombre": "CIGOGNA, Luis Francisco Jorge", 
+        "url": "http://www.diputados.gob.ar/diputados/lcigogna/"
+    }, 
+    "cimadevilla-mario-jorge": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Chubut", 
+        "nombre": "CIMADEVILLA, Mario Jorge"
+    }, 
+    "cittadini-stella": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "CITTADINI, Stella"
+    }, 
+    "cleri-marcos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mcleri_medium.jpg", 
+        "nombre": "CLERI, Marcos", 
+        "url": "http://www.diputados.gob.ar/diputados/mcleri/"
+    }, 
+    "closs-maurice-fabian": {
+        "bloque": "Renovador de la Concordia", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "CLOSS, Maurice Fabi\u00e1n"
+    }, 
+    "coirini-adriana-elsa": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "COIRINI, Adriana Elsa"
+    }, 
+    "colazo-mario-jorge": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Tierra del Fuego", 
+            "lista": "POPULAR", 
+            "orden": 1
+        }, 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "COLAZO, Mario Jorge"
+    }, 
+    "collantes-genaro": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "COLLANTES, Genaro"
+    }, 
+    "colombi-ricardo": {
+        "bloque": "Frente de Todos", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "COLOMBI, Ricardo"
+    }, 
+    "colombo-de-acevedo-maria-teresa": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "COLOMBO DE ACEVEDO, Mar\u00eda Teresa"
+    }, 
+    "comelli-alicia-marcela": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/acomelli_medium.jpg", 
+        "nombre": "COMELLI, Alicia Marcela", 
+        "url": "http://www.diputados.gob.ar/diputados/acomelli/"
+    }, 
+    "comi-carlos-marcelo": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ccomi_medium.jpg", 
+        "nombre": "COMI, Carlos Marcelo", 
+        "url": "http://www.diputados.gob.ar/diputados/ccomi/"
+    }, 
+    "conti-diana-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 9
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dconti_medium.jpg", 
+        "nombre": "CONTI, Diana Beatriz", 
+        "url": "http://www.diputados.gob.ar/diputados/dconti/"
+    }, 
+    "contrera-monica-graciela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mcontrera_medium.jpg", 
+        "nombre": "CONTRERA, M\u00f3nica Graciela", 
+        "url": "http://www.diputados.gob.ar/diputados/mcontrera/"
+    }, 
+    "cordoba-jose-manuel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "CORDOBA, Jos\u00e9 Manuel"
+    }, 
+    "cordoba-stella-maris": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/scordoba_medium.jpg", 
+        "nombre": "CORDOBA, Stella Maris", 
+        "url": "http://www.diputados.gob.ar/diputados/scordoba/"
+    }, 
+    "cornejo-alfredo-victor": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "CORNEJO, Alfredo Victor"
+    }, 
+    "corpacci-de-mercado-lucia-b": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "CORPACCI de MERCADO, Lucia B ."
+    }, 
+    "corradi-de-beltran-ana-maria": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "CORRADI DE BELTR\u00c1N, Ana Mar\u00eda"
+    }, 
+    "corregido-elena-mercedes": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "CORREGIDO, Elena Mercedes"
+    }, 
+    "cortina-roy": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rcortina_medium.jpg", 
+        "nombre": "CORTINA, Roy", 
+        "url": "http://www.diputados.gob.ar/diputados/rcortina/"
+    }, 
+    "coscia-jorge-edmundo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "COSCIA, Jorge Edmundo"
+    }, 
+    "costa-eduardo-raul": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Santa Cruz", 
+            "lista": "UNION PARA VIVIR MEJOR", 
+            "orden": 1
+        }, 
+        "distrito": "Santa Cruz", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ecosta_medium.jpg", 
+        "nombre": "COSTA, Eduardo Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/ecosta/"
+    }, 
+    "costa-roberto-raul": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "COSTA, Roberto Ra\u00fal"
+    }, 
+    "cremer-de-busti-maria-cristina": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "ALIANZA UNION POR ENTRE RIOS", 
+            "orden": 1
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mcremer_medium.jpg", 
+        "nombre": "CREMER de BUSTI, Mar\u00eda Cristina", 
+        "url": "http://www.diputados.gob.ar/diputados/mcremer/"
+    }, 
+    "cuccovillo-ricardo-oscar": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rcuccovillo_medium.jpg", 
+        "nombre": "CUCCOVILLO, Ricardo Oscar", 
+        "url": "http://www.diputados.gob.ar/diputados/rcuccovillo/"
+    }, 
+    "cuevas-hugo-oscar": {
+        "bloque": "De la Concertaci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "CUEVAS, Hugo Oscar"
+    }, 
+    "curletti-miriam-belen": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "CURLETTI, Miriam Bel\u00e9n"
+    }, 
+    "currilen-oscar-ruben": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ocurrilen_medium.jpg", 
+        "nombre": "CURRILEN, Oscar Rub\u00e9n", 
+        "url": "http://www.diputados.gob.ar/diputados/ocurrilen/"
+    }, 
+    "cusinato-jose-cesar-gustavo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "CUSINATO, Jos\u00e9 C\u00e9sar Gustavo"
+    }, 
+    "daher-zulema-beatriz": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "DAHER, Zulema Beatr\u00edz"
+    }, 
+    "dalla-fontana-ariel": {
+        "bloque": "Santa Fe Federal", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "DALLA FONTANA, Ariel"
+    }, 
+    "damilano-grivarello-viviana-monica": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "DAMILANO GRIVARELLO, Viviana M\u00f3nica"
+    }, 
+    "daniele-mario-domingo": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "DANIELE, Mario Domingo"
+    }, 
+    "dato-alfredo-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/adato_medium.jpg", 
+        "nombre": "DATO, Alfredo Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/adato/"
+    }, 
+    "daud-jorge-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "DAUD, Jorge Carlos"
+    }, 
+    "daza-hector-ruben": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "DAZA, H\u00e9ctor Rub\u00e9n"
+    }, 
+    "de-bernardi-eduardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "DE BERNARDI, Eduardo"
+    }, 
+    "de-brasi-marta-susana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "DE BRASI, Marta Susana"
+    }, 
+    "de-ferrari-rueda-patricia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/pdeferrarir_medium.jpg", 
+        "nombre": "De FERRARI RUEDA, Patricia", 
+        "url": "http://www.diputados.gob.ar/diputados/pdeferrarir/"
+    }, 
+    "de-gennaro-victor-norberto": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/vdegennaro_medium.jpg", 
+        "nombre": "De GENNARO, Victor Norberto", 
+        "url": "http://www.diputados.gob.ar/diputados/vdegennaro/"
+    }, 
+    "de-la-barrera-guillermo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "DE LA BARRERA, Guillermo"
+    }, 
+    "de-la-rosa-maria-graciela": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Formosa", 
+        "nombre": "DE LA ROSA, Mar\u00eda Graciela"
+    }, 
+    "de-marchi-omar-bruno": {
+        "bloque": "Dem\u00f3crata de Mendoza", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/odemarchi_medium.jpg", 
+        "nombre": "DE MARCHI, Omar Bruno", 
+        "url": "http://www.diputados.gob.ar/diputados/odemarchi/"
+    }, 
+    "de-narvaez-francisco": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fdenarvaez_medium.jpg", 
+        "nombre": "DE NARVAEZ, Francisco", 
+        "url": "http://www.diputados.gob.ar/diputados/fdenarvaez/"
+    }, 
+    "de-pedro-eduardo-enrique": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/edepedro_medium.jpg", 
+        "nombre": "de PEDRO, Eduardo Enrique", 
+        "url": "http://www.diputados.gob.ar/diputados/edepedro/"
+    }, 
+    "de-prat-gay-alfonso": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/apratgay_medium.jpg", 
+        "nombre": "de PRAT GAY, Alfonso", 
+        "url": "http://www.diputados.gob.ar/diputados/apratgay/"
+    }, 
+    "del-campillo-hector-eduardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "DEL CAMPILLO, H\u00e9ctor Eduardo"
+    }, 
+    "delich-francisco": {
+        "bloque": "Partido Nuevo Contra la Corrupci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "DELICH, Francisco"
+    }, 
+    "dellepiane-carlos-francisco": {
+        "bloque": "Frente Popular Bonaerense", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "DELLEPIANE, Carlos Francisco"
+    }, 
+    "depetri-edgardo-fernando": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 10
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/edepetri_medium.jpg", 
+        "nombre": "DEPETRI, Edgardo Fernando", 
+        "url": "http://www.diputados.gob.ar/diputados/edepetri/"
+    }, 
+    "di-landro-oscar-jorge": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "DI LANDRO, Oscar Jorge"
+    }, 
+    "di-perna-graciela-agustina": {
+        "bloque": "Trabajo y Dignidad", 
+        "camara": "Senado", 
+        "distrito": "Chubut", 
+        "nombre": "DI PERNA, Graciela Agustina"
+    }, 
+    "di-pollina-eduardo-alfredo": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "DI POLLINA, Eduardo Alfredo"
+    }, 
+    "di-tullio-juliana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jditullio_medium.jpg", 
+        "nombre": "di TULLIO, Juliana", 
+        "url": "http://www.diputados.gob.ar/diputados/jditullio/"
+    }, 
+    "diaz-bancalari-jose-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jdiaz_medium.jpg", 
+        "nombre": "DIAZ BANCALARI, Jos\u00e9 Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/jdiaz/"
+    }, 
+    "diaz-maria-rosa": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Senado", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "DIAZ, Mar\u00eda Rosa"
+    }, 
+    "diaz-roig-juan-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Formosa", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Formosa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jdiazr_medium.jpg", 
+        "nombre": "DIAZ ROIG, Juan Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/jdiazr/"
+    }, 
+    "diaz-susana-eladia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "DIAZ, Susana Eladia"
+    }, 
+    "diez-maria-ines": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "DIEZ, Mar\u00eda In\u00e9s"
+    }, 
+    "doga-maria-nelida": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "DOGA, Mar\u00eda N\u00e9lida"
+    }, 
+    "dominguez-julian-andres": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jdominguez_medium.jpg", 
+        "nombre": "DOMINGUEZ, Juli\u00e1n Andr\u00e9s", 
+        "url": "http://www.diputados.gob.ar/diputados/jdominguez/"
+    }, 
+    "donda-perez-victoria-analia": {
+        "bloque": "Libres del Sur", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/vdondap_medium.jpg", 
+        "nombre": "DONDA PEREZ, Victoria Anal\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/vdondap/"
+    }, 
+    "donkin-carlos-guillermo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cdonkin_medium.jpg", 
+        "nombre": "DONKIN, Carlos Guillermo", 
+        "url": "http://www.diputados.gob.ar/diputados/cdonkin/"
+    }, 
+    "dovena-miguel-dante": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "DOVENA, Miguel Dante"
+    }, 
+    "duclos-omar-arnaldo": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oduclos_medium.jpg", 
+        "nombre": "DUCLOS, Omar Arnaldo", 
+        "url": "http://www.diputados.gob.ar/diputados/oduclos/"
+    }, 
+    "dutto-gustavo-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "DUTTO, Gustavo Alberto"
+    }, 
+    "eliceche-carlos-tomas": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "ELICECHE, Carlos Tomas"
+    }, 
+    "elorriaga-osvaldo-enrique": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oelorriaga_medium.jpg", 
+        "nombre": "ELORRIAGA, Osvaldo Enrique", 
+        "url": "http://www.diputados.gob.ar/diputados/oelorriaga/"
+    }, 
+    "erro-norberto-pedro": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ERRO, Norberto Pedro"
+    }, 
+    "escudero-sonia-margarita": {
+        "bloque": "Justicialista 8 de Octubre", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Salta", 
+            "lista": "FRENTE POPULAR SALTE\u00d1O", 
+            "orden": 2
+        }, 
+        "distrito": "Salta", 
+        "nombre": "ESCUDERO, Sonia Margarita"
+    }, 
+    "espindola-gladys-susana": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gespindola_medium.jpg", 
+        "nombre": "ESPINDOLA, Gladys Susana", 
+        "url": "http://www.diputados.gob.ar/diputados/gespindola/"
+    }, 
+    "estenssoro-maria-eugenia": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Senado", 
+        "distrito": "CABA", 
+        "nombre": "ESTENSSORO, Mar\u00eda Eugenia"
+    }, 
+    "fabris-luciano": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "FABRIS, Luciano"
+    }, 
+    "fadel-patricia-susana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "FADEL, Patricia Susana"
+    }, 
+    "fadul-liliana": {
+        "bloque": "Partido Federal Fueguino", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lfadul_medium.jpg", 
+        "nombre": "FADUL, Liliana", 
+        "url": "http://www.diputados.gob.ar/diputados/lfadul/"
+    }, 
+    "falco-luis-alberto": {
+        "bloque": "Radical Rionegrino", 
+        "camara": "Senado", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "FALCO, Luis Alberto"
+    }, 
+    "faustinelli-hipolito": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hfaustinelli_medium.jpg", 
+        "nombre": "FAUSTINELLI, Hip\u00f3lito", 
+        "url": "http://www.diputados.gob.ar/diputados/hfaustinelli/"
+    }, 
+    "favario-carlos-alberto": {
+        "bloque": "Dem\u00f3crata Progresista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cfavario_medium.jpg", 
+        "nombre": "FAVARIO, Carlos Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/cfavario/"
+    }, 
+    "fein-monica-hayde": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "FEIN, M\u00f3nica Hayde"
+    }, 
+    "feletti-roberto-jose": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rfeletti_medium.jpg", 
+        "nombre": "FELETTI, Roberto Jos\u00e9", 
+        "url": "http://www.diputados.gob.ar/diputados/rfeletti/"
+    }, 
+    "felix-omar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ofelix_medium.jpg", 
+        "nombre": "FELIX, Omar", 
+        "url": "http://www.diputados.gob.ar/diputados/ofelix/"
+    }, 
+    "fellner-liliana-beatriz": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Jujuy", 
+        "nombre": "FELLNER, Liliana Beatriz"
+    }, 
+    "fernandez-alfredo-cesar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "FERNANDEZ, Alfredo Cesar"
+    }, 
+    "fernandez-anibal-domingo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FERNANDEZ, An\u00edbal Domingo"
+    }, 
+    "fernandez-basualdo-luis-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "FERNANDEZ BASUALDO, Luis Mar\u00eda"
+    }, 
+    "fernandez-de-kirchner-cristina": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FERNANDEZ DE KIRCHNER, Cristina"
+    }, 
+    "fernandez-marcelo-omar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FERNANDEZ, Marcelo Omar"
+    }, 
+    "fernandez-nicolas-alejandro": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "FERNANDEZ, Nicol\u00e1s Alejandro"
+    }, 
+    "fernandez-rodolfo-alfredo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rfernandez_medium.jpg", 
+        "nombre": "FERNANDEZ, Rodolfo Alfredo", 
+        "url": "http://www.diputados.gob.ar/diputados/rfernandez/"
+    }, 
+    "fernandez-sagasti-anabel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/afernandezs_medium.jpg", 
+        "nombre": "FERNANDEZ SAGASTI, Anabel", 
+        "url": "http://www.diputados.gob.ar/diputados/afernandezs/"
+    }, 
+    "ferra-de-bartol-margarita": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mferra_medium.jpg", 
+        "nombre": "FERRA de BARTOL, Margarita", 
+        "url": "http://www.diputados.gob.ar/diputados/mferra/"
+    }, 
+    "ferrari-gustavo-alfredo": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "UNIDOS POR LA LIBERTAD Y EL TRABAJO", 
+            "orden": 4
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gferrari_medium.jpg", 
+        "nombre": "FERRARI, Gustavo Alfredo", 
+        "url": "http://www.diputados.gob.ar/diputados/gferrari/"
+    }, 
+    "ferreyra-araceli": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aferreyra_medium.jpg", 
+        "nombre": "FERREYRA, Araceli", 
+        "url": "http://www.diputados.gob.ar/diputados/aferreyra/"
+    }, 
+    "ferri-gustavo-enrique": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FERRI, Gustavo Enrique"
+    }, 
+    "ferrigno-obarrio-santiago": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "FERRIGNO OBARRIO, Santiago"
+    }, 
+    "ferro-francisco-jose": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI - GEN - UPT", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FERRO, Francisco Jos\u00e9"
+    }, 
+    "fiad-mario-raymundo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Jujuy", 
+            "lista": "FRENTE JUJE\u00d1O, LISTA:", 
+            "orden": 1
+        }, 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mfiad_medium.jpg", 
+        "nombre": "FIAD, Mario Raymundo", 
+        "url": "http://www.diputados.gob.ar/diputados/mfiad/"
+    }, 
+    "figueroa-jose-oscar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "FIGUEROA, Jos\u00e9 Oscar"
+    }, 
+    "filmus-daniel-fernando": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "CABA", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "CABA", 
+        "nombre": "FILMUS, Daniel Fernando"
+    }, 
+    "fiol-paulina-esther": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "FIOL, Paulina Esther"
+    }, 
+    "fiore-vinuales-maria-cristina-del-valle": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Salta", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mfiorev_medium.jpg", 
+        "nombre": "FIORE VI\u00d1UALES, Mar\u00eda Cristina del Valle", 
+        "url": "http://www.diputados.gob.ar/diputados/mfiorev/"
+    }, 
+    "flores-hector": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FLORES, H\u00e9ctor"
+    }, 
+    "forconi-juan-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jforconi_medium.jpg", 
+        "nombre": "FORCONI, Juan Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/jforconi/"
+    }, 
+    "forstmann-selva-judit": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "FORSTMANN, Selva Judit"
+    }, 
+    "forte-ulises-umberto": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/uforte_medium.jpg", 
+        "nombre": "FORTE, Ulises Umberto", 
+        "url": "http://www.diputados.gob.ar/diputados/uforte/"
+    }, 
+    "fortuna-francisco-jose": {
+        "bloque": "C\u00f3rdoba Federal", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ffortuna_medium.jpg", 
+        "nombre": "FORTUNA, Francisco Jos\u00e9", 
+        "url": "http://www.diputados.gob.ar/diputados/ffortuna/"
+    }, 
+    "francioni-fabian-marcelo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ffrancioni_medium.jpg", 
+        "nombre": "FRANCIONI, Fabi\u00e1n Marcelo", 
+        "url": "http://www.diputados.gob.ar/diputados/ffrancioni/"
+    }, 
+    "franco-hugo-alberto": {
+        "bloque": "Frente Popular Bonaerense", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "FRANCO, Hugo Alberto"
+    }, 
+    "fuentes-marcelo-jorge": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Neuqu\u00e9n", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "FUENTES, Marcelo Jorge"
+    }, 
+    "galantini-eduardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "GALANTINI, Eduardo"
+    }, 
+    "gallardo-miriam-graciela-del-valle": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mgallardo_medium.jpg", 
+        "nombre": "GALLARDO, Miriam Graciela del Valle", 
+        "url": "http://www.diputados.gob.ar/diputados/mgallardo/"
+    }, 
+    "gallego-silvia-ester": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Pampa", 
+        "nombre": "GALLEGO, Silvia Ester"
+    }, 
+    "gallia-sergio-adrian": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "GALLIA, Sergio Adri\u00e1n"
+    }, 
+    "gallo-daniel-oscar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "GALLO, Daniel Oscar"
+    }, 
+    "galvalisi-luis-alberto": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GALVALISI, Luis Alberto"
+    }, 
+    "gambaro-natalia": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "UNIDOS POR LA LIBERTAD Y EL TRABAJO", 
+            "orden": 8
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ngambaro_medium.jpg", 
+        "nombre": "GAMBARO, Natalia", 
+        "url": "http://www.diputados.gob.ar/diputados/ngambaro/"
+    }, 
+    "garcia-andrea-fabiana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/agarcia_medium.jpg", 
+        "nombre": "GARCIA, Andrea Fabiana", 
+        "url": "http://www.diputados.gob.ar/diputados/agarcia/"
+    }, 
+    "garcia-de-moreno-eva": {
+        "bloque": "Trabajo y Dignidad", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "GARCIA de MORENO, Eva"
+    }, 
+    "garcia-hamilton-jose-ignacio": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "GARCIA HAMILTON, Jos\u00e9 Ignacio"
+    }, 
+    "garcia-irma-adriana": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "GARCIA, Irma Adriana"
+    }, 
+    "garcia-larraburu-silvina-marcela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "R\u00edo Negro", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "R\u00edo Negro", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/sgarcial_medium.jpg", 
+        "nombre": "GARCIA LARRABURU, Silvina Marcela", 
+        "url": "http://www.diputados.gob.ar/diputados/sgarcial/"
+    }, 
+    "garcia-maria-teresa": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 6
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mgarcia_medium.jpg", 
+        "nombre": "GARCIA, Mar\u00eda Teresa", 
+        "url": "http://www.diputados.gob.ar/diputados/mgarcia/"
+    }, 
+    "garcia-mendez-emilio": {
+        "bloque": "Solidaridad e Igualdad (SI)", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GARCIA MENDEZ, Emilio"
+    }, 
+    "garcia-susana-rosa": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "GARCIA, Susana Rosa"
+    }, 
+    "gardella-patricia-susana": {
+        "bloque": "Corriente de Pensamiento Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "GARDELLA, Patricia Susana"
+    }, 
+    "garin-de-tula-lucia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "GARIN de TULA, Lucia"
+    }, 
+    "garnero-estela-ramona": {
+        "bloque": "C\u00f3rdoba Federal", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/egarnero_medium.jpg", 
+        "nombre": "GARNERO, Estela Ramona", 
+        "url": "http://www.diputados.gob.ar/diputados/egarnero/"
+    }, 
+    "garramuno-jorge-alberto": {
+        "bloque": "Movimiento Popular Fueguino", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Tierra del Fuego", 
+            "lista": "MOVIMIENTO POPULAR FUEGUINO", 
+            "orden": 1
+        }, 
+        "distrito": "Tierra del Fuego", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jgarramuno_medium.jpg", 
+        "nombre": "GARRAMU\u00d1O, Jorge Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/jgarramuno/"
+    }, 
+    "garrido-arceo-jorge-antonio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "GARRIDO ARCEO, Jorge Antonio"
+    }, 
+    "garrido-manuel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mgarrido_medium.jpg", 
+        "nombre": "GARRIDO, Manuel", 
+        "url": "http://www.diputados.gob.ar/diputados/mgarrido/"
+    }, 
+    "gdansky-carlos-enrique": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cgdansky_medium.jpg", 
+        "nombre": "GDANSKY, Carlos Enrique", 
+        "url": "http://www.diputados.gob.ar/diputados/cgdansky/"
+    }, 
+    "genem-amanda-susana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "GENEM, Amanda Susana"
+    }, 
+    "gennaro-victor": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "GENNARO, Victor"
+    }, 
+    "gerez-elda-ramona": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "GEREZ, Elda Ramona"
+    }, 
+    "germano-daniel": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dgermano_medium.jpg", 
+        "nombre": "GERMANO, Daniel", 
+        "url": "http://www.diputados.gob.ar/diputados/dgermano/"
+    }, 
+    "giaccone-claudia-alejandra": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cgiaccone_medium.jpg", 
+        "nombre": "GIACCONE, Claudia Alejandra", 
+        "url": "http://www.diputados.gob.ar/diputados/cgiaccone/"
+    }, 
+    "giacomino-daniel-oscar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dgiacomino_medium.jpg", 
+        "nombre": "GIACOMINO, Daniel Oscar", 
+        "url": "http://www.diputados.gob.ar/diputados/dgiacomino/"
+    }, 
+    "giannettasio-graciela-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ggiannettasio_medium.jpg", 
+        "nombre": "GIANNETTASIO, Graciela Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/ggiannettasio/"
+    }, 
+    "gil-lavedra-ricardo-rodolfo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rgill_medium.jpg", 
+        "nombre": "GIL LAVEDRA, Ricardo Rodolfo", 
+        "url": "http://www.diputados.gob.ar/diputados/rgill/"
+    }, 
+    "gil-lozano-claudia-fernanda": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GIL LOZANO, Claudia Fernanda"
+    }, 
+    "gimenez-sandra-daniela": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "GIMENEZ, Sandra Daniela"
+    }, 
+    "ginzburg-nora": {
+        "bloque": "Frente por los Derechos Ciudadanos", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GINZBURG, Nora"
+    }, 
+    "gioja-cesar-ambrosio": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "San Juan", 
+        "nombre": "GIOJA, C\u00e9sar Ambrosio"
+    }, 
+    "gioja-juan-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "nombre": "GIOJA, Juan Carlos"
+    }, 
+    "giorgetti-jorge-raul": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "GIORGETTI, Jorge Ra\u00fal"
+    }, 
+    "giri-haide-delia": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "GIRI, Haid\u00e9 Delia"
+    }, 
+    "giubergia-miguel-angel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mgiubergia_medium.jpg", 
+        "nombre": "GIUBERGIA, Miguel Angel", 
+        "url": "http://www.diputados.gob.ar/diputados/mgiubergia/"
+    }, 
+    "giudici-silvana-myriam": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GIUDICI, Silvana Myriam"
+    }, 
+    "giusti-silvia-ester": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Chubut", 
+        "nombre": "GIUSTI, Silvia Ester"
+    }, 
+    "giustiniani-ruben-hector": {
+        "bloque": "Socialista", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Santa Fe", 
+        "nombre": "GIUSTINIANI, Rub\u00e9n H\u00e9ctor"
+    }, 
+    "godoy-juan-carlos": {
+        "bloque": "Concertaci\u00f3n Entrerriana", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "GODOY, Juan Carlos"
+    }, 
+    "godoy-ruperto-eduardo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "San Juan", 
+        "nombre": "GODOY, Ruperto Eduardo"
+    }, 
+    "gomez-diez-ricardo": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Senado", 
+        "distrito": "Salta", 
+        "nombre": "GOMEZ DIEZ, Ricardo"
+    }, 
+    "gonzalez-de-duhalde-hilda-beatriz": {
+        "bloque": "Justicialista para el Dialogo de Los Argentinos", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "GONZALEZ DE DUHALDE, Hilda Beatriz"
+    }, 
+    "gonzalez-gladys-esther": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE RENOVADOR", 
+            "orden": 12
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ggonzalez_medium.jpg", 
+        "nombre": "GONZALEZ, Gladys Esther", 
+        "url": "http://www.diputados.gob.ar/diputados/ggonzalez/"
+    }, 
+    "gonzalez-jorge-pedro": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "GONZALEZ, Jorge Pedro"
+    }, 
+    "gonzalez-juan-dante": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jgonzalez_medium.jpg", 
+        "nombre": "GONZALEZ, Juan Dante", 
+        "url": "http://www.diputados.gob.ar/diputados/jgonzalez/"
+    }, 
+    "gonzalez-maria-america": {
+        "bloque": "Solidaridad e Igualdad (SI)", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GONZALEZ, Mar\u00eda Am\u00e9rica"
+    }, 
+    "gonzalez-nancy-susana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ngonzalez_medium.jpg", 
+        "nombre": "GONZALEZ, Nancy Susana", 
+        "url": "http://www.diputados.gob.ar/diputados/ngonzalez/"
+    }, 
+    "gonzalez-pablo-gerardo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "GONZALEZ, Pablo Gerardo"
+    }, 
+    "gorbacz-leonardo-ariel": {
+        "bloque": "Proyecto Progresista", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "GORBACZ, Leonardo Ariel"
+    }, 
+    "granados-dulce": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dgranados_medium.jpg", 
+        "nombre": "GRANADOS, Dulce", 
+        "url": "http://www.diputados.gob.ar/diputados/dgranados/"
+    }, 
+    "gribaudo-christian-alejandro": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE RENOVADOR", 
+            "orden": 13
+        }, 
+        "distrito": "Buenos Aires", 
+        "nombre": "GRIBAUDO, Christian Alejandro"
+    }, 
+    "grosso-leonardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lgrosso_medium.jpg", 
+        "nombre": "GROSSO, Leonardo", 
+        "url": "http://www.diputados.gob.ar/diputados/lgrosso/"
+    }, 
+    "guastavino-pedro-guillermo-angel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "GUASTAVINO, Pedro Guillermo \u00c1ngel"
+    }, 
+    "guccione-jose-daniel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jguccione_medium.jpg", 
+        "nombre": "GUCCIONE, Jos\u00e9 Daniel", 
+        "url": "http://www.diputados.gob.ar/diputados/jguccione/"
+    }, 
+    "guerci-de-siufi-beatriz-elvira": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "GUERCI de SIUFI, Beatriz Elvira"
+    }, 
+    "guinle-marcelo-alejandro": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Chubut", 
+        "nombre": "GUINLE, Marcelo Alejandro"
+    }, 
+    "gullo-juan-carlos-dante": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "GULLO, Juan Carlos Dante"
+    }, 
+    "gutierrez-francisco-virgilio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "GUTIERREZ, Francisco Virgilio"
+    }, 
+    "gutierrez-graciela-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "GUTIERREZ, Graciela Beatriz"
+    }, 
+    "gutierrez-monica-edith": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mgutierrez_medium.jpg", 
+        "nombre": "GUTIERREZ, M\u00f3nica Edith", 
+        "url": "http://www.diputados.gob.ar/diputados/mgutierrez/"
+    }, 
+    "guzman-olga-elizabeth": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oguzman_medium.jpg", 
+        "nombre": "GUZMAN, Olga Elizabeth", 
+        "url": "http://www.diputados.gob.ar/diputados/oguzman/"
+    }, 
+    "halak-beatriz-susana": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "HALAK, Beatriz Susana"
+    }, 
+    "harispe-gaston": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gharispe_medium.jpg", 
+        "nombre": "HARISPE, Gast\u00f3n", 
+        "url": "http://www.diputados.gob.ar/diputados/gharispe/"
+    }, 
+    "heller-carlos": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 3
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cheller_medium.jpg", 
+        "nombre": "HELLER, Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/cheller/"
+    }, 
+    "heredia-arturo-miguel": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "HEREDIA, Arturo Miguel"
+    }, 
+    "hernandez-cinthyia-gabriela": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "HERNANDEZ, Cinthyia Gabriela"
+    }, 
+    "herrera-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "HERRERA, Alberto"
+    }, 
+    "herrera-griselda-noemi": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gherrera_medium.jpg", 
+        "nombre": "HERRERA, Griselda Noem\u00ed", 
+        "url": "http://www.diputados.gob.ar/diputados/gherrera/"
+    }, 
+    "herrera-jose-alberto": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jherrera_medium.jpg", 
+        "nombre": "HERRERA, Jos\u00e9 Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/jherrera/"
+    }, 
+    "higonet-maria-de-los-angeles": {
+        "bloque": "Justicialista La Pampa", 
+        "camara": "Senado", 
+        "distrito": "La Pampa", 
+        "nombre": "HIGONET, Mar\u00eda de los Angeles"
+    }, 
+    "hotton-cynthia-liliana": {
+        "bloque": "Valores para mi Pa\u00eds", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "HOTTON, Cynthia Liliana"
+    }, 
+    "ianni-ana-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aianni_medium.jpg", 
+        "nombre": "IANNI, Ana Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/aianni/"
+    }, 
+    "ibarra-eduardo-mauricio": {
+        "bloque": "Uni\u00f3n por San Juan", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/eibarra_medium.jpg", 
+        "nombre": "IBARRA, Eduardo Mauricio", 
+        "url": "http://www.diputados.gob.ar/diputados/eibarra/"
+    }, 
+    "ibarra-mauricio": {
+        "bloque": "Uni\u00f3n por San Juan", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "nombre": "IBARRA, Mauricio"
+    }, 
+    "ibarra-vilma-lidia": {
+        "bloque": "Frente Grande", 
+        "camara": "Diputados/Senado", 
+        "distrito": "CABA", 
+        "nombre": "IBARRA, Vilma Lidia"
+    }, 
+    "iglesias-fernando-adolfo": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "IGLESIAS, Fernando Adolfo"
+    }, 
+    "iglesias-roberto-raul": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "IGLESIAS, Roberto Raul"
+    }, 
+    "ilarregui-luis-alfredo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ILARREGUI, Luis Alfredo"
+    }, 
+    "ingram-roddy-ernesto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "INGRAM, Roddy Ernesto"
+    }, 
+    "irrazabal-juan-manuel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Misiones", 
+        "nombre": "IRRAZABAL, Juan Manuel"
+    }, 
+    "isidori-amanda-mercedes": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "ISIDORI, Amanda Mercedes"
+    }, 
+    "iturraspe-nora-graciela": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/giturraspe_medium.jpg", 
+        "nombre": "ITURRASPE, Nora Graciela", 
+        "url": "http://www.diputados.gob.ar/diputados/giturraspe/"
+    }, 
+    "iturrez-de-capellini-ada-rosa": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Senado", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "ITURREZ de CAPELLINI, Ada Rosa"
+    }, 
+    "iturrieta-miguel-angel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "ITURRIETA, Miguel Angel"
+    }, 
+    "jano-ricardo-javier": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "JANO, Ricardo Javier"
+    }, 
+    "jaque-celso-alejandro": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "JAQUE, Celso Alejandro"
+    }, 
+    "jenefes-guillermo-raul": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Jujuy", 
+        "nombre": "JENEFES, Guillermo Ra\u00fal"
+    }, 
+    "jerez-esteban-eduardo": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Tucum\u00e1n", 
+            "lista": "LABORISTA DE LA INDEPENDENCIA", 
+            "orden": 3
+        }, 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "JEREZ, Esteban Eduardo"
+    }, 
+    "jerez-eusebia-antonia": {
+        "bloque": "Fuerza Republicana", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "JEREZ, Eusebia Antonia"
+    }, 
+    "juez-luis-alfredo": {
+        "bloque": "Frente C\u00edvico de C\u00f3rdoba", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "JUEZ, Lu\u00eds Alfredo"
+    }, 
+    "junio-juan-carlos-isaac": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jcjunio_medium.jpg", 
+        "nombre": "JUNIO, Juan Carlos Isaac", 
+        "url": "http://www.diputados.gob.ar/diputados/jcjunio/"
+    }, 
+    "juri-mariana": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mjuri_medium.jpg", 
+        "nombre": "JURI, Mariana", 
+        "url": "http://www.diputados.gob.ar/diputados/mjuri/"
+    }, 
+    "kakubur-emilio": {
+        "bloque": "Dignidad Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "KAKUBUR, Emilio"
+    }, 
+    "katz-daniel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "KATZ, Daniel"
+    }, 
+    "kenny-eduardo-enrique-federico": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "KENNY, Eduardo Enrique Federico"
+    }, 
+    "kirchner-alicia-margarita-antonia": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "KIRCHNER, Alicia Margarita Antonia"
+    }, 
+    "kirchner-nestor-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "KIRCHNER, N\u00e9stor Carlos"
+    }, 
+    "korenfeld-beatriz-liliana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "KORENFELD, Beatriz Liliana"
+    }, 
+    "kosiner-pablo-francisco-juan": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/pkosiner_medium.jpg", 
+        "nombre": "KOSINER, Pablo Francisco Juan", 
+        "url": "http://www.diputados.gob.ar/diputados/pkosiner/"
+    }, 
+    "kroneberger-daniel-ricardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/dkroneberger_medium.jpg", 
+        "nombre": "KRONEBERGER, Daniel Ricardo", 
+        "url": "http://www.diputados.gob.ar/diputados/dkroneberger/"
+    }, 
+    "kunkel-carlos-miguel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 7
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ckunkel_medium.jpg", 
+        "nombre": "KUNKEL, Carlos Miguel", 
+        "url": "http://www.diputados.gob.ar/diputados/ckunkel/"
+    }, 
+    "labado-maria-ester": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "LABADO, Mar\u00eda Ester"
+    }, 
+    "lamberto-oscar-santiago": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "LAMBERTO, Oscar Santiago"
+    }, 
+    "lanceta-ruben-orfel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "LANCETA, Rub\u00e9n Orfel"
+    }, 
+    "landau-jorge-alberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jlandau_medium.jpg", 
+        "nombre": "LANDAU, Jorge Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/jlandau/"
+    }, 
+    "larroque-andres": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/alarroque_medium.jpg", 
+        "nombre": "LARROQUE, Andr\u00e9s", 
+        "url": "http://www.diputados.gob.ar/diputados/alarroque/"
+    }, 
+    "latorre-roxana-itati": {
+        "bloque": "Federalismo Santafesino", 
+        "camara": "Senado", 
+        "distrito": "Santa Fe", 
+        "nombre": "LATORRE, Roxana Itat\u00ed"
+    }, 
+    "lauritto-jose-eduardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "LAURITTO, Jos\u00e9 Eduardo"
+    }, 
+    "ledesma-julio-ruben": {
+        "bloque": "Corriente de Pensamiento Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jledesma_medium.jpg", 
+        "nombre": "LEDESMA, Julio Rub\u00e9n", 
+        "url": "http://www.diputados.gob.ar/diputados/jledesma/"
+    }, 
+    "legislador-a-designar": {
+        "bloque": "No integra Bloque", 
+        "camara": "Diputados/Senado", 
+        "distrito": "", 
+        "nombre": "Legislador a Designar"
+    }, 
+    "leguizamon-maria-laura": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "LEGUIZAM\u00d3N, Mar\u00eda Laura"
+    }, 
+    "lemme-maria-alicia": {
+        "bloque": "Frente del Movimiento Popular", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "LEMME, Mar\u00eda Alicia"
+    }, 
+    "lemos-silvia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "LEMOS, Silvia"
+    }, 
+    "lenz-maria-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "LENZ, Mar\u00eda Beatriz"
+    }, 
+    "leverberg-stella-maris": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/sleverberg_medium.jpg", 
+        "nombre": "LEVERBERG, Stella Maris", 
+        "url": "http://www.diputados.gob.ar/diputados/sleverberg/"
+    }, 
+    "leyba-de-marti-beatriz": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "LEYBA de MARTI, Beatriz"
+    }, 
+    "linares-jaime": {
+        "bloque": "GEN", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "LINARES, Jaime"
+    }, 
+    "linares-maria-virginia": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/vlinares_medium.jpg", 
+        "nombre": "LINARES, Mar\u00eda Virginia", 
+        "url": "http://www.diputados.gob.ar/diputados/vlinares/"
+    }, 
+    "lix-klett-roberto-ignacio": {
+        "bloque": "Fuerza Republicana", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "LIX KLETT, Roberto Ignacio"
+    }, 
+    "llanos-edith": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "LLANOS, Edith"
+    }, 
+    "llanos-ermindo-edgardo-marcelo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/eellanos_medium.jpg", 
+        "nombre": "LLANOS, Ermindo Edgardo Marcelo", 
+        "url": "http://www.diputados.gob.ar/diputados/eellanos/"
+    }, 
+    "llera-timoteo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "LLERA, Timoteo"
+    }, 
+    "lopez-amelia-de-los-milagros": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "LOPEZ, Amelia de los Milagros"
+    }, 
+    "lopez-arias-marcelo-eduardo": {
+        "bloque": "Justicialista", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Salta", 
+        "nombre": "L\u00d3PEZ ARIAS, Marcelo Eduardo"
+    }, 
+    "lopez-ernesto-segundo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "nombre": "LOPEZ, Ernesto Segundo"
+    }, 
+    "lopez-osvaldo-ramon": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Tierra del Fuego", 
+            "lista": "ESPACIO DEMOCRATICO PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "L\u00d3PEZ, Osvaldo Ram\u00f3n"
+    }, 
+    "lopez-rafael-angel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "LOPEZ, Rafael Angel"
+    }, 
+    "lorenzo-borocoto-eduardo": {
+        "bloque": "Movimiento Independiente", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "LORENZO BOROCOTO, Eduardo"
+    }, 
+    "lores-horacio": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Senado", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "LORES, Horacio"
+    }, 
+    "lorges-juan-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "LORGES, Juan Carlos"
+    }, 
+    "lotto-de-vecchietti-ines-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "LOTTO de VECCHIETTI, In\u00e9s Beatriz"
+    }, 
+    "lovaglio-saravia-antonio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "LOVAGLIO SARAVIA, Antonio"
+    }, 
+    "lozano-claudio-raul": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA CAMINO POPULAR", 
+            "orden": 1
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/clozano_medium.jpg", 
+        "nombre": "LOZANO, Claudio Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/clozano/"
+    }, 
+    "luna-de-marcos-ana-zulema": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "LUNA de MARCOS, Ana Zulema"
+    }, 
+    "luna-mirtha-maria-teresita": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Rioja", 
+        "nombre": "LUNA, Mirtha Mar\u00eda Teresita"
+    }, 
+    "lusquinos-luis-bernardo": {
+        "bloque": "Frente Justicia Uni\u00f3n y Libertad", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "San Luis", 
+            "lista": "COMPROMISO FEDERAL", 
+            "orden": 3
+        }, 
+        "distrito": "San Luis", 
+        "nombre": "LUSQUI\u00d1OS, Luis Bernardo"
+    }, 
+    "macaluse-eduardo-gabriel": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "MACALUSE, Eduardo Gabriel"
+    }, 
+    "macchi-carlos-guillermo": {
+        "bloque": "Partido Nuevo", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "MACCHI, Carlos Guillermo"
+    }, 
+    "macri-mauricio": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MACRI, Mauricio"
+    }, 
+    "maffei-marta-olinda": {
+        "bloque": "A.R.I", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "MAFFEI, Marta Olinda"
+    }, 
+    "majdalani-silvia-cristina": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNION PRO", 
+            "orden": 5
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/smajdalani_medium.jpg", 
+        "nombre": "MAJDALANI, Silvia Cristina", 
+        "url": "http://www.diputados.gob.ar/diputados/smajdalani/"
+    }, 
+    "maldonado-hugo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/vmaldonado_medium.jpg", 
+        "nombre": "MALDONADO, Hugo", 
+        "url": "http://www.diputados.gob.ar/diputados/vmaldonado/"
+    }, 
+    "mansilla-sergio-francisco": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "MANSILLA, Sergio Francisco"
+    }, 
+    "mansur-nelida-mabel": {
+        "bloque": "Partido Unidad Federalista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "MANSUR, N\u00e9lida Mabel"
+    }, 
+    "mansur-ricardo-alfredo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "MANSUR, Ricardo Alfredo"
+    }, 
+    "marco-del-pont-mercedes": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MARCO DEL PONT, Mercedes"
+    }, 
+    "marconato-gustavo-angel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "MARCONATO, Gustavo Angel"
+    }, 
+    "marin-ruben-hugo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Pampa", 
+        "nombre": "MARIN, Rub\u00e9n Hugo"
+    }, 
+    "marino-adriana-del-carmen": {
+        "bloque": "Frente Producci\u00f3n y Trabajo", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "nombre": "MARINO, Adriana del Carmen"
+    }, 
+    "marino-juan-carlos": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "La Pampa", 
+        "nombre": "MARINO, Juan Carlos"
+    }, 
+    "marino-juliana-isabel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MARINO, Juliana Isabel"
+    }, 
+    "martiarena-mario-humberto": {
+        "bloque": "Peronismo Juje\u00f1o", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "MARTIARENA, Mario Humberto"
+    }, 
+    "martin-maria-elena": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "MARTIN, Mar\u00eda Elena"
+    }, 
+    "martinez-alfredo-anselmo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Santa Cruz", 
+        "nombre": "MARTINEZ, Alfredo Anselmo"
+    }, 
+    "martinez-carignano-ernesto-felix": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "C\u00f3rdoba", 
+            "lista": "ALIANZA FRENTE PROGRESISTA CIVICO Y SOCIAL", 
+            "orden": 1
+        }, 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MARTINEZ CARIGNANO, Ernesto F\u00e9lix"
+    }, 
+    "martinez-ernesto-felix": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/emartinezc_medium.jpg", 
+        "nombre": "MARTINEZ, Ernesto F\u00e9lix", 
+        "url": "http://www.diputados.gob.ar/diputados/emartinezc/"
+    }, 
+    "martinez-garbino-emilio": {
+        "bloque": "Concertaci\u00f3n Entrerriana", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "MARTINEZ GARBINO, Emilio"
+    }, 
+    "martinez-jose-carlos": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Senado", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "MARTINEZ, Jos\u00e9 Carlos"
+    }, 
+    "martinez-julio-cesar": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "La Rioja", 
+            "lista": "FUERZA CIVICA RIOJANA", 
+            "orden": 1
+        }, 
+        "distrito": "La Rioja", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jmartinez_medium.jpg", 
+        "nombre": "MARTINEZ, Julio C\u00e9sar", 
+        "url": "http://www.diputados.gob.ar/diputados/jmartinez/"
+    }, 
+    "martinez-oddone-heriberto-agustin": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MARTINEZ ODDONE, Heriberto Agust\u00edn"
+    }, 
+    "martinez-oscar-ariel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/omartinez_medium.jpg", 
+        "nombre": "MARTINEZ, Oscar Ariel", 
+        "url": "http://www.diputados.gob.ar/diputados/omartinez/"
+    }, 
+    "martinez-pass-de-cresto-laura": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "MART\u00cdNEZ PASS de CRESTO, Laura"
+    }, 
+    "martinez-soledad": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE RENOVADOR", 
+            "orden": 6
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/smartinez_medium.jpg", 
+        "nombre": "MARTINEZ, Soledad", 
+        "url": "http://www.diputados.gob.ar/diputados/smartinez/"
+    }, 
+    "martini-hugo": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MARTINI, Hugo"
+    }, 
+    "massei-oscar-ermelindo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "MASSEI, Oscar Ermelindo"
+    }, 
+    "massoni-norberto": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Chubut", 
+        "nombre": "MASSONI, Norberto"
+    }, 
+    "mastandrea-alicia-ester": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "MASTANDREA, Alicia Ester"
+    }, 
+    "mayans-jose-miguel-angel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Formosa", 
+        "nombre": "MAYANS, Jos\u00e9 Miguel \u00c1ngel"
+    }, 
+    "maza-ada-mercedes": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Rioja", 
+        "nombre": "MAZA, Ada Mercedes"
+    }, 
+    "mazzarella-susana-del-valle": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/smazzarelladelv_medium.jpg", 
+        "nombre": "MAZZARELLA, Susana del Valle", 
+        "url": "http://www.diputados.gob.ar/diputados/smazzarelladelv/"
+    }, 
+    "meabe-de-matho-josefina-angelica": {
+        "bloque": "Liberal de Corrientes", 
+        "camara": "Senado", 
+        "distrito": "Corrientes", 
+        "nombre": "MEABE de MATHO, Josefina Ang\u00e9lica"
+    }, 
+    "mediza-heriberto-eloy": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "MEDIZA, Heriberto Eloy"
+    }, 
+    "mendez-de-ferreyra-araceli-estela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "MENDEZ de FERREYRA, Araceli Estela"
+    }, 
+    "mendoza-mayra-soledad": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mmendoza_medium.jpg", 
+        "nombre": "MENDOZA, Mayra Soledad", 
+        "url": "http://www.diputados.gob.ar/diputados/mmendoza/"
+    }, 
+    "mendoza-sandra-marcela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Chaco", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/smendoza_medium.jpg", 
+        "nombre": "MENDOZA, Sandra Marcela", 
+        "url": "http://www.diputados.gob.ar/diputados/smendoza/"
+    }, 
+    "menem-carlos-saul": {
+        "bloque": "Federalismo y Liberaci\u00f3n", 
+        "camara": "Senado", 
+        "distrito": "La Rioja", 
+        "nombre": "MENEM, Carlos Sa\u00fal"
+    }, 
+    "menem-eduardo-adrian": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "MENEM, Eduardo Adri\u00e1n"
+    }, 
+    "mera-dalmacio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "MERA, Dalmacio"
+    }, 
+    "mera-mario-ruben": {
+        "bloque": "Justicialista", 
+        "camara": "Senado", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "MERA, Mario Rub\u00e9n"
+    }, 
+    "merchan-paula-cecilia": {
+        "bloque": "Libres del Sur", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MERCHAN, Paula Cecilia"
+    }, 
+    "merino-raul-guillermo": {
+        "bloque": "Partido Nuevo Contra la Corrupci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MERINO, Raul Guillermo"
+    }, 
+    "merlo-mario-raul": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "MERLO, Mario Ra\u00fal"
+    }, 
+    "mestre-ramon-javier": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MESTRE, Ram\u00f3n Javier"
+    }, 
+    "metaza-mario-alfredo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mmetaza_medium.jpg", 
+        "nombre": "METAZA, Mario Alfredo", 
+        "url": "http://www.diputados.gob.ar/diputados/mmetaza/"
+    }, 
+    "michetti-marta-gabriela": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNION PRO", 
+            "orden": 1
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gmichetti_medium.jpg", 
+        "nombre": "MICHETTI, Marta Gabriela", 
+        "url": "http://www.diputados.gob.ar/diputados/gmichetti/"
+    }, 
+    "milman-gerardo-fabian": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE PROGRESISTA, CIVICO Y SOCIAL", 
+            "orden": 5
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gmilman_medium.jpg", 
+        "nombre": "MILMAN, Gerardo Fabi\u00e1n", 
+        "url": "http://www.diputados.gob.ar/diputados/gmilman/"
+    }, 
+    "miranda-julio-antonio": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "MIRANDA, Julio Antonio"
+    }, 
+    "mirkin-beatriz-graciela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "MIRKIN, Beatriz Graciela"
+    }, 
+    "moises-maria-carolina": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "MOISES, Mar\u00eda Carolina"
+    }, 
+    "molas-pedro-omar": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/pmolas_medium.jpg", 
+        "nombre": "MOLAS, Pedro Omar", 
+        "url": "http://www.diputados.gob.ar/diputados/pmolas/"
+    }, 
+    "molina-manuel-isauro": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mmolina_medium.jpg", 
+        "nombre": "MOLINA, Manuel Isauro", 
+        "url": "http://www.diputados.gob.ar/diputados/mmolina/"
+    }, 
+    "monayar-ana-maria-carmen": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MONAYAR, Ana Mar\u00eda C\u00e1rmen"
+    }, 
+    "mongelo-jose-ricardo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jmongelo_medium.jpg", 
+        "nombre": "MONGELO, Jos\u00e9 Ricardo", 
+        "url": "http://www.diputados.gob.ar/diputados/jmongelo/"
+    }, 
+    "monllau-blanca-maria-del-valle": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "MONLLAU, Blanca Mar\u00eda del Valle"
+    }, 
+    "montenegro-olinda": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "MONTENEGRO, Olinda"
+    }, 
+    "montero-laura-gisela": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "MONTERO, Laura Gisela"
+    }, 
+    "monti-lucrecia-etelvina": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MONTI, Lucrecia Etelvina"
+    }, 
+    "montoya-jorge-luciano": {
+        "bloque": "Nucleo Unidad Peronista", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MONTOYA, Jorge Luciano"
+    }, 
+    "morales-gerardo-ruben": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Jujuy", 
+        "nombre": "MORALES, Gerardo Rub\u00e9n"
+    }, 
+    "moran-juan-carlos": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "MORAN, Juan Carlos"
+    }, 
+    "morandini-norma-elena": {
+        "bloque": "Frente C\u00edvico de C\u00f3rdoba", 
+        "camara": "Diputados/Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "MORANDINI, Norma Elena"
+    }, 
+    "morante-antonio-arnaldo-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "MORANTE, Antonio Arnaldo Mar\u00eda"
+    }, 
+    "morejon-manuel-amor": {
+        "bloque": "Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "nombre": "MOREJON, Manuel Amor"
+    }, 
+    "moreno-carlos-julio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 8
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cmoreno_medium.jpg", 
+        "nombre": "MORENO, Carlos Julio", 
+        "url": "http://www.diputados.gob.ar/diputados/cmoreno/"
+    }, 
+    "morgado-claudio-marcelo": {
+        "bloque": "Partido de la Concertaci\u00f3n - FORJA", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "MORGADO, Claudio Marcelo"
+    }, 
+    "morini-pedro-juan": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "MORINI, Pedro Juan"
+    }, 
+    "mouilleron-roberto-mario": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rmouilleron_medium.jpg", 
+        "nombre": "MOUILLERON, Roberto Mario", 
+        "url": "http://www.diputados.gob.ar/diputados/rmouilleron/"
+    }, 
+    "moyano-juan-facundo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fmoyano_medium.jpg", 
+        "nombre": "MOYANO, Juan Facundo", 
+        "url": "http://www.diputados.gob.ar/diputados/fmoyano/"
+    }, 
+    "muller-edgar-raul": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/emuller_medium.jpg", 
+        "nombre": "MULLER, Edgar Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/emuller/"
+    }, 
+    "muller-mabel-hilda": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mmuller_medium.jpg", 
+        "nombre": "MULLER, Mabel Hilda", 
+        "url": "http://www.diputados.gob.ar/diputados/mmuller/"
+    }, 
+    "naim-lidia-lucia": {
+        "bloque": "Solidaridad e Igualdad (SI)", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "NAIM, Lidia Luc\u00eda"
+    }, 
+    "navarro-graciela": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gnavarro_medium.jpg", 
+        "nombre": "NAVARRO, Graciela", 
+        "url": "http://www.diputados.gob.ar/diputados/gnavarro/"
+    }, 
+    "nebreda-carmen-rosa": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cnebreda_medium.jpg", 
+        "nombre": "NEBREDA, Carmen Rosa", 
+        "url": "http://www.diputados.gob.ar/diputados/cnebreda/"
+    }, 
+    "negre-de-alonso-liliana-teresita": {
+        "bloque": "Justicialista San Luis", 
+        "camara": "Senado", 
+        "distrito": "San Luis", 
+        "nombre": "NEGRE DE ALONSO, Liliana Teresita"
+    }, 
+    "negri-mario-raul": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mnegri_medium.jpg", 
+        "nombre": "NEGRI, Mario Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/mnegri/"
+    }, 
+    "nemirovsci-osvaldo-mario": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "NEMIROVSCI, Osvaldo Mario"
+    }, 
+    "nieva-alejandro-mario": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "NIEVA, Alejandro Mario"
+    }, 
+    "nikisch-roy-abelardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Chaco", 
+        "nombre": "NIKISCH, Roy Abelardo"
+    }, 
+    "obeid-jorge-alberto": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Santa Fe", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Santa Fe", 
+        "nombre": "OBEID, Jorge Alberto"
+    }, 
+    "obiglio-julian-martin": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jobiglio_medium.jpg", 
+        "nombre": "OBIGLIO, Juli\u00e1n Mart\u00edn", 
+        "url": "http://www.diputados.gob.ar/diputados/jobiglio/"
+    }, 
+    "ocana-maria-graciela": {
+        "bloque": "Unidad para el Desarrollo Social y la Equidad", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mocana_medium.jpg", 
+        "nombre": "OCA\u00d1A, Maria Graciela", 
+        "url": "http://www.diputados.gob.ar/diputados/mocana/"
+    }, 
+    "oliva-cristian-rodolfo": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Santiago del Estero", 
+            "lista": "FRENTE CIVICO POR SANTIAGO", 
+            "orden": 1
+        }, 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/coliva_medium.jpg", 
+        "nombre": "OLIVA, Cristian Rodolfo", 
+        "url": "http://www.diputados.gob.ar/diputados/coliva/"
+    }, 
+    "olmedo-alfredo-horacio": {
+        "bloque": "Salta Somos Todos", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Salta", 
+            "lista": "SALTA SOMOS TODOS", 
+            "orden": 1
+        }, 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aolmedo_medium.jpg", 
+        "nombre": "OLMEDO, Alfredo Horacio", 
+        "url": "http://www.diputados.gob.ar/diputados/aolmedo/"
+    }, 
+    "olmos-graciela-hortencia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "OLMOS, Graciela Hortencia"
+    }, 
+    "oporto-mario-nestor": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/moporto_medium.jpg", 
+        "nombre": "OPORTO, Mario N\u00e9stor", 
+        "url": "http://www.diputados.gob.ar/diputados/moporto/"
+    }, 
+    "orsolini-pablo-eduardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/porsolini_medium.jpg", 
+        "nombre": "ORSOLINI, Pablo Eduardo", 
+        "url": "http://www.diputados.gob.ar/diputados/porsolini/"
+    }, 
+    "ortiz-correa-marcia-sara-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mortizcorrea_medium.jpg", 
+        "nombre": "ORTIZ CORREA, Marcia Sara Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/mortizcorrea/"
+    }, 
+    "ortiz-mariela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mortiz_medium.jpg", 
+        "nombre": "ORTIZ, Mariela", 
+        "url": "http://www.diputados.gob.ar/diputados/mortiz/"
+    }, 
+    "osorio-marta-lucia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "nombre": "OSORIO, Marta Luc\u00eda"
+    }, 
+    "osuna-blanca-ines": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "OSUNA, Blanca In\u00e9s"
+    }, 
+    "oviedo-alejandra-beatriz": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "OVIEDO, Alejandra Beatriz"
+    }, 
+    "pais-juan-mario": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jpais_medium.jpg", 
+        "nombre": "PAIS, Juan Mario", 
+        "url": "http://www.diputados.gob.ar/diputados/jpais/"
+    }, 
+    "pampuro-jose-juan-bautista": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Buenos Aires", 
+        "nombre": "PAMPURO, Jos\u00e9 Juan Bautista"
+    }, 
+    "pansa-sergio-horacio": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/spansa_medium.jpg", 
+        "nombre": "PANSA, Sergio Horacio", 
+        "url": "http://www.diputados.gob.ar/diputados/spansa/"
+    }, 
+    "panzoni-patricia-ester": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "PANZONI, Patricia Ester"
+    }, 
+    "parada-liliana-beatriz": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA CAMINO POPULAR", 
+            "orden": 2
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lparada_medium.jpg", 
+        "nombre": "PARADA, Liliana Beatriz", 
+        "url": "http://www.diputados.gob.ar/diputados/lparada/"
+    }, 
+    "paredes-urquiza-alberto-nicolas": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "PAREDES URQUIZA, Alberto Nicol\u00e1s"
+    }, 
+    "paroli-raul-omar": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "PAROLI, Ra\u00fal Omar"
+    }, 
+    "parrilli-nanci-maria-agustina": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Neuqu\u00e9n", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "PARRILLI, Nanci Mar\u00eda Agustina"
+    }, 
+    "pasini-ariel-osvaldo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "PASINI, Ariel Osvaldo"
+    }, 
+    "pastoriza-eduardo": {
+        "bloque": "Bloque por la Verdad", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "nombre": "PASTORIZA, Eduardo"
+    }, 
+    "pastoriza-mirta-ameliana": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mpastoriza_medium.jpg", 
+        "nombre": "PASTORIZA, Mirta Ameliana", 
+        "url": "http://www.diputados.gob.ar/diputados/mpastoriza/"
+    }, 
+    "peralta-fabian-francisco": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fperalta_medium.jpg", 
+        "nombre": "PERALTA, Fabi\u00e1n Francisco", 
+        "url": "http://www.diputados.gob.ar/diputados/fperalta/"
+    }, 
+    "perceval-maria-cristina": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "PERCEVAL, Mar\u00eda Cristina"
+    }, 
+    "pereyra-guillermo-antonio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "PEREYRA, Guillermo Antonio"
+    }, 
+    "perez-alberto-cesar": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "PEREZ, Alberto Cesar"
+    }, 
+    "perez-alberto-jose": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ajperez_medium.jpg", 
+        "nombre": "PEREZ, Alberto Jos\u00e9", 
+        "url": "http://www.diputados.gob.ar/diputados/ajperez/"
+    }, 
+    "perez-alsina-juan-agustin": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Senado", 
+        "distrito": "Salta", 
+        "nombre": "PEREZ ALSINA, Juan Agust\u00edn"
+    }, 
+    "perez-jorge-raul": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "PEREZ, Jorge Ra\u00fal"
+    }, 
+    "perez-jose-adrian": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE RENOVADOR", 
+            "orden": 7
+        }, 
+        "distrito": "Buenos Aires", 
+        "nombre": "PEREZ, Jos\u00e9 Adri\u00e1n"
+    }, 
+    "perez-mirta": {
+        "bloque": "Dignidad y Justicia", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "PEREZ, Mirta"
+    }, 
+    "perie-hugo-ruben": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "nombre": "PERIE, Hugo Rub\u00e9n"
+    }, 
+    "perie-julia-argentina": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jperie_medium.jpg", 
+        "nombre": "PERIE, Julia Argentina", 
+        "url": "http://www.diputados.gob.ar/diputados/jperie/"
+    }, 
+    "perotti-omar-angel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/operotti_medium.jpg", 
+        "nombre": "PEROTTI, Omar Angel", 
+        "url": "http://www.diputados.gob.ar/diputados/operotti/"
+    }, 
+    "perroni-ana-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aperroni_medium.jpg", 
+        "nombre": "PERRONI, Ana Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/aperroni/"
+    }, 
+    "persico-daniel-raul": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "San Luis", 
+        "nombre": "PERSICO, Daniel Ra\u00fal"
+    }, 
+    "peso-stella-marys": {
+        "bloque": "Justicialista Nacional", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "PESO, Stella Marys"
+    }, 
+    "petcoff-naidenoff-luis-carlos": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Formosa", 
+        "nombre": "PETCOFF NAIDENOFF, Luis Carlos"
+    }, 
+    "petit-maria-de-los-angeles": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "PETIT, Mar\u00eda de los Angeles"
+    }, 
+    "pichetto-miguel-angel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "R\u00edo Negro", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 1
+        }, 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "PICHETTO, Miguel \u00c1ngel"
+    }, 
+    "piemonte-hector-horacio": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hpiemonte_medium.jpg", 
+        "nombre": "PIEMONTE, H\u00e9ctor Horacio", 
+        "url": "http://www.diputados.gob.ar/diputados/hpiemonte/"
+    }, 
+    "pietragalla-corti-horacio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hpietragallac_medium.jpg", 
+        "nombre": "PIETRAGALLA CORTI, Horacio", 
+        "url": "http://www.diputados.gob.ar/diputados/hpietragallac/"
+    }, 
+    "pilatti-vergara-maria-ines": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Chaco", 
+            "lista": "FRENTE PARA LA VICTORIA", 
+            "orden": 2
+        }, 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mpilattiv_medium.jpg", 
+        "nombre": "PILATTI VERGARA, Mar\u00eda In\u00e9s", 
+        "url": "http://www.diputados.gob.ar/diputados/mpilattiv/"
+    }, 
+    "pinchetti-de-sierra-morales-delia-norma": {
+        "bloque": "Fuerza Republicana", 
+        "camara": "Senado", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "PINCHETTI de SIERRA MORALES, Delia Norma"
+    }, 
+    "pinedo-federico": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fpinedo_medium.jpg", 
+        "nombre": "PINEDO, Federico", 
+        "url": "http://www.diputados.gob.ar/diputados/fpinedo/"
+    }, 
+    "pinto-sergio-damian": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "nombre": "PINTO, Sergio Dami\u00e1n"
+    }, 
+    "piumato-julio-juan": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "PIUMATO, Julio Ju\u00e1n"
+    }, 
+    "plaini-francisco-omar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "UNIDOS POR LA LIBERTAD Y EL TRABAJO", 
+            "orden": 2
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oplaini_medium.jpg", 
+        "nombre": "PLAINI, Francisco Omar", 
+        "url": "http://www.diputados.gob.ar/diputados/oplaini/"
+    }, 
+    "poggi-claudio-javier": {
+        "bloque": "Frente Justicia Uni\u00f3n y Libertad", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "POGGI, Claudio Javier"
+    }, 
+    "portela-agustin-alberto": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aportela_medium.jpg", 
+        "nombre": "PORTELA, Agust\u00edn Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/aportela/"
+    }, 
+    "porto-hector-norberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "PORTO, H\u00e9ctor Norberto"
+    }, 
+    "pradines-roberto-arturo": {
+        "bloque": "Dem\u00f3crata de Mendoza", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rpradines_medium.jpg", 
+        "nombre": "PRADINES, Roberto Arturo", 
+        "url": "http://www.diputados.gob.ar/diputados/rpradines/"
+    }, 
+    "prieto-hugo-nelson": {
+        "bloque": "De la Concertaci\u00f3n", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "PRIETO, Hugo Nelson"
+    }, 
+    "pucheta-ramona": {
+        "bloque": "Socialista del MIJD", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rpucheta_medium.jpg", 
+        "nombre": "PUCHETA, Ramona", 
+        "url": "http://www.diputados.gob.ar/diputados/rpucheta/"
+    }, 
+    "puerta-federico-ramon": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Misiones", 
+            "lista": "FRENTE UNIDOS", 
+            "orden": 1
+        }, 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fpuerta_medium.jpg", 
+        "nombre": "PUERTA, Federico Ram\u00f3n", 
+        "url": "http://www.diputados.gob.ar/diputados/fpuerta/"
+    }, 
+    "puiggros-adriana-victoria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/apuiggros_medium.jpg", 
+        "nombre": "PUIGGROS, Adriana Victoria", 
+        "url": "http://www.diputados.gob.ar/diputados/apuiggros/"
+    }, 
+    "quintela-teresita-nicolasa": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "La Rioja", 
+        "nombre": "QUINTELA, Teresita Nicolasa"
+    }, 
+    "quintero-marta-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "QUINTERO, Marta Beatriz"
+    }, 
+    "quiroga-horacio-rodolfo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "QUIROGA, Horacio Rodolfo"
+    }, 
+    "quiroz-elsa-siria": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "QUIROZ, Elsa Siria"
+    }, 
+    "rached-emilio-alberto": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Santiago del Estero", 
+            "lista": "FRENTE PROGRESISTA CIVICO Y SOCIAL", 
+            "orden": 1
+        }, 
+        "distrito": "Santiago del Estero", 
+        "nombre": "RACHED, Emilio Alberto"
+    }, 
+    "raimundi-carlos-alberto": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/craimundi_medium.jpg", 
+        "nombre": "RAIMUNDI, Carlos Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/craimundi/"
+    }, 
+    "rasino-elida-elena": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/erasino_medium.jpg", 
+        "nombre": "RASINO, Elida Elena", 
+        "url": "http://www.diputados.gob.ar/diputados/erasino/"
+    }, 
+    "re-hilma-leonor": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "UNION CIVICA RADICAL", 
+            "orden": 2
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hre_medium.jpg", 
+        "nombre": "RE, Hilma Leonor", 
+        "url": "http://www.diputados.gob.ar/diputados/hre/"
+    }, 
+    "recalde-hector-pedro": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "ALIANZA FRENTE PARA LA VICTORIA", 
+            "orden": 4
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/hrecalde_medium.jpg", 
+        "nombre": "RECALDE, H\u00e9ctor Pedro", 
+        "url": "http://www.diputados.gob.ar/diputados/hrecalde/"
+    }, 
+    "redczuk-oscar-felipe": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/oredczuk_medium.jpg", 
+        "nombre": "REDCZUK, Oscar Felipe", 
+        "url": "http://www.diputados.gob.ar/diputados/oredczuk/"
+    }, 
+    "regazzoli-maria-cristina": {
+        "bloque": "Partido Justicialista La Pampa", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mregazzoli_medium.jpg", 
+        "nombre": "REGAZZOLI, Mar\u00eda Cristina", 
+        "url": "http://www.diputados.gob.ar/diputados/mregazzoli/"
+    }, 
+    "rejal-jesus-fernando": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "REJAL, Jes\u00fas Fernando"
+    }, 
+    "reutemann-carlos-alberto": {
+        "bloque": "Santa Fe Federal", 
+        "camara": "Senado", 
+        "distrito": "Santa Fe", 
+        "nombre": "REUTEMANN, Carlos Alberto"
+    }, 
+    "reyes-maria-fernanda": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNEN", 
+            "orden": 2
+        }, 
+        "distrito": "CABA", 
+        "nombre": "REYES, Mar\u00eda Fernanda"
+    }, 
+    "richter-ana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "RICHTER, Ana"
+    }, 
+    "rico-maria-del-carmen-cecilia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "RICO, Mar\u00eda del Carmen Cecilia"
+    }, 
+    "riestra-antonio-sabino": {
+        "bloque": "Unidad Popular", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ariestra_medium.jpg", 
+        "nombre": "RIESTRA, Antonio Sabino", 
+        "url": "http://www.diputados.gob.ar/diputados/ariestra/"
+    }, 
+    "rioboo-sandra-adriana": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "RIOBOO, Sandra Adriana"
+    }, 
+    "riofrio-marina-raquel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "San Juan", 
+        "nombre": "RIOFRIO, Marina Raquel"
+    }, 
+    "rios-liliana-maria": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lrios_medium.jpg", 
+        "nombre": "RIOS, Liliana Mar\u00eda", 
+        "url": "http://www.diputados.gob.ar/diputados/lrios/"
+    }, 
+    "rios-maria-fabiana": {
+        "bloque": "A.R.I", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "RIOS, Mar\u00eda Fabiana"
+    }, 
+    "rios-roberto-fabian": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Corrientes", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/frios_medium.jpg", 
+        "nombre": "R\u00cdOS, Roberto Fabi\u00e1n", 
+        "url": "http://www.diputados.gob.ar/diputados/frios/"
+    }, 
+    "risko-silvia-lucrecia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Misiones", 
+            "lista": "FRENTE RENOVADOR DE LA CONCORDIA", 
+            "orden": 2
+        }, 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/srisko_medium.jpg", 
+        "nombre": "RISKO, Silvia Lucrecia", 
+        "url": "http://www.diputados.gob.ar/diputados/srisko/"
+    }, 
+    "ritondo-cristian": {
+        "bloque": "Propuesta Peronista", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "RITONDO, Cristian"
+    }, 
+    "rivara-raul-alberto": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rrivara_medium.jpg", 
+        "nombre": "RIVARA, Ra\u00fal Alberto", 
+        "url": "http://www.diputados.gob.ar/diputados/rrivara/"
+    }, 
+    "rivarola-ruben-armando": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rrivarola_medium.jpg", 
+        "nombre": "RIVAROLA, Rub\u00e9n Armando", 
+        "url": "http://www.diputados.gob.ar/diputados/rrivarola/"
+    }, 
+    "rivas-jorge": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jrivas_medium.jpg", 
+        "nombre": "RIVAS, Jorge", 
+        "url": "http://www.diputados.gob.ar/diputados/jrivas/"
+    }, 
+    "roberti-alberto-oscar": {
+        "bloque": "Frente Renovador Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aroberti_medium.jpg", 
+        "nombre": "ROBERTI, Alberto Oscar", 
+        "url": "http://www.diputados.gob.ar/diputados/aroberti/"
+    }, 
+    "robledo-roberto-ricardo": {
+        "bloque": "Partido Justicialista La Pampa", 
+        "camara": "Diputados", 
+        "distrito": "La Pampa", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rrobledo_medium.jpg", 
+        "nombre": "ROBLEDO, Roberto Ricardo", 
+        "url": "http://www.diputados.gob.ar/diputados/rrobledo/"
+    }, 
+    "rodriguez-evaristo-arturo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Cruz", 
+        "nombre": "RODRIGUEZ, Evaristo Arturo"
+    }, 
+    "rodriguez-marcela-virginia": {
+        "bloque": "Democracia Igualitaria y Participativa", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mrodriguez_medium.jpg", 
+        "nombre": "RODRIGUEZ, Marcela Virginia", 
+        "url": "http://www.diputados.gob.ar/diputados/mrodriguez/"
+    }, 
+    "rodriguez-oscar-ernesto-r": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "RODRIGUEZ, Oscar Ernesto R."
+    }, 
+    "rodriguez-saa-adolfo": {
+        "bloque": "Justicialista San Luis", 
+        "camara": "Diputados/Senado", 
+        "distrito": "San Luis", 
+        "nombre": "RODRIGUEZ SAA, Adolfo"
+    }, 
+    "rogel-fabian-dulio": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/frogel_medium.jpg", 
+        "nombre": "ROGEL, Fabi\u00e1n Dulio", 
+        "url": "http://www.diputados.gob.ar/diputados/frogel/"
+    }, 
+    "rojkes-de-alperovich-beatriz-l": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "ROJKES de ALPEROVICH, Beatriz L ."
+    }, 
+    "rojkes-de-alperovich-beatriz-liliana": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "ROJKES de ALPEROVICH, Beatriz Liliana"
+    }, 
+    "roldan-jose-maria": {
+        "bloque": "Frente de Todos", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Corrientes", 
+        "nombre": "ROLDAN, Jos\u00e9 Mar\u00eda"
+    }, 
+    "roman-carmen": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "ROMAN, Carmen"
+    }, 
+    "romero-juan-carlos": {
+        "bloque": "Justicialista 8 de Octubre", 
+        "camara": "Senado", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Salta", 
+            "lista": "FRENTE POPULAR SALTE\u00d1O", 
+            "orden": 1
+        }, 
+        "distrito": "Salta", 
+        "nombre": "ROMERO, Juan Carlos"
+    }, 
+    "romero-rosario": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "ROMERO, Rosario"
+    }, 
+    "roquel-rodolfo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Formosa", 
+        "nombre": "ROQUEL, Rodolfo"
+    }, 
+    "rossi-agustin-oscar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "ROSSI, Agust\u00edn Oscar"
+    }, 
+    "rossi-alejandro-luis": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "ROSSI, Alejandro Luis"
+    }, 
+    "rossi-carlos-alberto": {
+        "bloque": "Vecinalista - Partido Nuevo", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "ROSSI, Carlos Alberto"
+    }, 
+    "rossi-cipriana-lorena": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "ROSSI, Cipriana Lorena"
+    }, 
+    "rosso-graciela-zulema": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "ROSSO, Graciela Zulema"
+    }, 
+    "rozas-angel": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Chaco", 
+            "lista": "UNION POR CHACO", 
+            "orden": 1
+        }, 
+        "distrito": "Chaco", 
+        "nombre": "ROZAS, Angel"
+    }, 
+    "rucci-claudia-monica": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "UNIDOS POR LA LIBERTAD Y EL TRABAJO", 
+            "orden": 3
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/crucci_medium.jpg", 
+        "nombre": "RUCCI, Claudia Monica", 
+        "url": "http://www.diputados.gob.ar/diputados/crucci/"
+    }, 
+    "ruckauf-carlos-federico": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "RUCKAUF, Carlos Federico"
+    }, 
+    "ruiz-aida-delia": {
+        "bloque": "Frente C\u00edvico por Santiago", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aruiz_medium.jpg", 
+        "nombre": "RUIZ, Aida Delia", 
+        "url": "http://www.diputados.gob.ar/diputados/aruiz/"
+    }, 
+    "ruiz-diaz-elsa-beatriz": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "RUIZ DIAZ, Elsa Beatriz"
+    }, 
+    "ruiz-ramon": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "RUIZ, Ram\u00f3n"
+    }, 
+    "saadi-ramon-eduardo": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Diputados/Senado", 
+        "distrito": "Catamarca", 
+        "nombre": "SAADI, Ram\u00f3n Eduardo"
+    }, 
+    "sabbatella-martin": {
+        "bloque": "Nuevo Encuentro", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/msabbatella_medium.jpg", 
+        "nombre": "SABBATELLA, Mart\u00edn", 
+        "url": "http://www.diputados.gob.ar/diputados/msabbatella/"
+    }, 
+    "sacca-luis-fernando": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lsacca_medium.jpg", 
+        "nombre": "SACCA, Luis Fernando", 
+        "url": "http://www.diputados.gob.ar/diputados/lsacca/"
+    }, 
+    "salazar-carlos-eduardo": {
+        "bloque": "Fuerza Republicana", 
+        "camara": "Senado", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "SALAZAR, Carlos Eduardo"
+    }, 
+    "salim-juan-arturo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jsalim_medium.jpg", 
+        "nombre": "SALIM, Juan Arturo", 
+        "url": "http://www.diputados.gob.ar/diputados/jsalim/"
+    }, 
+    "salum-osvaldo-ruben": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "SALUM, Osvaldo Rub\u00e9n"
+    }, 
+    "salvatori-pedro": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Senado", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "SALVATORI, Pedro"
+    }, 
+    "sanchez-fernando": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI - GEN - UPT", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNEN", 
+            "orden": 3
+        }, 
+        "distrito": "CABA", 
+        "nombre": "SANCHEZ, Fernando"
+    }, 
+    "sanchez-maria-dora": {
+        "bloque": "Concertaci\u00f3n Plural", 
+        "camara": "Senado", 
+        "distrito": "Corrientes", 
+        "nombre": "SANCHEZ, Mar\u00eda Dora"
+    }, 
+    "santander-mario": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "nombre": "SANTANDER, Mario"
+    }, 
+    "santillan-marcelo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "SANTILLAN, Marcelo"
+    }, 
+    "santillan-walter-marcelo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/wsantillan_medium.jpg", 
+        "nombre": "SANTILLAN, Walter Marcelo", 
+        "url": "http://www.diputados.gob.ar/diputados/wsantillan/"
+    }, 
+    "santin-eduardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/esantin_medium.jpg", 
+        "nombre": "SANTIN, Eduardo", 
+        "url": "http://www.diputados.gob.ar/diputados/esantin/"
+    }, 
+    "sanz-ernesto-ricardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "SANZ, Ernesto Ricardo"
+    }, 
+    "sapag-luz-maria": {
+        "bloque": "Movimiento Popular Neuquino", 
+        "camara": "Senado", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "SAPAG, Luz Mar\u00eda"
+    }, 
+    "sapag-silvia-estela": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Neuqu\u00e9n", 
+        "nombre": "SAPAG, Silvia Estela"
+    }, 
+    "sarghini-jorge-emilio": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "SARGHINI, Jorge Emilio"
+    }, 
+    "sartori-diego-horacio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Misiones", 
+        "nombre": "SARTORI, Diego Horacio"
+    }, 
+    "satragno-lidia-elsa": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "SATRAGNO, Lidia Elsa"
+    }, 
+    "scalesi-juan-carlos": {
+        "bloque": "Consenso Federal", 
+        "camara": "Diputados", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "SCALESI, Juan Carlos"
+    }, 
+    "schmidt-liermann-cornelia": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/csliermann_medium.jpg", 
+        "nombre": "SCHMIDT-LIERMANN, Cornelia", 
+        "url": "http://www.diputados.gob.ar/diputados/csliermann/"
+    }, 
+    "sciutto-ruben-dario": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/rsciutto_medium.jpg", 
+        "nombre": "SCIUTTO, Rub\u00e9n Dar\u00edo", 
+        "url": "http://www.diputados.gob.ar/diputados/rsciutto/"
+    }, 
+    "segarra-adela-rosa": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/asegarra_medium.jpg", 
+        "nombre": "SEGARRA, Adela Rosa", 
+        "url": "http://www.diputados.gob.ar/diputados/asegarra/"
+    }, 
+    "serebrinsky-gustavo-eduardo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "SEREBRINSKY, Gustavo Eduardo"
+    }, 
+    "sesma-laura-judith": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "SESMA, Laura Judith"
+    }, 
+    "simoncini-silvia-rosa": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ssimoncini_medium.jpg", 
+        "nombre": "SIMONCINI, Silvia Rosa", 
+        "url": "http://www.diputados.gob.ar/diputados/ssimoncini/"
+    }, 
+    "sluga-juan-carlos": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "SLUGA, Juan Carlos"
+    }, 
+    "snopek-carlos-daniel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Jujuy", 
+        "nombre": "SNOPEK, Carlos Daniel"
+    }, 
+    "sola-felipe-carlos": {
+        "bloque": "Uni\u00f3n Peronista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE RENOVADOR", 
+            "orden": 4
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fsola_medium.jpg", 
+        "nombre": "SOLA, Felipe Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/fsola/"
+    }, 
+    "solanas-fernando-ezequiel": {
+        "bloque": "Proyecto Sur", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNEN", 
+            "orden": 1
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fsolanas_medium.jpg", 
+        "nombre": "SOLANAS, Fernando Ezequiel", 
+        "url": "http://www.diputados.gob.ar/diputados/fsolanas/"
+    }, 
+    "solanas-julio-rodolfo-francisco": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jsolanas_medium.jpg", 
+        "nombre": "SOLANAS, Julio Rodolfo Francisco", 
+        "url": "http://www.diputados.gob.ar/diputados/jsolanas/"
+    }, 
+    "solanas-raul-patricio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "SOLANAS, Ra\u00fal Patricio"
+    }, 
+    "sosa-carlos-alberto": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "SOSA, Carlos Alberto"
+    }, 
+    "soto-gladys-beatriz": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gsoto_medium.jpg", 
+        "nombre": "SOTO, Gladys Beatriz", 
+        "url": "http://www.diputados.gob.ar/diputados/gsoto/"
+    }, 
+    "spatola-paola-rosana": {
+        "bloque": "Guardia Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "SPATOLA, Paola Rosana"
+    }, 
+    "stella-anibal-jesus": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "STELLA, Anibal Jesus"
+    }, 
+    "stolbizer-margarita-rosa": {
+        "bloque": "GEN", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE PROGRESISTA, CIVICO Y SOCIAL", 
+            "orden": 1
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mstolbizer_medium.jpg", 
+        "nombre": "STOLBIZER, Margarita Rosa", 
+        "url": "http://www.diputados.gob.ar/diputados/mstolbizer/"
+    }, 
+    "storani-federico-teobaldo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "STORANI, Federico Teobaldo"
+    }, 
+    "storani-maria-luisa": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE PROGRESISTA, CIVICO Y SOCIAL", 
+            "orden": 7
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mstorani_medium.jpg", 
+        "nombre": "STORANI, Mar\u00eda Luisa", 
+        "url": "http://www.diputados.gob.ar/diputados/mstorani/"
+    }, 
+    "storero-hugo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "STORERO, Hugo"
+    }, 
+    "storni-silvia": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "STORNI, Silvia"
+    }, 
+    "sylvestre-begnis-juan-hector": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "SYLVESTRE BEGNIS, Juan H\u00e9ctor"
+    }, 
+    "taffarel-ricardo-cesar": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "TAFFAREL, Ricardo Cesar"
+    }, 
+    "tate-alicia-ester": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "TATE, Alicia Ester"
+    }, 
+    "terada-alicia": {
+        "bloque": "Coalici\u00f3n C\u00edvica - ARI", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Chaco", 
+            "lista": "UNION POR CHACO", 
+            "orden": 2
+        }, 
+        "distrito": "Chaco", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aterada_medium.jpg", 
+        "nombre": "TERADA, Alicia", 
+        "url": "http://www.diputados.gob.ar/diputados/aterada/"
+    }, 
+    "terragno-rodolfo": {
+        "bloque": "Radical Independiente", 
+        "camara": "Senado", 
+        "distrito": "CABA", 
+        "nombre": "TERRAGNO, Rodolfo"
+    }, 
+    "thomas-enrique-luis": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ethomas_medium.jpg", 
+        "nombre": "THOMAS, Enrique Luis", 
+        "url": "http://www.diputados.gob.ar/diputados/ethomas/"
+    }, 
+    "tineo-javier-hector": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "La Rioja", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jtineo_medium.jpg", 
+        "nombre": "TINEO, Javier H\u00e9ctor", 
+        "url": "http://www.diputados.gob.ar/diputados/jtineo/"
+    }, 
+    "tinnirello-carlos-alberto": {
+        "bloque": "Red de Encuentro Social", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "TINNIRELLO, Carlos Alberto"
+    }, 
+    "toledo-hugo-david": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "TOLEDO, Hugo David"
+    }, 
+    "tomas-hector-daniel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/htomas_medium.jpg", 
+        "nombre": "TOMAS, H\u00e9ctor Daniel", 
+        "url": "http://www.diputados.gob.ar/diputados/htomas/"
+    }, 
+    "tomaz-adriana-elisa": {
+        "bloque": "Partido Unidad Federalista", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "TOMAZ, Adriana Elisa"
+    }, 
+    "tonelli-pablo-gabriel": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ptonelli_medium.jpg", 
+        "nombre": "TONELLI, Pablo Gabriel", 
+        "url": "http://www.diputados.gob.ar/diputados/ptonelli/"
+    }, 
+    "torfe-monica-liliana": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "TORFE, M\u00f3nica Liliana"
+    }, 
+    "torino-hector-omar": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "TORINO, H\u00e9ctor Omar"
+    }, 
+    "torres-eduardo-enrique": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "TORRES, Eduardo Enrique"
+    }, 
+    "torrontegui-maria-angelica": {
+        "bloque": "Frente Justicia Uni\u00f3n y Libertad", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "nombre": "TORRONTEGUI, Mar\u00eda Ang\u00e9lica"
+    }, 
+    "triaca-alberto-jorge": {
+        "bloque": "PRO", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "CABA", 
+            "lista": "ALIANZA UNION PRO", 
+            "orden": 4
+        }, 
+        "distrito": "CABA", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/atriaca_medium.jpg", 
+        "nombre": "TRIACA, Alberto Jorge", 
+        "url": "http://www.diputados.gob.ar/diputados/atriaca/"
+    }, 
+    "troadello-monica": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Mendoza", 
+        "nombre": "TROADELLO, M\u00f3nica"
+    }, 
+    "tulio-rosa-ester": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "TULIO, Rosa Ester"
+    }, 
+    "tunessi-juan-pedro": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Buenos Aires", 
+            "lista": "FRENTE PROGRESISTA, CIVICO Y SOCIAL", 
+            "orden": 6
+        }, 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jtunessi_medium.jpg", 
+        "nombre": "TUNESSI, Juan Pedro", 
+        "url": "http://www.diputados.gob.ar/diputados/jtunessi/"
+    }, 
+    "unac-jose-ruben": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/junac_medium.jpg", 
+        "nombre": "U\u00d1AC, Jos\u00e9 Rub\u00e9n", 
+        "url": "http://www.diputados.gob.ar/diputados/junac/"
+    }, 
+    "urlich-carlos": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "URLICH, Carlos"
+    }, 
+    "urquia-roberto-daniel": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "URQUIA, Roberto Daniel"
+    }, 
+    "urtubey-juan-manuel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "URTUBEY, Juan Manuel"
+    }, 
+    "vaca-narvaja-patricia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "VACA NARVAJA, Patricia"
+    }, 
+    "valinotto-jorge-anselmo": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jvalinotto_medium.jpg", 
+        "nombre": "VALINOTTO, Jorge Anselmo", 
+        "url": "http://www.diputados.gob.ar/diputados/jvalinotto/"
+    }, 
+    "vanossi-jorge": {
+        "bloque": "Propuesta Republicana", 
+        "camara": "Diputados", 
+        "distrito": "CABA", 
+        "nombre": "VANOSSI, Jorge"
+    }, 
+    "vaquie-enrique-andres": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Mendoza", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/evaquie_medium.jpg", 
+        "nombre": "VAQUIE, Enrique Andr\u00e9s", 
+        "url": "http://www.diputados.gob.ar/diputados/evaquie/"
+    }, 
+    "vargas-aignasse-geronimo": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Tucum\u00e1n", 
+        "nombre": "VARGAS AIGNASSE, Ger\u00f3nimo"
+    }, 
+    "varisco-sergio-fausto": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "VARISCO, Sergio Fausto"
+    }, 
+    "vazquez-de-tabernise-silvia-beatriz": {
+        "bloque": "Partido de la Concertaci\u00f3n - FORJA", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "VAZQUEZ de TABERNISE, Silvia Beatriz"
+    }, 
+    "veaute-mariana-alejandra": {
+        "bloque": "Frente C\u00edvico y Social de Catamarca", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mveaute_medium.jpg", 
+        "nombre": "VEAUTE, Mariana Alejandra", 
+        "url": "http://www.diputados.gob.ar/diputados/mveaute/"
+    }, 
+    "vega-juan-carlos": {
+        "bloque": "Coalici\u00f3n C\u00edvica", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "nombre": "VEGA, Juan Carlos"
+    }, 
+    "velarde-marta-sylvia": {
+        "bloque": "Justicialismo Republicano", 
+        "camara": "Diputados", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "VELARDE, Marta Sylvia"
+    }, 
+    "vera-arturo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "VERA, Arturo"
+    }, 
+    "verani-pablo": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "R\u00edo Negro", 
+        "nombre": "VERANI, Pablo"
+    }, 
+    "verna-carlos-alberto": {
+        "bloque": "Justicialista La Pampa", 
+        "camara": "Senado", 
+        "distrito": "La Pampa", 
+        "nombre": "VERNA, Carlos Alberto"
+    }, 
+    "viale-lisandro-alfredo": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Senado", 
+            "distrito": "Entre R\u00edos", 
+            "lista": "ALIANZA FRENTE AMPLIO PROGRESISTA", 
+            "orden": 1
+        }, 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "VIALE, Lisandro Alfredo"
+    }, 
+    "viana-luis-alberto": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "VIANA, Luis Alberto"
+    }, 
+    "videla-nora-esther": {
+        "bloque": "Frente Peronista", 
+        "camara": "Diputados", 
+        "distrito": "San Luis", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/nvidela_medium.jpg", 
+        "nombre": "VIDELA, Nora Esther", 
+        "url": "http://www.diputados.gob.ar/diputados/nvidela/"
+    }, 
+    "vigo-elida-maria": {
+        "bloque": "Justicialista-Frente para la Victoria", 
+        "camara": "Senado", 
+        "distrito": "Misiones", 
+        "nombre": "VIGO, Elida Mar\u00eda"
+    }, 
+    "vilarino-jose-antonio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jvilarino_medium.jpg", 
+        "nombre": "VILARI\u00d1O, Jos\u00e9 Antonio", 
+        "url": "http://www.diputados.gob.ar/diputados/jvilarino/"
+    }, 
+    "villa-jose-antonio": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "San Juan", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jvilla_medium.jpg", 
+        "nombre": "VILLA, Jos\u00e9 Antonio", 
+        "url": "http://www.diputados.gob.ar/diputados/jvilla/"
+    }, 
+    "villata-graciela-susana": {
+        "bloque": "Frente C\u00edvico - C\u00f3rdoba", 
+        "camara": "Diputados", 
+        "distrito": "C\u00f3rdoba", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/gvillata_medium.jpg", 
+        "nombre": "VILLATA, Graciela Susana", 
+        "url": "http://www.diputados.gob.ar/diputados/gvillata/"
+    }, 
+    "villaverde-jorge-antonio": {
+        "bloque": "Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "VILLAVERDE, Jorge Antonio"
+    }, 
+    "viudes-isabel-josefa": {
+        "bloque": "Partido Nuevo", 
+        "camara": "Senado", 
+        "distrito": "Corrientes", 
+        "nombre": "VIUDES, Isabel Josefa"
+    }, 
+    "wayar-walter-raul": {
+        "bloque": "Frente Peronista Federal", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/wwayar_medium.jpg", 
+        "nombre": "WAYAR, Walter Ra\u00fal", 
+        "url": "http://www.diputados.gob.ar/diputados/wwayar/"
+    }, 
+    "west-mariano-federico": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "nombre": "WEST, Mariano Feder\u00edco"
+    }, 
+    "wilder-ricardo": {
+        "bloque": "Frente de Unidad Provincial", 
+        "camara": "Diputados", 
+        "distrito": "Tierra del Fuego", 
+        "nombre": "WILDER, Ricardo"
+    }, 
+    "yague-linda-cristina": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Neuqu\u00e9n", 
+            "lista": "COMPROMISO CIVICO NEUQUINO", 
+            "orden": 3
+        }, 
+        "distrito": "Neuqu\u00e9n", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/lyague_medium.jpg", 
+        "nombre": "YAG\u00dcE, Linda Cristina", 
+        "url": "http://www.diputados.gob.ar/diputados/lyague/"
+    }, 
+    "yarade-rodolfo-fernando": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/fyarade_medium.jpg", 
+        "nombre": "YARADE, Rodolfo Fernando", 
+        "url": "http://www.diputados.gob.ar/diputados/fyarade/"
+    }, 
+    "yazbek-ruben-david": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Catamarca", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/ryazbek_medium.jpg", 
+        "nombre": "YAZBEK, Rub\u00e9n David", 
+        "url": "http://www.diputados.gob.ar/diputados/ryazbek/"
+    }, 
+    "yoma-jorge-raul": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "La Rioja", 
+            "lista": "FRENTE NUEVO PACTO FE-DERAL", 
+            "orden": 1
+        }, 
+        "distrito": "La Rioja", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jyoma_medium.jpg", 
+        "nombre": "YOMA, Jorge Raul", 
+        "url": "http://www.diputados.gob.ar/diputados/jyoma/"
+    }, 
+    "zabalza-juan-carlos": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/jzabalza_medium.jpg", 
+        "nombre": "ZABALZA, Juan Carlos", 
+        "url": "http://www.diputados.gob.ar/diputados/jzabalza/"
+    }, 
+    "zamarreno-maria-eugenia": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Buenos Aires", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/mzamarreno_medium.jpg", 
+        "nombre": "ZAMARRE\u00d1O, Mar\u00eda Eugenia", 
+        "url": "http://www.diputados.gob.ar/diputados/mzamarreno/"
+    }, 
+    "zancada-pablo": {
+        "bloque": "Partido Socialista", 
+        "camara": "Diputados", 
+        "distrito": "Santa Fe", 
+        "nombre": "ZANCADA, Pablo"
+    }, 
+    "zavalia-jose-luis": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Senado", 
+        "distrito": "Santiago del Estero", 
+        "nombre": "ZAVALIA, Jos\u00e9 Luis"
+    }, 
+    "zavallo-gustavo": {
+        "bloque": "Peronismo Federal", 
+        "camara": "Diputados", 
+        "distrito": "Entre R\u00edos", 
+        "nombre": "ZAVALLO, Gustavo"
+    }, 
+    "ziebart-cristina-isabel": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "distrito": "Chubut", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/cziebart_medium.jpg", 
+        "nombre": "ZIEBART, Cristina Isabel", 
+        "url": "http://www.diputados.gob.ar/diputados/cziebart/"
+    }, 
+    "ziegler-alex-roberto": {
+        "bloque": "Frente para la Victoria - PJ", 
+        "camara": "Diputados", 
+        "candidatura": {
+            "camara": "Diputados", 
+            "distrito": "Misiones", 
+            "lista": "FRENTE RENOVADOR DE LA CONCORDIA", 
+            "orden": 1
+        }, 
+        "distrito": "Misiones", 
+        "foto": "http://www4.hcdn.gob.ar/fotos/aziegler_medium.jpg", 
+        "nombre": "ZIEGLER, Alex Roberto", 
+        "url": "http://www.diputados.gob.ar/diputados/aziegler/"
+    }, 
+    "zimmermann-victor": {
+        "bloque": "Uni\u00f3n C\u00edvica Radical", 
+        "camara": "Diputados", 
+        "distrito": "Chaco", 
+        "nombre": "ZIMMERMANN, V\u00edctor"
+    }, 
+    "zottos-miguel-andres-costas": {
+        "bloque": "Renovador de Salta", 
+        "camara": "Diputados", 
+        "distrito": "Salta", 
+        "nombre": "ZOTTOS, Miguel Andr\u00e9s Costas"
+    }
+}
