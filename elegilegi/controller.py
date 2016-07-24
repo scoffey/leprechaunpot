@@ -113,10 +113,36 @@ class ApiHandler(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'application/json'
         self.response.out.write(output)
 
+class ExportHandler(webapp2.RequestHandler):
+
+    def get(self):
+        limit = int(self.request.get('limit') or 100)
+        offset = int(self.request.get('offset') or 0)
+        result = dict((b.user_id, self._ballot_to_dict(b)) for \
+                b in Ballot.query().fetch(limit=limit, offset=offset))
+        self._output_json(result)
+
+    def _ballot_to_dict(self, b):
+        return {
+            'user_id': b.user_id,
+            'data': dict(i.split('=', 1) for i in b.data.split('\n')),
+            'timestamp': time.mktime(b.timestamp.timetuple())
+        }
+
+    def _output_json(self, data):
+        output = json.dumps(data)
+        callback = self.request.get('callback')
+        if callback:
+            callback = re.sub('[^a-zA-Z0-9_\\.]+', '', callback)
+            output = '%s(%s);' % (callback, output)
+        self.response.headers['Content-Type'] = 'application/json'
+        self.response.out.write(output)
+
 # App controller setup
 app = webapp2.WSGIApplication([
     ('/elegilegi/', MainHandler),
     ('/elegilegi/api', ApiHandler),
+    #('/elegilegi/export', ExportHandler),
 ])
 
 if __name__ == '__main__':
