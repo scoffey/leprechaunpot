@@ -116,7 +116,7 @@ class ApiHandler(webapp2.RequestHandler):
 class ExportHandler(webapp2.RequestHandler):
 
     def get(self):
-        limit = int(self.request.get('limit') or 100)
+        limit = int(self.request.get('limit') or 10)
         offset = int(self.request.get('offset') or 0)
         result = dict((b.user_id, self._ballot_to_dict(b)) for \
                 b in Ballot.query().fetch(limit=limit, offset=offset))
@@ -140,9 +140,9 @@ class ExportHandler(webapp2.RequestHandler):
 
 # App controller setup
 app = webapp2.WSGIApplication([
-    ('/elegilegi/', MainHandler),
+    #('/elegilegi/', MainHandler),
+    ('/elegilegi/', ExportHandler),
     ('/elegilegi/api', ApiHandler),
-    #('/elegilegi/export', ExportHandler),
 ])
 
 if __name__ == '__main__':
