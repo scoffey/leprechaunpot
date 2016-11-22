@@ -55,9 +55,21 @@ class Guest(ndb.Model):
     ipaddr = ndb.StringProperty()
     timestamp = ndb.DateTimeProperty(auto_now=True)
 
+    def serialize(self, attrs=None, mapper=None):
+        retval = {}
+        attrs = attrs or self._properties
+        mapper = mapper or (lambda x: x)
+        for k in attrs:
+            v = self.key.id() if k == 'uid' else getattr(self, k)
+            retval[k] = mapper(v)
+        return retval
+
 # Request handlers
 
 class ApiHandler(webapp2.RequestHandler):
+
+    _ATTRS = ('uid', 'party_id', 'firstname', 'lastname',
+            'attending', 'intl', 'data')
 
     def get(self):
         attending = self.request.get('attending')
@@ -87,11 +99,11 @@ class ApiHandler(webapp2.RequestHandler):
             self.abort(400)
 
     def _output_guest(self, g):
-        result = self._guest_to_dict(g)
+        result = g.serialize(self._ATTRS)
         if g and g.party_id:
             gs = Guest.query(Guest.party_id == g.party_id).fetch(limit=16)
             if len(gs) > 1:
-                result['party'] = [self._guest_to_dict(g) for g in gs]
+                result['party'] = [g.serialize(self._ATTRS) for g in gs]
         self._output_json(result)
 
     def _output_suggestions(self, firstname, lastname):
@@ -105,7 +117,7 @@ class ApiHandler(webapp2.RequestHandler):
             d = fuzzy_name_distance((firstslug, lastslug),
                     (g.firstslug, g.lastslug))
             if d < 0.7:
-                s = self._guest_to_dict(g)
+                s = g.serialize(self._ATTRS)
                 s['distance'] = d
                 suggestions.append(s)
         self._output_json({'suggestions': suggestions})
@@ -131,13 +143,17 @@ class ApiHandler(webapp2.RequestHandler):
         g.put()
         logging.info('New RSVP: %r' % g)
         self._send_mail(g)
-        self._output_json(self._guest_to_dict(g))
+        self._output_json(g.serialize(self._ATTRS))
 
     def _send_mail(self, g):
         sender = 'c2FudGlhZ28uY29mZmV5QGdtYWlsLmNvbQ==\n'.decode('base64')
-        send_mail(sender=sender, to=sender,
-                subject='New RSVP at %s' % self.request.host,
-                body=repr(g.to_dict()))
+        body = '%s %s: attending=%s, ipaddr=%s, email=%s, data=%s, date=%s' % \
+                (g.firstname, g.lastname, g.attending, g.ipaddr, \
+                g.email, json.dumps(g.data), g.timestamp.isoformat())
+        try:
+            send_mail(sender=sender, to=sender, subject='New RSVP', body=body)
+        except Exception as e:
+            logging.exception(e)
 
     def _get_cookie(self, key, default=None):
         c = self.request.cookies
@@ -147,17 +163,6 @@ class ApiHandler(webapp2.RequestHandler):
         domain = self.request.host.split(':', 1)[0]
         self.response.set_cookie(key, value, max_age=60 * 86400, \
                 path='/', domain=domain, secure=True)
-
-    def _guest_to_dict(self, g):
-        return {
-            'uid': g.key.id(),
-            'party_id': g.party_id,
-            'firstname': g.firstname,
-            'lastname': g.lastname,
-            'attending': g.attending,
-            'intl': g.intl,
-            'data': g.data
-        }
 
     def _output_json(self, data):
         output = json.dumps(data)
@@ -202,7 +207,7 @@ class AdminHandler(webapp2.RequestHandler):
         if not uid or auth_token != _AUTH_TOKEN:
             self.abort(400)
         g = Guest.get_by_id(uid)
-        original = g.to_dict()
+        original = g.serialize(mapper=self._json_safe)
         g.attending = 0
         g.email = None
         g.data = {}
@@ -227,7 +232,6 @@ class AdminHandler(webapp2.RequestHandler):
                 logging.warn('Skipping row: %r', row)
                 bad_rows.append(row)
             else:
-                #logging.info('New entity: %r', g)
                 update_count += 1
         self._output_json({'updated': update_count, 'skipped': bad_rows})
 
@@ -247,7 +251,7 @@ class AdminHandler(webapp2.RequestHandler):
         g.data = (json.loads(d) if d else None) or g.data or {}
         g.email = r.get('email') or g.email or None
         g.ipaddr = r.get('ipaddr') or g.ipaddr or None
-        g.put_async()
+        g.put()
         return g
 
     def delete(self):
@@ -258,11 +262,14 @@ class AdminHandler(webapp2.RequestHandler):
         g = Guest.get_by_id(uid)
         g.key.delete()
         logging.info('Deleted entity: %r' % g)
-        self._output_json(g.to_dict())
+        self._output_json(g.serialize(mapper=self._json_safe))
+
+    def _json_safe(self, value):
+        if isinstance(value, datetime.datetime):
+            return value.isoformat()
+        return value
 
     def _output_json(self, data):
-        if isinstance(data.get('timestamp'), datetime.datetime): # HACK TODO
-            data['timestamp'] = data['timestamp'].isoformat()
         output = json.dumps(data)
         callback = self.request.get('callback')
         if callback:
